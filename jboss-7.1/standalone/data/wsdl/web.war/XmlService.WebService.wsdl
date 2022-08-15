@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://www.eframe.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="XmlService.WebService" targetNamespace="http://www.eframe.org/">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.eframe.org/" elementFormDefault="unqualified" targetNamespace="http://www.eframe.org/" version="1.0">
+
+  <xs:element name="doBusiness" type="tns:doBusiness"/>
+
+  <xs:element name="doBusinessResponse" type="tns:doBusinessResponse"/>
+
+  <xs:complexType name="doBusiness">
+    <xs:sequence>
+      <xs:element form="qualified" minOccurs="0" name="message" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="doBusinessResponse">
+    <xs:sequence>
+      <xs:element form="qualified" minOccurs="0" name="doBusinessResult" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="doBusiness">
+    <wsdl:part element="tns:doBusiness" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="doBusinessResponse">
+    <wsdl:part element="tns:doBusinessResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="XmlService.WebService">
+    <wsdl:operation name="doBusiness">
+      <wsdl:input message="tns:doBusiness" name="doBusiness">
+    </wsdl:input>
+      <wsdl:output message="tns:doBusinessResponse" name="doBusinessResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="XmlService.WebServiceSoapBinding" type="tns:XmlService.WebService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="doBusiness">
+      <soap:operation soapAction="http://www.eframe.org/doBusiness" style="document"/>
+      <wsdl:input name="doBusiness">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="doBusinessResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="XmlService.WebService">
+    <wsdl:port binding="tns:XmlService.WebServiceSoapBinding" name="XmlService.WebServicePort">
+      <soap:address location="http://LAPTOP-ZQH:8080/web/XmlService.WebService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

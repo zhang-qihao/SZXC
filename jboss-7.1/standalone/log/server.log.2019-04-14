@@ -1,0 +1,98 @@
+2019-04-14 12:26:06,019 INFO  [org.jboss.modules] (main) JBoss Modules version 1.6.0.Final-redhat-1
+2019-04-14 12:26:06,806 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.7.SP1-redhat-1
+2019-04-14 12:26:07,002 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0049: JBoss EAP 7.1.0.GA (WildFly Core 3.0.10.Final-redhat-1) 在启动
+2019-04-14 12:26:07,003 DEBUG [org.jboss.as.config] (MSC service thread 1-7) 已配置的系统属性：
+	[Standalone] = 
+	awt.toolkit = sun.lwawt.macosx.LWCToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	gopherProxySet = false
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	java.awt.graphicsenv = sun.awt.CGraphicsEnvironment
+	java.awt.printerjob = sun.lwawt.macosx.CPrinterJob
+	java.class.path = /Volumes/ProjectHD/Tools/jboss eap7.1/jboss-HGHIS/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/endorsed
+	java.ext.dirs = /Users/zq/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+	java.home = /Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre
+	java.io.tmpdir = /var/folders/j8/n0t5dsz52tv0fyn4kjc4fm1h0000gn/T/
+	java.library.path = /Users/zq/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_161-b12
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_161
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.161-b12
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address.management = 127.0.0.1
+	jboss.home.dir = /Volumes/ProjectHD/Tools/jboss eap7.1/jboss-HGHIS
+	jboss.host.name = zhangqidemacbook-pro
+	jboss.modules.dir = /Volumes/ProjectHD/Tools/jboss eap7.1/jboss-HGHIS/modules
+	jboss.node.name = zhangqidemacbook-pro
+	jboss.qualified.host.name = zhangqidemacbook-pro.local
+	jboss.server.base.dir = /Volumes/ProjectHD/Tools/jboss eap7.1/jboss-HGHIS/standalone
+	jboss.server.config.dir = /Volumes/ProjectHD/Tools/jboss eap7.1/jboss-HGHIS/standalone/configuration
+	jboss.server.data.dir = /Volumes/ProjectHD/Tools/jboss eap7.1/jboss-HGHIS/standalone/data
+	jboss.server.deploy.dir = /Volumes/ProjectHD/Tools/jboss eap7.1/jboss-HGHIS/standalone/data/content
+	jboss.server.log.dir = /Volumes/ProjectHD/Tools/jboss eap7.1/jboss-HGHIS/standalone/log
+	jboss.server.name = zhangqidemacbook-pro
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Volumes/ProjectHD/Tools/jboss eap7.1/jboss-HGHIS/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/Volumes/ProjectHD/Tools/jboss eap7.1/jboss-HGHIS/standalone/configuration/logging.properties
+	module.path = /Volumes/ProjectHD/Tools/jboss eap7.1/jboss-HGHIS/modules
+	org.jboss.boot.log.file = /Volumes/ProjectHD/Tools/jboss eap7.1/jboss-HGHIS/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 10.13.6
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	sun.arch.data.model = 64
+	sun.boot.class.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/classes
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Volumes/ProjectHD/Tools/jboss eap7.1/jboss-HGHIS/jboss-modules.jar -mp /Volumes/ProjectHD/Tools/jboss eap7.1/jboss-HGHIS/modules org.jboss.as.standalone -Djboss.home.dir=/Volumes/ProjectHD/Tools/jboss eap7.1/jboss-HGHIS -Djboss.server.base.dir=/Volumes/ProjectHD/Tools/jboss eap7.1/jboss-HGHIS/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = CN
+	user.dir = /Volumes/ProjectHD/Tools/jboss eap7.1/jboss-HGHIS/bin
+	user.home = /Users/zq
+	user.language = zh
+	user.name = zq
+	user.timezone = Asia/Shanghai
+2019-04-14 12:26:07,005 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM 参数: -D[Standalone] -verbose:gc -Xloggc:/Volumes/ProjectHD/Tools/jboss eap7.1/jboss-HGHIS/standalone/log/gc.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=3M -XX:-TraceClassUnloading -Xms512m -Xmx2048m -XX:MaxPermSize=256m -Djboss.bind.address.management=127.0.0.1 -Dorg.jboss.boot.log.file=/Volumes/ProjectHD/Tools/jboss eap7.1/jboss-HGHIS/standalone/log/server.log -Dlogging.configuration=file:/Volumes/ProjectHD/Tools/jboss eap7.1/jboss-HGHIS/standalone/configuration/logging.properties 
+2019-04-14 12:26:08,795 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: 地址 'security-realm' 上的资源里的属性 '/core-service=management/management-interface=http-interface' 已被舍弃，以后的版本里可能会删除它。详情请参考 read-resource-description 操作的输出里的属性描述。
+2019-04-14 12:26:08,815 INFO  [org.wildfly.security] (ServerService Thread Pool -- 7) ELY00001: WildFly Elytron version 1.1.7.Final-redhat-1
+2019-04-14 12:26:08,815 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 28) WFLYCTL0028: 地址 'security-realm' 上的资源里的属性 '/subsystem=undertow/server=default-server/https-listener=https' 已被舍弃，以后的版本里可能会删除它。详情请参考 read-resource-description 操作的输出里的属性描述。
+2019-04-14 12:26:08,872 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: 使用 socket-binding (management-http) 创建 HTTP 管理服务
+2019-04-14 12:26:08,889 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.5.4.Final-redhat-1
+2019-04-14 12:26:08,897 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.5.4.Final-redhat-1
