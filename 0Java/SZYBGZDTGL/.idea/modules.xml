@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SZYBGZDTGL/SZYBGZDTGL.iml" filepath="$PROJECT_DIR$/SZYBGZDTGL/SZYBGZDTGL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EF5EmptyProjWeb/SZYBGZDTGL.iml" filepath="$PROJECT_DIR$/EF5EmptyProjWeb/SZYBGZDTGL.iml" />
+    </modules>
+  </component>
+</project>

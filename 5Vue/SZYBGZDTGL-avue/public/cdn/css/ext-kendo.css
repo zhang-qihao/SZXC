@@ -1,0 +1,712 @@
+/*录入框*/
+input[readonly], input[readonly]:hover {
+    background-color: #edf0f4;
+    color: #333333;
+    border: 1px solid #BAC3CC;
+}
+
+input[readonly]:focus {
+    border: 1px solid #BAC3CC;
+
+}
+
+textarea[readonly] {
+    background-color: #f9f9f9;
+}
+
+.k-input[readonly] {
+    background-color: #f9f9f9;
+    color: #000000;
+}
+
+
+li {
+    list-style: none;
+}
+
+
+ul {
+    padding: 0;
+}
+
+
+/*窗口*/
+/*.k-widget *{*/
+/*-webkit-box-sizing: inherit;*/
+/*box-sizing: inherit;*/
+/*}*/
+.k-widget .k-window-content * {
+    /*-webkit-box-sizing: content-box;*/
+    /*box-sizing: content-box;*/
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.k-window-content .k-widget * {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+
+}
+
+.k-alert .k-window-titlebar::before {
+    content: '提示';
+}
+
+.k-alert .k-window-titlebar .k-dialog-title {
+    visibility: collapse;
+}
+
+div.k-window-content {
+    /*position: relative;*/
+    /*height: 100%;*/
+    padding: 0em;
+    overflow: hidden;
+    outline: 0;
+}
+
+/*confirm窗口*/
+.k-confirm .k-window-titlebar::before {
+    content: '提示';
+}
+
+.k-confirm .k-window-titlebar .k-dialog-title {
+    visibility: collapse;
+}
+
+/*checkbox*/
+.k-checkbox-label {
+    display: inline;
+}
+
+/*树*/
+div.k-treeview {
+    border-width: 0;
+    background: 0 0;
+    overflow: auto;
+    white-space: nowrap;
+    width: 100%;
+    height: calc(100% - 18px);
+}
+
+#treeview-sprites .k-sprite {
+    background-image: url("./img/coloricons-sprite.png");
+}
+
+.rootfolder {
+    background-position: 0 0;
+}
+
+.folder {
+    background-position: 0 -16px;
+}
+
+.pdf {
+    background-position: 0 -32px;
+}
+
+.html {
+    background-position: 0 -48px;
+}
+
+.image {
+    background-position: 0 -64px;
+}
+
+
+/*拦截框*/
+.k-overlay {
+    opacity: .2;
+}
+
+/*splitter分栏*/
+.k-widget.k-splitter {
+    border-width: 0px;
+}
+
+
+/*Grid 背景色*/
+div.k-grid-content.k-auto-scrollable {
+    white-space: normal;
+    background-color: #f5f7fb;
+    background-image: url(./img/grid-bg.png);
+    background-repeat: repeat;
+    /*background-size: 100% 100%;*/
+    height: calc(100% - 69px) !important;
+    /*flex: 1;*/
+}
+
+.body-mini div.k-grid-content.k-auto-scrollable {
+    height: calc(100% - 69px) !important;
+}
+
+.body-small div.k-grid-content.k-auto-scrollable {
+    height: calc(100% - 72px) !important;
+}
+
+.body-medium div.k-grid-content.k-auto-scrollable {
+    height: calc(100% - 76px) !important;
+}
+
+.k-grid-content-locked {
+    height: calc(100% - 69px) !important;
+}
+
+.body-mini div.k-grid-content-locked {
+    height: calc(100% - 69px) !important;
+}
+
+.body-small div.k-grid-content-locked {
+    height: calc(100% - 72px) !important;
+}
+
+.body-medium div.k-grid-content-locked {
+    height: calc(100% - 76px) !important;
+}
+
+.k-grid table {
+    background: white;
+}
+
+/*Grid 不换行*/
+.k-grid td {
+    white-space: nowrap;
+}
+
+/*Grid 选中行 超链接颜色*/
+.k-grid .k-state-selected a {
+    color: #ccdcf1;
+}
+
+.k-grid .k-state-selected .k-button {
+    color: #333;
+}
+
+.k-grid tbody .k-button {
+    min-width: 0px;
+}
+
+/*录入框备注颜色*/
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #adbcd2;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #adbcd2;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #adbcd2;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #adbcd2;
+}
+
+input[readonly]::-webkit-input-placeholder {
+    color: #333333;
+}
+
+/*录入框选中颜色*/
+.k-textbox:focus {
+    border-color: rgba(25, 132, 200, 1);
+    -webkit-box-shadow: 0 0 3px 0 rgba(25, 132, 200, .5);
+    box-shadow: 0 0 3px 0 rgba(25, 132, 200, .5)
+}
+
+input[readonly]:focus {
+    border: 1px solid #BAC3CC;
+    box-shadow: none;
+}
+
+/*弹框*/
+.k-window.k-dialog {
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding: 0px;
+    box-shadow: none;
+    border: none;
+}
+
+.k-dialog.k-alert .k-dialog-titlebar, .k-dialog.k-confirm .k-dialog-titlebar, .k-dialog.k-prompt .k-dialog-titlebar {
+    border-bottom: 1px solid #ededed;
+    padding: 0px;
+    height: 36px;
+    line-height: 36px;
+    color: #7492d0;
+    margin-left: 8px;
+}
+
+.k-dialog.k-alert .k-content, .k-dialog.k-confirm .k-content {
+    padding: 20px;
+}
+
+/*!*时间控件的样式*!*/
+/*.k-autocomplete.k-state-default, .k-dropdown-wrap.k-state-default, .k-numeric-wrap.k-state-default, .k-picker-wrap.k-state-default {*/
+/*    height: 25px;*/
+/*    line-height: 25px;*/
+
+/*}*/
+/*.k-autocomplete .k-input, .k-dropdown-wrap .k-input, .k-numeric-wrap .k-input, .k-picker-wrap .k-input, .k-selectbox .k-input, .k-textbox>input {*/
+/*    padding: 0px;*/
+/*    height: 25px;*/
+/*    line-height: 25px;*/
+
+/*}*/
+.k-input {
+    text-align: left;
+    height: 100%;
+    padding: 0 !important;
+}
+
+/*.k-dropdown-wrap .k-select, .k-numeric-wrap .k-select, .k-picker-wrap .k-select {*/
+/*    height: 100%;*/
+/*    min-height: 25px;*/
+/*    line-height: 25px;*/
+/*}*/
+
+input.k-textbox {
+    /*height: 100%;*/
+    text-indent: .33em;
+    line-height: 1.6em;
+    border: unset;
+}
+
+/*div.k-header{*/
+/*!*padding: 6px 0 6px;*!*/
+/*color: #535b6a;*/
+/*text-align: center;*/
+/*border-top-left-radius: 4px;*/
+/*border-top-right-radius: 4px;*/
+/*!*font-size: 100%;*!*/
+/*line-height: 15px;*/
+/*font-size: 14px;*/
+/*}*/
+/*span.k-header{*/
+/*color: #535b6a;*/
+/*text-align: center;*/
+/*border-top-left-radius: 4px;*/
+/*border-top-right-radius: 4px;*/
+/*!*font-size: 100%;*!*/
+/*line-height: 15px;*/
+/*font-size: 14px;*/
+/*}*/
+
+/*.k-dialog-buttongroup .k-dialog-button-layout-stretched {*/
+/*margin: 20px 25px 20px ;*/
+/*display: -webkit-box;*/
+/*font-size: 14px;*/
+/*}*/
+/*.k-content {*/
+/*padding: 20px 30px 0;*/
+/*font-size: 12px;*/
+/*}*/
+/*.k-button {*/
+/*!*height: 36px;*!*/
+/*line-height: 14px;*/
+/*color: #7492d0;*/
+/*text-align: center;*/
+/*border-radius: 4px;*/
+/*font-size: 14px;*/
+/*margin: 0 auto;*/
+/*padding: 0px;*/
+/*}*/
+/*.k-grid-content  .k-button {*/
+/*height: 22px;*/
+/*font-size: 12px;*/
+/*line-height: 22px;*/
+/*padding: 0 10px;*/
+/*}*/
+/*.k-primary {*/
+/*height: 36px;*/
+/*line-height: 14px;*/
+/*background:#7492d0 !important;*/
+/*color: white;*/
+/*text-align: center;*/
+/*border-radius: 4px;*/
+/*margin: 0 auto;*/
+/*padding: 0px;*/
+/*border: none;*/
+/*box-shadow: none;*/
+/*}*/
+.k-primary:hover {
+    background: #7492d0;
+}
+
+/* 弹出框 title 和按钮控件在同一行 */
+.k-window-title {
+    display: inline-block;
+}
+
+/*  弹出框 k-window-titlebar 位置调整  */
+.k-window-titlebar .k-window-actions {
+    position: absolute;
+    top: 10px;
+    right: 6px;
+}
+
+/* k-multiselect load 图标隐藏 */
+.k-multiselect .k-loading-hidden {
+    visibility: hidden;
+}
+
+.k-form-error {
+    border-color: #ff9800;
+    background-color: #ff9800;
+    color: #fff;
+    background-image: none, linear-gradient(to bottom, rgba(255, 255, 255, .45) 0, rgba(255, 255, 255, 0) 100%);
+    background-position: 50% 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    display: inline-block;
+    padding: 2px 5px 1px 6px;
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+.k-form-error:before {
+    content: "\e403";
+}
+
+/*.k-i-collapse{*/
+/*    width: 36px;*/
+/*}*/
+/*.k-i-expand{*/
+/*    width: 36px;*/
+/*}*/
+.k-i-loading {
+    width: 36px;
+}
+
+.k-i-expand:before {
+    content: "\e005";
+    font-family: 'WebComponentsIcons';
+    left: 0;
+    right: unset;
+    margin: unset;
+}
+
+/*.k-i-expand:after{*/
+/*    content: "\f07b";*/
+/*    font-family: 'FontAwesome';*/
+/*    right: 4px;*/
+/*    position: absolute;*/
+/*    color:#ffc628;*/
+/*}*/
+.k-i-collapse:before {
+    content: "\e001";
+    font-family: 'WebComponentsIcons';
+    left: 0;
+    right: unset;
+    margin: unset;
+}
+
+/*.k-i-collapse:after{*/
+/*    content: "\f07c";*/
+/*    font-family: 'FontAwesome';*/
+/*    right: 4px;*/
+/*    position: absolute;*/
+/*    color:#ffc628;*/
+/*}*/
+.k-i-none.k-i-loading:after {
+    content: "\f0f6";
+    font-family: 'FontAwesome';
+    right: 4px;
+    position: absolute;
+    color: #ffc628;
+}
+
+/*.k-grid.k-widget.k-grid-display-block.k-reorderable{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+/*kendo表格盒子模型*/
+.k-animation-container, .k-animation-container *, .k-animation-container :after, .k-block .k-header, .k-list-container, .k-widget, .k-widget *, .k-widget :before {
+    box-sizing: border-box;
+}
+
+/*kendo表格的底部工具栏样式*/
+/*.k-pager-wrap {*/
+/*    height: 34px;*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*}*/
+.k-pager-wrap {
+    /*border-bottom: solid #dedee0 1px;*/
+    height: 39px;
+}
+
+.k-grid-header, .k-grid-content, .k-grid-footer {
+    flex-shrink: 0;
+}
+
+
+/*一个页面多个kendo,样式一样*/
+.k-pager-sm .k-pager-numbers-wrap select.k-dropdown {
+    height: 100%;
+    display: none;
+    cursor: pointer;
+}
+
+.k-pager-md .k-pager-info, .k-pager-sm .k-pager-info, .k-pager-sm .k-pager-numbers, .k-pager-sm .k-pager-sizes {
+    display: flex;
+}
+
+.k-pager-wrap > .k-pager-numbers-wrap {
+    width: auto;
+    margin: 0;
+}
+
+/*修改*/
+.zfbl {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.showZfbl {
+    position: absolute;
+    top: -10px;
+    left: 100%;
+    width: 200px;
+    background: #fff;
+    display: none;
+    z-index: 99;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.zfbl:hover .showZfbl {
+    display: block;
+}
+
+/*.with-bottom tr > td:nth-child(16){*/
+/*    overflow: unset;*/
+/*}*/
+.showZfbl > div {
+    line-height: 20px;
+    text-align: left;
+    color: #999;
+}
+
+/*.with-bottom .k-grid-content.k-auto-scrollable{*/
+/*    padding-bottom: 50px;*/
+/*}*/
+/*grid查询无数据样式*/
+.k-grid-content > .k-grid-norecords > .k-grid-norecords-template {
+    display: none;
+}
+
+.k-grid-norecords {
+    height: calc(100% - 1px);
+    background-image: url("./img/norecords.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    /*background-size: 100px 100px;*/
+}
+
+/*.with-bottom .k-grid-norecords{*/
+/*    background-position: 50% calc(50% + 25px);*/
+/*}*/
+
+/*自定义点击事件,选中时的样式*/
+.k-state-selected .select-text {
+    color: #fff !important;
+}
+
+/*k-button样式*/
+.k-button {
+    height: 24px;
+    line-height: 24px;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.body-mini .k-button {
+    height: 24px;
+    line-height: 24px;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.body-small .k-button {
+    height: 28px;
+    line-height: 28px;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.body-medium .k-button {
+    height: 32px;
+    line-height: 32px;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+/*grid下的kendo样式*/
+.k-grid td {
+    height: 30px;
+    padding: 0 0.6em;
+    line-height: 30px;
+}
+
+.body-mini .k-grid td {
+    height: 30px;
+    padding: 0 0.6em;
+    line-height: 30px;
+}
+
+.body-small .k-grid td {
+    height: 34px;
+    padding: 0 0.6em;
+    line-height: 34px;
+}
+
+.body-medium .k-grid td {
+    height: 38px;
+    padding: 0 0.6em;
+    line-height: 38px;
+}
+
+/*.k-autocomplete.k-state-default, .k-dropdown-wrap.k-state-default, .k-numeric-wrap.k-state-default, .k-picker-wrap.k-state-default{*/
+/*    height: 24px;*/
+/*    line-height: 24px;*/
+/*}*/
+/*.body-mini .k-autocomplete.k-state-default,.body-mini .k-dropdown-wrap.k-state-default,.body-mini .k-numeric-wrap.k-state-default,.body-mini .k-picker-wrap.k-state-default{*/
+/*    height: 24px;*/
+/*    line-height: 24px;*/
+/*}*/
+/*.body-small .k-autocomplete.k-state-default,.body-small .k-dropdown-wrap.k-state-default,.body-small .k-numeric-wrap.k-state-default,.body-small .k-picker-wrap.k-state-default{*/
+/*    height: 28px;*/
+/*    line-height: 28px;*/
+/*}*/
+/*.body-medium .k-autocomplete.k-state-default,.body-medium .k-dropdown-wrap.k-state-default,.body-medium .k-numeric-wrap.k-state-default,.body-medium .k-picker-wrap.k-state-default{*/
+/*    height: 32px;*/
+/*    line-height: 32px;*/
+/*}*/
+
+.k-autocomplete, .k-block, .k-calendar-container, .k-colorpicker, .k-combobox, .k-datepicker, .k-datetimepicker, .k-drag-clue, .k-dropdown, .k-dropdown-wrap, .k-editor-inline, .k-gantt-views, .k-gantt-views > .k-current-view, .k-grid .k-filter-options, .k-grouping-header .k-group-indicator, .k-inline-block, .k-list-container, .k-multiselect, .k-numeric-wrap, .k-numerictextbox, .k-picker-wrap, .k-slider-selection, .k-slider-track, .k-textbox, .k-timepicker, .k-touch-scrollbar, .k-treeview .k-in, .k-upload {
+    height: 24px;
+    line-height: 24px;
+}
+
+.body-mini .k-autocomplete, .body-mini .k-block, .body-mini .k-calendar-container, .body-mini .k-colorpicker, .body-mini .k-combobox, .body-mini .k-datepicker, .body-mini .k-datetimepicker, .body-mini .k-drag-clue, .k-dropdown, .body-mini .k-dropdown-wrap, .body-mini .k-editor-inline, .body-mini .k-gantt-views, .body-mini .k-gantt-views > .k-current-view, .body-mini .k-grid .k-filter-options, .body-mini .k-grouping-header .k-group-indicator, .body-mini .k-inline-block, .body-mini .k-list-container, .body-mini .k-multiselect, .body-mini .k-numeric-wrap, .body-mini .k-numerictextbox, .body-mini .k-picker-wrap, .body-mini .k-slider-selection, .body-mini .k-slider-track, .body-mini .k-textbox, .body-mini .k-timepicker, .body-mini .k-touch-scrollbar, .body-mini .k-treeview .k-in, .body-mini .k-upload {
+    height: 24px;
+    line-height: 24px;
+}
+
+.body-small .k-autocomplete, .body-small .k-block, .body-small .k-calendar-container, .body-small .k-colorpicker, .body-small .k-combobox, .body-small .k-datepicker, .body-small .k-datetimepicker, .body-small .k-drag-clue, .k-dropdown, .body-small .k-dropdown-wrap, .body-small .k-editor-inline, .body-small .k-gantt-views, .body-small .k-gantt-views > .k-current-view, .body-small .k-grid .k-filter-options, .body-small .k-grouping-header .k-group-indicator, .body-small .k-inline-block, .body-small .k-list-container, .body-small .k-multiselect, .body-small .k-numeric-wrap, .body-small .k-numerictextbox, .body-small .k-picker-wrap, .body-small .k-slider-selection, .body-small .k-slider-track, .body-small .k-textbox, .body-small .k-timepicker, .body-small .k-touch-scrollbar, .body-small .k-treeview .k-in, .body-small .k-upload {
+    height: 28px;
+    line-height: 28px;
+}
+
+.body-medium .k-autocomplete, .body-medium .k-block, .body-medium .k-calendar-container, .body-medium .k-colorpicker, .body-medium .k-combobox, .body-medium .k-datepicker, .body-medium .k-datetimepicker, .body-medium .k-drag-clue, .k-dropdown, .body-medium .k-dropdown-wrap, .body-medium .k-editor-inline, .body-medium .k-gantt-views, .body-medium .k-gantt-views > .k-current-view, .body-medium .k-grid .k-filter-options, .body-medium .k-grouping-header .k-group-indicator, .body-medium .k-inline-block, .body-medium .k-list-container, .body-medium .k-multiselect, .body-medium .k-numeric-wrap, .body-medium .k-numerictextbox, .body-medium .k-picker-wrap, .body-medium .k-slider-selection, .body-medium .k-slider-track, .body-medium .k-textbox, .body-medium .k-timepicker, .body-medium .k-touch-scrollbar, .body-medium .k-treeview .k-in, .body-medium .k-upload {
+    height: 32px;
+    line-height: 32px;
+}
+
+/*输入框hover是的效果*/
+.k-state-hover {
+    border: unset !important;
+    /*background: unset!important;*/
+}
+
+
+.k-autocomplete, .k-dropdown-wrap.k-state-default, .k-numeric-wrap.k-state-default, .k-picker-wrap.k-state-default {
+    border: unset;
+}
+
+.k-grid .k-button {
+    margin: 0 0.16em;
+}
+
+/*kendo里面的edit-box样式*/
+.k-grid td .edit-box {
+    height: 24px;
+    line-height: 24px;
+}
+
+.body-mini .k-grid td .edit-box {
+    height: 24px;
+    line-height: 24px;
+}
+
+.body-small .k-grid td .edit-box {
+    height: 28px;
+    line-height: 28px;
+}
+
+.body-medium .k-grid td .edit-box {
+    height: 32px;
+    line-height: 32px;
+}
+
+/*修改k-command-cell样式,居中显示*/
+/*.k-command-cell{*/
+/*    !*height: 100% !important;*!*/
+/*    !*display: flex;*!*/
+/*    !*align-items: center;*!*/
+/*    !*justify-content: center;*!*/
+/*}*/
+
+/*修改kendo下面的高亮背景颜色*/
+.k-alt, .k-pivot-layout > tbody > tr:first-child > td:first-child, .k-resource.k-alt, .k-separator {
+    background: #f8f8f8;
+}
+
+.k-state-selected {
+    background-color: #1984c8 !important;
+}
+
+/*修改kendo-locked样式*/
+.k-grid-content-locked {
+    background-color: #f5f7fb;
+    background-image: url(./img/grid-bg.png);
+    background-repeat: repeat;
+}
+
+.k-grid-content-locked, .k-grid-content-locked td, .k-grid-header-locked, .k-grid-header-locked .k-header {
+    border-color: #dedee0;
+}
+
+/*可编辑grid样式*/
+/*.k-grid .k-dirty-cell{*/
+/*    height: 100%;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+
+.k-grid .k-dirty-cell .edit-box{
+    margin-top: 3px;
+}
+
+.k-grid td .edit-box {
+    flex: 1;
+    border: solid 1px #bbb;
+    padding: 0 10px;
+    border-radius: 4px;
+    flex-shrink: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*text-align: right;*/
+}
+/*区分ef-grid-edit组件(不带分页)和ef-page-grid组件(带分页)  可编辑情况下,ef-grid-edit没有分页的样式*/
+div .withoutPaging .k-grid-content.k-auto-scrollable{
+    height: calc(100% - 30px)!important;
+}
+.body-mini div .withoutPaging .k-grid-content.k-auto-scrollable{
+    height: calc(100% - 30px)!important;
+}
+.body-small div .withoutPaging .k-grid-content.k-auto-scrollable{
+    height: calc(100% - 32px)!important;
+}
+.body-medium div .withoutPaging .k-grid-content.k-auto-scrollable{
+    height: calc(100% - 34px)!important;
+}

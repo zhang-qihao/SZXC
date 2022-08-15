@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configroot>
+
+   <messagequeue id="MQ1" server="jboss" type="jms">  <!-- 目前支持 -->
+      <url>http-remoting://localhost:8080</url>
+      <user>guest</user>
+      <password>guest</password>
+      <factoryjndiname>jms/RemoteConnectionFactory</factoryjndiname>
+      <queuejndiname>jms/RemoteConnectionFactory</queuejndiname>
+   </messagequeue>
+
+   <messagequeue id="MQ2" server="weblogic" type="jms">
+      <url>t3://localhost:7001</url>
+      <user>weblogic</user>
+      <password>weblogic10</password>
+      <factoryjndiname>weblogic.jms.ConnectionFactory0</factoryjndiname>
+      <queuejndiname>weblogic.jms.Queue0</queuejndiname>
+   </messagequeue>
+
+
+   <messagequeue id="MQ3" server="activemq" type="jms">
+      <url>t3://localhost:16161</url>
+      <user>weblogic</user>
+      <password>weblogic10</password>
+      <factoryjndiname>weblogic.jms.ConnectionFactory0</factoryjndiname>
+      <queuejndiname>weblogic.jms.Queue0</queuejndiname>
+   </messagequeue>
+
+
+
+   <!--自启动监听交易-->
+   <listenner>
+      <messagelistener id="LogListener" mqid="MQ1"  servicetype="json" ></messagelistener>
+      <messagelistener id="LogListener2" mqid="MQ2"  servicetype="xml"  ></messagelistener>
+   </listenner>
+
+
+
+</configroot>

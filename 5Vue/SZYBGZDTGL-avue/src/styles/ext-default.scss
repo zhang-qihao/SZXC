@@ -1,0 +1,314 @@
+$mainColor:#3079df;
+$title-rgb:#539FF3;
+
+
+//初始化basic-container
+.basic-container{
+  .el-card{
+    height: 100%;
+    .el-card__body{
+      height: 100%;
+      padding: 0;
+    }
+  }
+}
+//初始化el-menu--vertical
+.el-menu--vertical{
+  background: #20222a!important;
+  .el-menu{
+    .el-menu-item{
+      span,i{
+        color: rgba(255,255,255,.7);
+      }
+    }
+    .menu-wrapper{
+      .el-submenu{
+        .el-submenu__title{
+          i,span{
+            color: rgba(255,255,255,.7);
+          }
+        }
+      }
+    }
+  }
+}
+.el-menu--vertical{
+  .el-menu{
+    .el-menu-item:hover{
+      background: transparent;
+      span,i{
+        color: #fff;
+      }
+    }
+    .menu-wrapper{
+      .el-submenu{
+        .el-submenu__title:hover{
+          background: transparent;
+          i,span{
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+//logo背景颜色
+.avue-logo{
+  background: #0254d4;
+}
+//top背景颜色
+.avue-top{
+  //background-image: url("./img/header-bg.png");
+  background: linear-gradient(to right,#1f66d5,#5caaf8);
+  .avue-breadcrumb{
+    i{
+      color: #fff;
+    }
+  }
+  .el-menu--horizontal{
+    .el-menu-item{
+      span,i{
+        color: #fff;
+      }
+    }
+  }
+  .el-tooltip{
+    span{
+      background: transparent!important;
+      border: none!important;
+      i{
+        color: #fff;
+      }
+    }
+  }
+  .el-dropdown{
+    .el-dropdown-link{
+      background: transparent!important;
+      border: none!important;
+      color: #fff;
+    }
+  }
+}
+.avue-sidebar{
+  //sidebar背景颜色
+  .avue-menu{
+    background: #20222a;
+  }
+}
+.default{
+  .el-menu--vertical{
+    background: #20222a!important;
+    .el-menu{
+      .el-menu-item{
+        span,i{
+          color: rgba(255,255,255,.7);
+        }
+      }
+      .menu-wrapper{
+        .el-submenu{
+          .el-submenu__title{
+            i,span{
+              color: rgba(255,255,255,.7);
+            }
+          }
+        }
+      }
+    }
+  }
+  .el-menu--vertical{
+    .el-menu{
+      .el-menu-item:hover{
+        background: transparent;
+        span,i{
+          color: #fff;
+        }
+      }
+      .menu-wrapper{
+        .el-submenu{
+          .el-submenu__title:hover{
+            background: transparent;
+            i,span{
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+  //header-title调整
+  .header-title{
+    color: $mainColor;
+  }
+  .el-tabs__item.is-active{
+    color: $mainColor;
+  }
+  .el-tabs__item:hover{
+    color: $mainColor;
+  }
+  .header-title-content{
+    color: $mainColor;
+  }
+  .block-header-bgcolor-green > .block-header > .block-title > .header-title > .header-title-content{
+    background: $title-rgb;
+    //opacity: .5;
+  }
+  .block-header-bgcolor-green > .block-header > .block-title > .header-title > .header-title-content:before{
+    border-color: $title-rgb transparent;
+  }
+  .block-header-bgcolor-green .block-header{
+    border-bottom-color: $title-rgb;
+  }
+
+  .block-header-bgcolor > .block-header > .block-title > .header-title > .header-title-content{
+    background: $title-rgb;
+  }
+  .block-header-bgcolor > .block-header > .block-title > .header-title > .header-title-content:before{
+    border-color: transparent $title-rgb;
+  }
+  .block-header-bgcolor > .block-header{
+    background: #f0f7ff;
+  }
+  .el-tabs__active-bar{
+    background-color: $mainColor;
+  }
+  //tab切换
+  .header-left-tab-active{
+    border-bottom-color: $mainColor;
+  }
+  .header-left-tab:hover{
+    color: $mainColor;
+    border-bottom-color: $mainColor;
+  }
+  //sidebar左边线条
+  .avue-sidebar .el-menu-item.is-active:before, .avue-sidebar .el-submenu__title.is-active:before{
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 4px;
+    position: absolute;
+    background: $mainColor;
+  }
+  //系统管理和开发用例页面和首页
+  div > .menu-home-header{
+    border-bottom: solid 3px $title-rgb;
+  }
+  div > .menu-home-title{
+    background: $title-rgb;
+    //opacity: .5;
+  }
+  div > .menu-home-title:before{
+    border-color: $title-rgb transparent; /*上下颜色 左右颜色*/
+    //opacity: .5;
+  }
+  //top-bar__right图标加框框
+  .top-bar__right{
+    .el-tooltip{
+      & > span{
+        border:solid 1px #fff!important;
+        i{
+          color: #fff;
+        }
+      }
+    }
+  }
+  .top-bar__right{
+    .el-tooltip{
+      a{
+        & > span{
+          border:solid 1px #fff!important;
+          i{
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  /*说明el-popover*/
+  .exp-info .exp-info-content{
+    border: solid 1px $mainColor;
+    color: $mainColor;
+  }
+}
+
+
+//tabs页面切换样式
+.menzhen-content-left-tab .menzhen-content-left-tab-item .item-text-is-active{
+  color: $mainColor!important;
+  border-bottom-color: $mainColor!important;
+}
+.menzhen-content-left-tab .menzhen-content-left-tab-item:hover{
+  color: $mainColor!important;
+}
+.default .header-left-tab-active{
+  border-bottom-color: $mainColor!important;
+}
+.default .header-left-tab:hover{
+  color: $mainColor!important;
+}
+.header-left-tab-active{
+  border-bottom-color: $mainColor!important;
+  color: $mainColor!important;
+}
+
+//radio框样式
+.el-radio__input.is-checked .el-radio__inner{
+  border-color: $mainColor;
+  background: $mainColor;
+}
+.el-radio__label{
+  font-size: 12px;
+}
+.el-radio__input.is-checked+.el-radio__label{
+  color: $mainColor;
+
+}
+
+
+/*顶部菜单样式*/
+.top-bar__menu{
+  margin-left: 20px;
+}
+.top-bar__menu .el-menu .el-menu-item  i{
+  margin-right: 0;
+  font-size: 16px;
+}
+.top-bar__menu .el-menu .el-menu-item  span{
+  font-size: 16px;
+}
+.avue-top .top-bar__menu .el-menu--horizontal > .el-menu-item{
+  padding: 0;
+  line-height: 49px;
+}
+.avue-top .top-bar__menu .el-menu--horizontal div{
+  padding: 0 10px;
+}
+.avue-top .top-bar__menu .el-menu--horizontal  .activeMenu{
+  background: #0c4cb4;
+}
+.avue-top .top-bar__menu .el-menu--horizontal  .activeMenu:hover{
+  background: #0c4cb4!important;
+}
+/*顶部更多菜单样式*/
+.top-bar__menu-more-menu{
+  max-width: 580px;
+  /*min-height: 100px;*/
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 20px 20px 10px;
+}
+.top-bar__menu-more-menu .el-dropdown-menu__item{
+  width: 170px;
+  flex-shrink: 0;
+  font-size: 16px!important;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.top-bar__menu-more-menu .activeMenu{
+  background: #ecf5ff;
+  color: #66b1ff!important;
+}

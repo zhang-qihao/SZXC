@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIGROOT>
+	<!-- <BUSINESS id='SYS001' class='hib.db.oa.business.activity.Business' timeout='100'/>  --><!-- 前置机更新（内部） -->
+	<!-- <BUSINESS id='SYS011' class='hib.db.oa.business.activity.Business' timeout='100'/>  --><!-- 表同步（内部） -->
+
+	<!--微信服务--><!-- 要求实现com.eframework.core.service.weixin.business.AWXBusiness接口-->
+	<WX>
+		<BUSINESS id='SYS001' log="true" class='hib.db.oa.business.activity.Business' timeout='100'/>
+		<BUSINESS id='SYS001' log="true" class='hib.db.oa.business.activity.Business' timeout='100'/>
+		<BUSINESS id='SYS001' log="true" class='hib.db.oa.business.activity.Business' timeout='100'/>
+		<BUSINESS id='我要报修' log="true" class='weixin.WxBusiness' timeout='100'/>
+		<BUSINESS id='我的单据' log="true" class='weixin.MyWxBusiness' timeout='100'/>
+		<BUSINESS id='计划任务' log="true" class='weixin.PlanWxBusiness' timeout='100'/>
+		<BUSINESS id='bx' log="true" class='weixin.HgwxBusiness' timeout='100'/>
+		<BUSINESS id='dj' log="true" class='weixin.MyWxBusiness' timeout='100'/>
+		<BUSINESS id='pl' log="true" class='weixin.PlanWxBusiness' timeout='100'/>
+		<BUSINESS id='wx' log="true" class='weixin.WxBusiness' timeout='100'/>
+	</WX>
+
+
+
+	<!--基于JSON的 Web Service 服务--><!-- 要求实现com.eframework.core.service.webservice.AJsonBusiness接口-->
+	<!-- 访问地址：   http://localhost:7001/web/JsonService.WebService?wsdl  -->
+	<!-- JSON格式规范：   { businessNo: 'W01'  ,   method: 'methodName' ，  error:'0' ，   errorMsg:'' ，     data:'业务数据'  }
+	  其中：  error：0成功  -1出错     method:AJsonBusiness接口中的方法名，可空，当空时默认使用 doBusiness( JSONObject businessJson) throws BusinessException 方法    -->
+	<BUSINESS id='OrgManageService'  name='组织机构管理服务' log="true"  class='com.eframework.module.comp.organization.service.OrgManageService' timeout='100'/>
+	<!--<BUSINESS id='CellManageService' class='com.xctrade.services.base.CellManageService' timeout='100'/>-->
+	<BUSINESS id='UserManageService'  name='用户管理服务'  log="true" class='com.eframework.module.comp.user.service.UserManageService' timeout='100'/>
+	<BUSINESS id='MenuManageService'  name='菜单管理服务'  log="true" class='com.eframework.module.comp.menu.service.MenuManageService' timeout='100'/>
+	<BUSINESS id='AuthManageService'  name='权限管理服务'  log="true" class='com.eframework.module.comp.authority.service.AuthManageService' timeout='100'/>
+
+	<!--基于JSON 的 Servlet 服务--><!-- 要求实现com.eframework.core.service.webservice.AJsonBusiness接口-->
+	<!-- 访问地址： http://localhost:7001/web/JsonService.servlet    -->
+	<!-- JSON格式规范：   { businessNo: 'W01'  ,   method: 'methodName' ，  error:'0' ，   errorMsg:'' ，     data:'业务数据'  }
+      其中：  error：0成功  -1出错     method:AJsonBusiness接口中的方法名，可空，当空时默认使用 doBusiness( JSONObject businessJson) throws BusinessException 方法    -->
+	<BUSINESS id='W03'  name=''   log="true" class='com.xctrade.services.base.MBusinessNoticeRead' timeout='100'/>
+
+
+	<!--基于XML服务--><!-- 要求实现com.eframework.core.service.webservice.AXmlBusiness接口-->
+
+
+
+	<!--自启动交易服务--><!-- 要求实现com.eframework.core.service.selfexcited.ISelfExcitedBusiness接口-->
+	<SELFEXCITED>
+		<!--<BUSINESS id='SheduleQueryThread' name=''  log="true" class='com.eframework.module.comp.portal.thread.SheduleQueryThread' timeout='100'  frequency='30'/>-->
+		<!-- 定时发启 -->
+		<!--  <BUSINESS id='ZJ001' name='' class='login.Self' timeout='100'  frequency='10'/>   -->
+		<!--  <BUSINESS id='ZJ002' name='' class='login.Self2'  timeout='100'  frequency='60'/>  -->
+
+       <!--<BUSINESS id='NoticeSendThread' name=''  log="true"  class='com.sumec.action.core.s.sb.notice.thread.NoticeSendThread' timeout='100'  frequency='10'/>-->
+
+       <!--<BUSINESS id='NoticeSendSMSThread' name=''  log="true" class='com.sumec.action.core.s.sb.notice.thread.NoticeSMSThread' timeout='100'  frequency='10'/>-->
+
+		<!--<BUSINESS id="NoticeSendEmailThread" name=''  log="true" class="com.sumec.action.core.s.sb.notice.thread.NoticeEmailThread" timeout="100" frequency="10"/>-->
+
+		<!-- 海外消息发送：到货通知（根据提单预计到货日期前7天触发）frequency='24*60*60' -->
+		<!-- <BUSINESS id='OverseasArrivalNoticeMsgPushThread' name='' class='com.xctrade.business.g.common.OverseasArrivalNoticeMsgPushThread' timeout='100'  frequency='86400'/> -->
+	</SELFEXCITED>
+
+
+</CONFIGROOT>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.2.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd
+	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.2.xsd">
+
+    <bean id="targetconnectionfactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+        <property name="brokerURL" value="tcp://localhost:61616" />
+        <property name="userName" value="admin" />
+        <property name="password" value="admin" />
+    </bean>
+
+    <bean id="connectionfactory"
+          class="org.springframework.jms.connection.SingleConnectionFactory">
+        <!-- 目标ConnectionFactory对应真实的可以产生JMS Connection的ConnectionFactory -->
+        <property name="targetConnectionFactory" ref="targetconnectionfactory" />
+    </bean>
+
+    <!-- 队列（同一个服务器下，一条队列配置一个） -->
+    <bean id="log_service_queue" class="org.apache.activemq.command.ActiveMQQueue">
+        <constructor-arg>
+            <value>LogServiceQueue</value>
+        </constructor-arg>
+    </bean>
+
+    <!-- 向队列发送（同一个服务器下，一条队列配置一个）  -->
+    <bean id="log_service_sender" class="org.springframework.jms.core.JmsTemplate">
+        <property name="connectionFactory" ref="connectionfactory" />
+        <property name="defaultDestination" ref="log_service_queue"/>
+    </bean>
+
+    <!-- 向队列监听（同一个服务器下，一条队列配置一个）  -->
+    <bean id="log_service_receiver" class="com.eframework.module.service.mq.logservice.LogServiceListener"/>
+
+    <bean class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+        <property name="connectionFactory" ref="connectionfactory"/>
+        <property name="destination" ref="log_service_queue"/>
+        <property name="messageListener" ref="log_service_receiver"/>
+    </bean>
+</beans>

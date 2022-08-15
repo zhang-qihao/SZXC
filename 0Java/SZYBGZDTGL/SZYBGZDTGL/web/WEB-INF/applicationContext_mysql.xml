@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+                           http://www.springframework.org/schema/tx
+                           http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+                           http://www.springframework.org/schema/aop
+                           http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+    <context:property-placeholder location="classpath:/config/spring.properties" ignore-unresolvable="true"/>
+
+    <context:annotation-config />
+    <!-- 启动包扫描功能，以便注册带有@Controller、@Service、@repository、@Component等注解的类成为spring的bean -->
+    <context:component-scan base-package="com.eframework" />
+    <context:component-scan base-package="com.test" />
+
+
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+    <!-- 定义事务管理器（声明式的事务） -->
+    <!--<bean id="transactionManager"-->
+    <!--class="org.springframework.orm.hibernate5.HibernateTransactionManager">-->
+    <!--<property name="sessionFactory" ref="sessionFactory" />-->
+    <!--</bean>-->
+
+    <bean id="transactionManager" class="org.springframework.transaction.jta.JtaTransactionManager">
+        <property name="transactionManagerName" value="java:jboss/TransactionManager"/>
+    </bean>
+
+
+    <!--<bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">-->
+    <!--<property name="configLocation" value="classpath:hibernate.cfg.xml" />-->
+    <!--<property name="configurationClass" value="org.hibernate.cfg.AnnotationConfiguration" />-->
+    <!--</bean>-->
+
+    <!-- 数据源  -->
+    <bean id="MyDataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+        <property name="jndiName" value="java:jboss/datasources/MYDB1"></property>
+    </bean>
+
+
+    <!-- 线程池 -->
+    <bean id="taskExecutor"  class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+        <property name="corePoolSize" value="5" />
+        <property name="maxPoolSize" value="10" />
+        <property name="WaitForTasksToCompleteOnShutdown" value="true" />
+    </bean>
+
+    <!-- session factory , 指定了lobHandler -->
+    <bean id="MyHibernateSessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+        <property name="dataSource">
+            <ref bean="MyDataSource" />
+        </property>
+        <property name="jtaTransactionManager" ref="transactionManager"/>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+                <prop key="hibernate.show_sql">false</prop>
+                <prop key="hibernate.format_sql">false</prop>
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
+
+                <prop key="hibernate.default_schema">${db.default.schema}</prop>
+
+                <prop key="hibernate.transaction.jta.platform">org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform</prop>
+                <!--<prop key="hibernate.transaction.factory_class">org.hibernate.engine.transaction.internal.jta.JtaTransactionFactory</prop>-->
+                <!--<prop key="hibernate.transaction.coordinator_class">org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorImpl</prop>-->
+
+
+                <prop key="hibernate.transaction.coordinator_class">jta</prop>
+                <!--<prop key="hibernate.current_session_context_class">org.hibernate.context.internal.JTASessionContext</prop>-->
+                <prop key="hibernate.current_session_context_class">jta</prop>
+                <!--<prop key="current_session_context_class">jta</prop>-->
+                <!--<prop key="hibernate.transaction.factory_class">jta</prop>-->
+                <!--<prop key="hibernate.transaction.manager_lookup_class">jta</prop>-->
+
+            </props>
+        </property>
+
+
+        <property name="mappingResources">
+            <list>
+                <!--SW工作流-->
+                <!--<value>-->
+                    <!--com/eframework/module/comp/workflow/engine/persistence/hibernate/ProcessInstanceTrace.hbm.xml-->
+                <!--</value>-->
+                <!--<value>-->
+                    <!--com/eframework/module/comp/workflow/engine/persistence/hibernate/ProcessInstance.hbm.xml-->
+                <!--</value>-->
+                <!--<value>-->
+                    <!--com/eframework/module/comp/workflow/engine/persistence/hibernate/TaskInstance.hbm.xml-->
+                <!--</value>-->
+                <!--<value>-->
+                    <!--com/eframework/module/comp/workflow/engine/persistence/hibernate/Token.hbm.xml-->
+                <!--</value>-->
+                <!--<value>-->
+                    <!--com/eframework/module/comp/workflow/engine/persistence/hibernate/WorkItem.hbm.xml-->
+                <!--</value>-->
+                <!--<value>-->
+                    <!--com/eframework/module/comp/workflow/engine/persistence/hibernate/WorkflowDefinition.hbm.xml-->
+                <!--</value>-->
+                <!--<value>-->
+                    <!--com/eframework/module/comp/workflow/engine/persistence/hibernate/WorkflowDefinitionInfo.hbm.xml-->
+                <!--</value>-->
+                <!--<value>-->
+                    <!--com/eframework/module/comp/workflow/engine/persistence/hibernate/HisApplyProcess.hbm.xml-->
+                <!--</value>-->
+                <!--<value>-->
+                    <!--com/eframework/module/comp/workflow/engine/persistence/hibernate/HisSwitchBill.hbm.xml-->
+                <!--</value>-->
+            </list>
+        </property>
+        <property name="annotatedClasses">
+            <list>
+                <!-- 开始加载系统表 -->
+                <!--<value>com.xccode.dictionary.database.tables.DictionaryCfg</value>-->
+                <!--<value>com.xccode.dictionary.database.tables.DictionaryList</value>-->
+                <!--<value>com.xccode.gis.database.tables.GISLatlng</value>-->
+                <!--<value>com.xccode.gis.database.tables.GISPolyline</value>-->
+                <!--<value>com.xccode.gis.database.tables.GISPolylineList</value>-->
+                <!--<value>com.xccode.gis.database.tables.GISPolygon</value>-->
+                <!--<value>com.xccode.gis.database.tables.GISPolygonList</value>-->
+                <!--<value>com.xccode.gis.database.tables.ADDLatlng</value>-->
+                <!--<value>com.xccode.gis.database.tables.ADDPolygon</value>-->
+                <!--<value>com.xccode.gis.database.tables.ADDPolygonList</value>-->
+                <!--<value>com.xccode.dao.hibernate.sequence.SequencesGenerator</value>-->
+                <!--<value>com.xccode.dao.hibernate.sequence.UniqueKeysGenerator</value>-->
+                <!--<value>com.xccode.dao.xcdao.persist.database.tables.ImpCfg</value>-->
+                <!--<value>com.xccode.dao.xcdao.persist.database.tables.ImpList</value>-->
+                <!--<value>com.xccode.am.database.archivefile.tables.Amfile</value>-->
+                <!--<value>com.xccode.am.database.archivetemplate.tables.ArchiveTemplate</value>-->
+                <!--&lt;!&ndash; 结束加载系统表 &ndash;&gt;-->
+
+                <!--&lt;!&ndash; 开始加载用例表 &ndash;&gt;-->
+                <!--<value>com.xccode.example.tags.tables.ExTree</value>-->
+                <!--<value>com.xccode.example.tags.tables.ExSelect1</value>-->
+                <!--<value>com.xccode.example.tags.tables.ExSelect2</value>-->
+                <!--<value>com.xccode.example.tags.tables.ExChart1</value>-->
+                <!--<value>com.xccode.example.tags.tables.ExChart2</value>-->
+                <!--<value>com.xccode.example.tags.tables.ExGantt</value>-->
+                <!--<value>com.xccode.example.tags.tables.ExScheduler1</value>-->
+
+
+                <!--<value>com.xccode.systemmanagement.modulemanagement.tables.SysBusinessService</value>-->
+                <!--<value>com.xccode.systemmanagement.modulemanagement.tables.SysModule</value>-->
+                <!--<value>com.xccode.systemmanagement.modulemanagement.tables.SysModuleBusinessRole</value>-->
+                <!--<value>com.xccode.systemmanagement.modulemanagement.tables.SysModuleBusinessRoleGive</value>-->
+                <!--<value>com.xccode.systemmanagement.modulemanagement.tables.SysModuleMetadata</value>-->
+                <!--<value>com.xccode.systemmanagement.modulemanagement.tables.SysModuleMetadataGive</value>-->
+                <!--<value>com.xccode.systemmanagement.modulemanagement.tables.SysModuleOpiRole</value>-->
+                <!--<value>com.xccode.systemmanagement.modulemanagement.tables.SysModuleOpiRoleGive</value>-->
+                <!--<value>com.xccode.systemmanagement.modulemanagement.tables.SysModuleProcessList</value>-->
+                <!--<value>com.xccode.systemmanagement.modulemanagement.tables.SysModuleProcessRole</value>-->
+                <!--<value>com.xccode.systemmanagement.modulemanagement.tables.SysModuleProcessRoleGive</value>-->
+                <!--<value>com.xccode.systemmanagement.modulemanagement.tables.SysModuleRole</value>-->
+                <!--<value>com.xccode.systemmanagement.modulemanagement.tables.SysModuleRoleGive</value>-->
+                <!--<value>com.xccode.systemmanagement.modulemanagement.tables.SysModuleRoleList</value>-->
+                <!--<value>com.xccode.systemmanagement.modulemanagement.tables.SysOpiComponent</value>-->
+                <!--<value>com.xccode.systemmanagement.modulemanagement.tables.SysOpiService</value>-->
+
+                <!-- 结束加载用例表 -->
+
+                <!-- 开始加载客户表 -->
+
+                <!-- 结束加载客户表 -->
+            </list>
+        </property>
+        <property name="packagesToScan">
+            <list>
+                <value>*</value>
+            </list>
+        </property>
+    </bean>
+    <!-- 这个bean主要是为了得到ApplicationContext 所以它不需要其它属性-->
+    <bean class="com.eframework.util.spring.SpringHelper"></bean>
+    <!--SW工作流-->
+    <import resource="classpath:WorkflowContext.xml" />
+    <import resource="classpath:WorkflowContext-beanfactory.xml" />
+
+
+</beans>

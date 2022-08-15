@@ -1,0 +1,373 @@
+
+$mainColor:#409EFF;
+$title-rgb:#70b9eb;
+
+.theme-iview {
+  //logo背景颜色
+  .avue-logo{
+    background: #409EFF;
+  }
+  //.avue-tags{
+  //  padding:  3px 5px 5px 0;
+  //  background: #f0f0f0;
+  //  box-shadow: inset 0 0 3px 2px hsla(0,0%,39.2%,.1);
+  //  .is-active{
+  //    &:before{
+  //      background: #409EFF !important;
+  //    }
+  //  }
+  //  .el-tabs__item{
+  //    padding: 0 15px !important;
+  //    position: relative;
+  //    height: 32px !important;
+  //    line-height:32px !important;
+  //    border: 1px solid #e8eaec!important;
+  //    color: #515a6e!important;
+  //    background: #fff!important;
+  //    border-radius: 3px;
+  //    &:before{
+  //      content:'';
+  //      display: inline-block;
+  //      width: 12px;
+  //      height: 12px;
+  //      margin-right:10px;
+  //      border-radius: 50%;
+  //      background: #e8eaec;
+  //    }
+  //  }
+  //}
+
+  .avue-sidebar{
+    //sidebar背景颜色
+    .avue-menu{
+      background: #001529;
+    }
+    .el-menu-item{
+      &.is-active {
+          background-color:  #000c17;
+          &:before {
+            display: none;
+          }
+          i,span{
+            color:#409EFF;
+        }
+      }
+    }
+     .el-submenu{
+        .el-menu-item{
+          &.is-active {
+            background-color:  #409EFF;
+            &:before {
+              display: none;
+            }
+            i,span{
+              color:#fff;
+          }
+        }
+      }
+    }
+  }
+  .el-menu--vertical{
+    background: #2c343f!important;
+    .el-menu{
+      .el-menu-item{
+        background: #232a32!important;
+        span,i{
+          color: rgba(255,255,255,.5);
+        }
+      }
+      .menu-wrapper{
+        .el-submenu{
+          .el-submenu__title{
+            i,span{
+              color: rgba(255,255,255,.5);
+            }
+          }
+        }
+      }
+    }
+  }
+  .el-menu--vertical{
+    .el-menu{
+      .el-menu-item:hover{
+        background: #232a32;
+        span,i{
+          color: #fff;
+        }
+      }
+      .menu-wrapper{
+        .el-submenu{
+          .el-submenu__title:hover{
+            background: #232a32;
+            i,span{
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+  //top背景颜色
+  .avue-top{
+    border-top: 4px solid $mainColor;
+    background: #fff;
+    .top-bar__title{
+      height: 46px;
+      color: #333;
+      line-height: 46px;
+    }
+    .top-bar__left,.top-bar__right{
+      //height: 46px;
+      line-height: 46px;
+    }
+    .avue-breadcrumb{
+      i{
+        color: $mainColor;
+      }
+    }
+    .el-menu--horizontal{
+      .el-menu-item{
+        span,i{
+          color: #333;
+        }
+      }
+    }
+    .el-tooltip{
+      span{
+        background: transparent!important;
+        border: none!important;
+        i{
+          color: #333;
+        }
+      }
+    }
+    .el-dropdown{
+      .el-dropdown-link{
+        background: transparent!important;
+        border: none!important;
+        color: #333;
+      }
+    }
+  }
+
+
+  //header-title调整
+  .header-title{
+    color: $mainColor;
+  }
+  .el-tabs__item.is-active{
+    color: $mainColor;
+  }
+  .el-tabs__item:hover{
+    color: $mainColor;
+  }
+  .header-title-content{
+    color: $mainColor;
+  }
+  .block-header-bgcolor-green > .block-header > .block-title > .header-title > .header-title-content{
+    background: $title-rgb;
+    //opacity: .5;
+  }
+  .block-header-bgcolor-green > .block-header > .block-title > .header-title > .header-title-content:before{
+    border-color: $title-rgb transparent;
+  }
+  .block-header-bgcolor-green .block-header{
+    border-bottom-color: $title-rgb;
+  }
+  .block-header-bgcolor > .block-header > .block-title > .header-title > .header-title-content{
+    background: $title-rgb;
+  }
+  .block-header-bgcolor > .block-header > .block-title > .header-title > .header-title-content:before{
+    border-color: transparent $title-rgb;
+  }
+  .block-header-bgcolor > .block-header{
+    background: #f0f7ff;
+  }
+  .el-tabs__active-bar{
+    background-color: $mainColor;
+  }
+  //tab切换
+  .header-left-tab-active{
+    border-bottom-color: $mainColor;
+  }
+  .header-left-tab:hover{
+    color: $mainColor;
+    border-bottom-color: $mainColor;
+  }
+  .avue-sidebar{
+    //sidebar背景颜色
+    .avue-menu{
+      background: #2c343f;
+    }
+    //侧边栏菜单
+    .el-menu-item,.el-submenu__title{
+      font-size: 13px;
+      i,span{
+        color:rgba(255,255,255,.5);
+      }
+      &:hover{
+        background: #232a32;
+        i,span{
+          color:#fff;
+        }
+      }
+      &.is-active {
+        background-color: #232a32;
+        &::before{
+          width: 0;
+        }
+        i,span{
+          color: #fff;
+        }
+      }
+    }
+  }
+  //sidebar左边线条
+  .avue-sidebar .el-menu-item.is-active:before, .avue-sidebar .el-submenu__title.is-active:before{
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 4px;
+    position: absolute;
+    background: $mainColor;
+  }
+  //系统管理和开发用例页面和首页
+  div > .menu-home-header{
+    border-bottom: solid 3px $title-rgb;
+  }
+  div > .menu-home-title{
+    background:$title-rgb;
+    //opacity: .5;
+  }
+  div > .menu-home-title:before{
+    border-color: $title-rgb transparent; /*上下颜色 左右颜色*/
+    //opacity: .5;
+  }
+  //top-bar__right图标加框框
+  .top-bar__right{
+    .el-tooltip{
+      & > span{
+        background: $mainColor!important;
+        i{
+          color: #fff;
+        }
+      }
+    }
+  }
+  .top-bar__right{
+    .el-tooltip{
+      a{
+        & > span{
+          background: $mainColor!important;
+          i{
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  //tabs页面切换样式
+  .menzhen-content-left-tab .menzhen-content-left-tab-item .item-text-is-active{
+    color: $mainColor!important;
+    border-bottom-color: $mainColor!important;
+  }
+  .menzhen-content-left-tab .menzhen-content-left-tab-item:hover{
+    color: $mainColor!important;
+  }
+  .header-left-tab-active{
+    border-bottom-color: $mainColor!important;
+  }
+  .header-left-tab:hover{
+    color: $mainColor!important;
+  }
+  .header-left-tab-active{
+    border-bottom-color: $mainColor!important;
+    color: $mainColor!important;
+  }
+
+  //radio框样式
+  .el-radio__input.is-checked .el-radio__inner{
+    border-color: $mainColor;
+    background: $mainColor;
+  }
+  .el-radio__input.is-checked+.el-radio__label{
+    color: $mainColor;
+
+  }
+
+
+  /*说明el-popover*/
+  .exp-info .exp-info-content{
+    border: solid 1px $mainColor;
+    color: $mainColor;
+  }
+
+
+  /*顶部菜单样式*/
+  .top-bar__menu{
+    margin-left: 20px;
+    height: 100%;
+  }
+  .top-bar__menu .top-menu{
+    height: 100%;
+  }
+  .top-bar__menu .top-menu .el-menu{
+    height: 100%;
+  }
+  .top-bar__menu .top-menu .el-menu .el-menu-item{
+    height: 100%;
+  }
+  .top-bar__menu .el-menu .el-menu-item  i{
+    margin-right: 0;
+    font-size: 16px;
+  }
+  .top-bar__menu .el-menu .el-menu-item  span{
+    font-size: 16px;
+  }
+  .avue-top .top-bar__menu .el-menu--horizontal > .el-menu-item{
+    padding: 0;
+    line-height: 46px;
+  }
+  .avue-top .top-bar__menu .el-menu--horizontal div{
+    padding: 0 10px;
+  }
+  .avue-top .top-bar__menu .el-menu--horizontal  .activeMenu{
+    background: transparent;
+  }
+  .avue-top .top-bar__menu .el-menu--horizontal  .activeMenu i{
+    color: $mainColor;
+    font-weight: bold;
+  }
+  .avue-top .top-bar__menu .el-menu--horizontal  .activeMenu span{
+    color: $mainColor;
+    font-weight: bold;
+  }
+  .avue-top .top-bar__menu .el-menu--horizontal  .activeMenu:hover{
+    background: transparent!important;
+  }
+  /*顶部更多菜单样式*/
+  .avue-top .menu-dropdown-link{
+    line-height: 50px!important;
+  }
+  .top-bar__menu-more-menu{
+    max-width: 580px;
+    /*min-height: 100px;*/
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 20px 20px 10px;
+  }
+  .top-bar__menu-more-menu .el-dropdown-menu__item{
+    width: 170px;
+    flex-shrink: 0;
+    font-size: 16px!important;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .top-bar__menu-more-menu .activeMenu{
+    background: #ecf5ff;
+    color: #66b1ff!important;
+  }
+
+}

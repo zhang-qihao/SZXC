@@ -1,0 +1,370 @@
+// 全局变量
+@import './variables.scss';
+// ele样式覆盖
+@import './element-ui.scss';
+// 顶部右侧显示
+@import './top.scss';
+// 导航标签
+@import './tags.scss';
+// 工具类函数
+@import './mixin.scss';
+// 侧面导航栏
+@import './sidebar.scss';
+// 动画
+@import './animate/vue-transition.scss';
+//主题
+@import './theme/index.scss';
+//适配
+@import './media.scss';
+//通用配置
+@import './normalize.scss';
+@import "./ext-default.scss";
+a{
+  text-decoration: none;
+  color:#333;
+}
+*{
+  outline: none;
+}
+//滚动条样式
+@include scrollBar;
+
+
+
+
+
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+fieldset, lengend, button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp, tt { font-family: "Courier New", Courier, monospace; } /* 统一等宽字体 */
+
+/* 重置列表元素 */
+ul, ol { list-style: none; }
+
+/* 重置文本格式元素 */
+a { text-decoration: none; }
+a:hover { text-decoration: none; outline: none}
+a:active{outline: none;}
+a:-webkit-any-link{
+  outline: none;
+  color: rgba(0,0,0,.65);
+}
+
+button, input, select, textarea {
+  font-size: 100%; /* 使得表单元素在 ie 下能继承字体大小 */
+}
+
+/* 重置表格元素 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 重置 hr */
+hr {
+  border: none;
+  height: 1px;
+}
+.pointer{
+  cursor: pointer;
+}
+//.content {
+//  height: 810px;
+//  //overflow:auto;
+//  //background: #fff;
+//  .content-block {
+//    height: 100%;
+//    padding: 10px 20px;
+//    overflow: auto;
+//    background: #fff;
+//    border-radius: $borderRadius;
+//    box-sizing: border-box;
+//  }
+//}
+//.block{
+//    background: #fff;
+//    border-radius: $borderRadius;
+//    padding: 10px;
+//    box-sizing: border-box;
+//}
+.title{
+  font-size: $titleFontSize;
+  color: $titleColor;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.subTitle{
+  font-size: $subTitleFontSize;
+  color: $subTitleFontColor;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+//button.el-button{
+//  height: 28px;
+//  padding: 0 10px;
+//  border-radius: $borderRadius;
+//}
+//button.el-button [class*=el-icon-]+span{
+//  margin-left: 10px;
+//}
+//i.el-icon--right{
+//  margin-left: 10px;
+//}
+//button.el-button.iconBtn{
+//  padding: 0;
+//  width: 30px;
+//  text-align: center;
+//}
+//button.textBtn.primary{
+//  color: $mainColor;
+//}
+//button.textBtn.success{
+//  color: $successColor;
+//}
+//button.textBtn.warning{
+//  color: $warnColor;
+//}
+//button.textBtn.danger{
+//  color: $dangerColor;
+//}
+div.el-select{
+  width: 100%;
+}
+div{
+  .el-form-item{
+    margin-bottom: 0;
+  }
+  .el-form-item__label{
+    color: $labelColor;
+    line-height: 1;
+    //margin-bottom: 6px;
+    font-size: 12px;
+    padding-bottom: 2px !important;
+  }
+  .el-input{
+    font-size: 12px;
+    height: 28px;
+  }
+  .el-input__inner{
+    height: 28px;
+    padding: 0 10px;
+    width: 100% !important;
+  }
+  .el-date-editor.el-input, .el-date-editor.el-input__inner{
+    width: 100%;
+  }
+  .el-textarea__inner{
+    padding: 5px 10px;
+  }
+  .el-input__icon{
+    line-height: 28px;
+  }
+  .el-date-editor .el-range-separator,.el-date-editor .el-range__icon,.el-date-editor .el-range__close-icon{
+    line-height: 20px;
+  }
+  .el-radio__label,.el-checkbox__label{
+    padding-left: 5px;
+  }
+  label.el-radio{
+    line-height: 28px;
+  }
+  .el-radio,.el-checkbox{
+    margin-right: 14px;
+  }
+
+  .el-form-item__content{
+    line-height: 1;
+  }
+  .el-input input::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  .el-input-number,.el-input-number--mini,.el-input-number--small,.el-input-number--medium{
+    width: 100%;
+  }
+  //.el-input input::-moz-input-placeholder {
+  //    color: #AEABAB;
+  //}
+  .el-input input::-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .el-drawer{
+    overflow: visible;
+  }
+  .el-input.is-disabled .el-input__inner{
+    background: #edf0f4;
+    border-color: #bfbfbf;
+    color: #333;
+  }
+  .el-pagination{
+    padding: 2px 0;
+  }
+  .el-input--mini{
+    height: 28px;
+    line-height: 26px;
+  }
+  .el-input--mini .el-input__inner{
+    font-size: 12px;
+    height: 28px;
+    line-height: 28px;
+  }
+  .el-input--small{
+    height: 32px;
+    line-height: 30px;
+  }
+  .el-input--small .el-input__inner{
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+  }
+  .el-input--medium{
+    height: 36px;
+    line-height: 34px;
+  }
+  .el-input--medium .el-input__inner{
+    font-size: 16px;
+    height: 36px;
+    line-height: 36px;
+  }
+  .el-input-number--mini{
+    height: 28px;
+  }
+  .el-input-number--mini .el-input__inner{
+    font-size: 12px;
+    height: 28px;
+    line-height: 28px;
+  }
+  .el-input-number--small{
+    height: 32px;
+  }
+  .el-input-number--small .el-input__inner{
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+  }
+  .el-input-number--medium{
+    height: 36px;
+  }
+  .el-input-number--medium .el-input__inner{
+    font-size: 16px;
+    height: 36px;
+    line-height: 36px;
+  }
+  //时间范围中间的'至'调整
+  .el-range-editor.el-input__inner{
+    align-items: baseline;
+  }
+
+  .mini .el-input input::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  .mini  .el-input input::-ms-input-placeholder {
+    font-size: 12px;
+  }
+
+  .small  .el-input input::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  .small  .el-input input::-ms-input-placeholder {
+    font-size: 14px;
+  }
+
+  .medium  .el-input input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .medium  .el-input input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .el-input-number.is-controls-right[class*=mini] [class*=decrease], .el-input-number.is-controls-right[class*=mini] [class*=increase]{
+    height: 14px;
+    line-height: 13px;
+  }
+
+  //单选框大小调整
+  .el-radio__inner{
+    width: 16px;
+    height: 16px;
+  }
+  //多选框大小调整
+  .el-checkbox__inner{
+    width: 16px;
+    height: 16px;
+  }
+}
+//user/setting.vue 页面高度
+.user-setting{
+  &__main {
+    padding: 8px 40px;
+  }
+  &__item {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+  }
+  &__title {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 28px;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+  &__meta {
+    flex: 1;
+    .title {
+      margin: 6px 0;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .subtitle {
+      margin: 8px 0;
+      font-size: 14px;
+      color: #555;
+    }
+  }
+  //user-setting下的basic-container
+  .basic-container{
+    .el-card{
+      height: 100%;
+      .el-card__body{
+        height: 100%;
+        padding: 0;
+        .el-tabs,.el-tabs--left{
+          height: 100%;
+          .el-tabs__content{
+            height: 100%;
+            overflow: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+

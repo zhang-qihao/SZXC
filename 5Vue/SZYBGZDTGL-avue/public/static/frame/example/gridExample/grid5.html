@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../prism/prism.css">
+</head>
+<body>
+
+<script type="text/javascript" src="../prism/prism.js"></script>
+
+<pre>
+    <code class="language-css">
+        <xmp>
+<template>
+  <div>
+    <el-container style="height: 100%;">
+      <el-header>
+        <div class="header-left">
+          <el-button-group style="margin-left: 5px">
+            <el-button v-prevent-re-click icon="el-icon-plus" size="mini" type="primary" @click="dialogTableVisible = true">显示源码
+            </el-button>
+            <el-button v-prevent-re-click icon="el-icon-delete" size="mini" type="danger">删除</el-button>
+            <el-button v-prevent-re-click icon="el-icon-folder-checked" size="mini" type="primary">保存</el-button>
+            <el-button v-prevent-re-click size="mini" type="primary">复制权限</el-button>
+          </el-button-group>
+        </div>
+        <div class="header-right">
+          <el-form @submit.native.prevent ref="form1" :model="form" label-width="0">
+            <ef-text v-model="form.user1" :maxlength=20 :minlength=5 name="user1" placeholder="user1"/>
+          </el-form>
+          <el-button-group style="margin-left: 5px">
+            <el-button v-prevent-re-click icon="el-icon-plus" size="mini" type="primary">添加</el-button>
+          </el-button-group>
+        </div>
+          <!--      显示源码-->
+        <el-dialog title="源码展示" :visible.sync="dialogTableVisible" :modal-append-to-body="false">
+          <iframe src="/static/frame/example/gridexample/grid5.html" frameborder="0"
+                  style="width: 100%;height: 400px"></iframe>
+        </el-dialog>
+      </el-header>
+      <el-container style="height: calc(100% - 37px);overflow: auto;">
+        <el-main style="height: 100%">
+            <div class="main-content" style="height: 100%;overflow: hidden">
+              <ef-page-grid ref="grid2" queryNo="Frame_Query_002" pageSize="20" queryWindow="1" style="height:100%;"/>
+            </div>
+        </el-main>
+        <el-aside width="20%" style="background: transparent;padding: 15px">
+          <el-timeline>
+            <el-timeline-item type="primary" v-for="(item,index) in 9" :key="index">
+              <el-card>
+                <p>U001</p>
+                <p>2021-07-06 15:05:50</p>
+              </el-card>
+            </el-timeline-item>
+            <el-timeline-item type="primary">
+              <el-card>
+                <p>蔡东平</p>
+                <p>2021-07-06 17:05:52</p>
+              </el-card>
+            </el-timeline-item>
+            <el-timeline-item type="primary">
+              <el-card>
+                <p>蔡东平</p>
+                <p>2021-07-06 17:08:23</p>
+              </el-card>
+            </el-timeline-item>
+          </el-timeline>
+        </el-aside>
+      </el-container>
+    </el-container>
+  </div>
+</template>
+
+<script>
+import {BaseCtrl} from '/src/util/eframe'
+
+export default {
+    name: "grid5",
+    mixins: [BaseCtrl],
+    data() {
+        return {
+            moreSelection: false,
+            dialogTableVisible:false,
+            form: {
+                user1: '',
+                user2: '',
+                telephone1: '',
+                mail1: '',
+                password2: '',
+                date1: '',
+                month1: '',
+                time1: '',
+                datetime1: '',
+                number1: '',
+                money1: '',
+                switch1: false,
+                textarea: ''
+            }
+        }
+    },
+    created() {
+        this.$nextTick(() => {
+            this.$refs['grid2'].setInitFun((queryGrid) => {
+                queryGrid.selectAll = function (e, grid) {
+                    console.log("selectAll");
+                };
+                queryGrid.selectRow = function (e, dataItem, grid, row) {
+                    console.log("selectRole" + dataItem.QUERYNO);
+                };
+                //扩展Grid函数
+                queryGrid.onSelect = function (dataItem, grid, row) {
+                    let queryNo = dataItem.get("QUERYNO");
+                    alert(queryNo);
+                };
+                queryGrid.doRefresh();
+            });
+        });
+    },
+    mounted() {
+
+    },
+    methods: {
+        methods: {
+            loadData(ref) {
+                // Set the block to loading state
+                this.$refs[ref].stateLoading()
+
+                // .. here you could load your data
+
+                // Set a timeout for demo purposes
+                setTimeout(() => {
+                    // Set the block back to normal state
+                    this.$refs[ref].stateNormal()
+                }, 2000)
+            },
+        }
+    }
+}
+</script>
+
+<style lang="scss" scoped>
+.el-card p:first-child{
+  font-weight: bold;
+  font-size: 16px;
+}
+.el-card p:last-child{
+  margin-top: 10px;
+}
+
+</style>
+</xmp>
+
+    </code>
+</pre>
+
+
+
+
+
+
+</body>
+</html>

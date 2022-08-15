@@ -1,0 +1,120 @@
+.el-dropdown-menu__item {
+    font-size: 12px !important;
+    line-height: 28px !important;
+}
+.el-card.is-always-shadow {
+    box-shadow: none;
+    border: none !important;
+}
+
+.el-scrollbar__view {
+    height: 100%;
+}
+
+.el-menu--horizontal {
+    border-bottom: none !important;
+}
+
+.el-menu {
+    border-right: none !important;
+}
+
+.el-menu--display,
+.el-menu--display+.el-submenu__icon-arrow {
+    display: none;
+}
+
+
+
+.el-message__icon,
+.el-message__content {
+    display: inline-block;
+}
+
+.el-date-editor .el-range-input,
+.el-date-editor .el-range-separator {
+    height: auto;
+    overflow: hidden;
+}
+
+.el-dialog__wrapper {
+    z-index: 2048;
+}
+
+
+.el-col {
+    margin-bottom: 8px;
+}
+
+.el-main {
+    padding: 0 !important;
+}
+.el-dropdown-menu__item--divided:before, .el-menu, .el-menu--horizontal>.el-menu-item:not(.is-disabled):focus, .el-menu--horizontal>.el-menu-item:not(.is-disabled):hover, .el-menu--horizontal>.el-submenu .el-submenu__title:hover {
+    background-color:transparent;
+}
+
+
+.el-dropdown-menu__item--divided:before, .el-menu, .el-menu--horizontal>.el-menu-item:not(.is-disabled):focus, .el-menu--horizontal>.el-menu-item:not(.is-disabled):hover, .el-menu--horizontal>.el-submenu .el-submenu__title:hover{
+    background-color: transparent !important;
+}
+
+.el-table {
+  font-size: 12px;
+  background-color: transparent;
+  background-image:url(../assets/grid-bg.png);
+}
+
+.el-table td, .el-table th {
+  min-height: 18px;
+  line-height: 18px;
+  padding: 3px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: transparent;
+}
+.el-table th {
+  background-color: #f4f4f5;
+}
+
+.pagination-box {
+  position: relative;
+  padding: 6px 12px;
+  border: solid 1px #dedee0;
+}
+.pagination-box .total {
+  position: absolute;
+  right: 12px;
+  top: 14px;
+}
+.el-pagination .btn-next, .el-pagination .btn-prev {
+  background-color: transparent;
+}
+.el-pagination button:disabled {
+  background-color: transparent;
+}
+.el-pager li {
+  background: transparent;
+}
+
+.el-pagination button,
+.el-pager li {
+  border-radius: 3em;
+  min-width: 2.14em;
+  height: 2.14em;
+  line-height: 2.14em;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dedee0;
+  margin: 0 3px;
+}
+.el-pager li.active {
+  color: #fff;
+  background-color: #1984c8;
+}
+.el-pagination .btn-prev {
+  padding-right: 6px;
+}
+.el-pagination .btn-next {
+  padding-left: 6px;
+}

@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="web">
+    <output-path>$PROJECT_DIR$/out/artifacts/web</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="SZYBGZDTGL" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="All-In-One" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="SZYBGZDTGL/web/Web" />
+    </root>
+  </artifact>
+</component>

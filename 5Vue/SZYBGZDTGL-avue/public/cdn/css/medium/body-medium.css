@@ -1,0 +1,383 @@
+.body-medium{
+    font-size: 16px;
+}
+.body-medium .k-grid{
+    font-size: 16px!important;
+}
+.body-medium  .header-title{
+    font-size: 16px;
+}
+.body-medium .el-form-item__label > span{
+    /*margin-bottom: 6px;*/
+    display: inline-block;
+    font-size: 16px;
+}
+.body-medium .el-form-item__label-wrap > .el-form-item__label > span{
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.body-medium .el-form-item__label-wrap{
+    height: 36px;
+    /*line-height: 36px;*/
+}
+.body-medium div > .is-error{
+    padding-bottom: 16px;
+}
+.body-medium div > .el-form-item__error{
+    font-size: 16px;
+}
+.body-medium .el-container > .el-header{
+    height: 45px!important;
+}
+.body-medium .block > .block-header{
+    height: 45px;
+}
+.body-medium  .el-button{
+    height: 32px;
+    font-size: 16px;
+    /*display: flex;*/
+    /*align-items: center;*/
+}
+.body-medium .el-dropdown-selfdefine{
+    height: 32px;
+    font-size: 16px;
+}
+.body-medium .el-tooltip{
+    font-size: 16px;
+}
+.body-medium .top-bar__item{
+    font-size: 16px;
+}
+.body-medium .info-list-left{
+    font-size: 16px;
+}
+.body-medium .info-list-right{
+    font-size: 16px;
+}
+.body-medium .info-list-left{
+    width: 66px;
+}
+.body-medium input::-webkit-input-placeholder {
+    font-size: 16px!important;
+
+}
+
+.body-medium input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    font-size: 16px!important;
+}
+
+.body-medium input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    font-size: 16px!important;
+}
+
+.body-medium input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    font-size: 16px!important;
+}
+
+.body-medium .top-search  input::-webkit-input-placeholder{
+    font-size: 12px!important;
+}
+.body-medium .top-search  input::-moz-placeholder{
+    font-size: 12px!important;
+}
+.body-medium .top-search  input:-moz-placeholder{
+    font-size: 12px!important;
+}
+.body-medium .top-search  input:-ms-input-placeholder{
+    font-size: 12px!important;
+}
+.body-medium .block-header-bgcolor > .block-header{
+    height: 36px;
+}
+.body-medium .block-header-bgcolor > .block-header > .block-title{
+    height: 36px;
+}
+.body-medium .block-header-bgcolor > .block-header > .block-title > .header-title > .header-title-content:before {
+    left: 100%;
+    border-width: 18px 0 18px 24px;
+}
+.body-medium .el-form .el-form-item__label{
+    font-size: 16px;
+}
+.body-medium .block-header-bgcolor-green > .block-header{
+    height: 36px;
+}
+.body-medium .block-header-bgcolor-green > .block-header > .block-title{
+    height: 36px;
+}
+.body-medium .block-header-bgcolor-green > .block-header > .block-title > .header-title > .header-title-content{
+    font-size: 16px;
+}
+.body-medium .block-header-bgcolor-green > .block-header > .block-title > .header-title > .header-title-content:before {
+    border-width: 0 34px 34px 0;
+}
+.body-medium .link-title-box-row .link-title{
+    /*width: 40px;*/
+    height: 40px;
+}
+.body-medium .el-header-nopadding{
+    height: 45px!important;
+}
+
+
+
+/*修改*/
+.body-medium .el-form-item__label{
+    padding:0 0 0 10px!important;
+}
+.body-medium div .el-input--medium{
+    height: 100%;
+    line-height: 30px;
+    /*padding-left: 10px;*/
+}
+/*.body-medium div .el-input{*/
+/*    height: 32px;*/
+/*}*/
+.body-medium div .el-input--medium .el-input__inner{
+    height: 32px;
+    line-height: 32px;
+}
+.body-medium .el-button{
+    height: 32px;
+}
+.body-medium .el-form-item__label-wrap{
+    height: 32px;
+    /*line-height: 32px;*/
+}
+/*el-input-number样式调整*/
+.body-medium div .el-input-number--medium{
+    height: 32px;
+}
+.body-medium div .el-input-number.is-controls-right[class*=medium] [class*=decrease]div .el-input-number.is-controls-right[class*=medium] [class*=increase]{
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.body-medium div .el-input-number.is-controls-right[class*=medium] [class*=increase]{
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-medium .el-input-number.is-controls-right .el-input-number__decrease{
+    bottom: 0;
+}
+.body-medium .el-input-number__decrease{
+    font-size: 16px!important;
+}
+.body-medium .el-input-number__increase{
+    font-size: 16px!important;
+}
+
+/*.body-medium .el-form-item__label > span{*/
+/*    margin-top: 9px;*/
+/*}*/
+.body-medium .el-form-item__label-wrap > .el-form-item__label > span{
+    margin-top: 0;
+}
+/*.body-medium .el-input__prefix{*/
+/*    left: 15px;*/
+/*}*/
+/*.body-medium .show-type>.el-form-item__label{*/
+/*    padding:8px 0 0!important;*/
+/*}*/
+.body-medium .show-type .el-form-item__content>.text-box{
+    min-height: 16px;
+    /*max-height: 40px;*/
+    padding: 6px 10px;
+    font-size: 16px;
+}
+.body-medium .show-type .el-form-item__content>.text-null-box{
+   height: 32px;
+}
+.body-medium .type1 .el-form-item__content>.text-box{
+    padding: 7px 10px;
+}
+.body-medium div > .el-autocomplete {
+    width: 100%;
+}
+.body-medium div > .el-autocomplete .el-input {
+    height: 32px;
+    line-height: 32px;
+}
+.body-medium div > .el-autocomplete .el-input input{
+    height: 32px;
+    line-height: 32px;
+    font-size: 16px;
+}
+
+.body-medium div .el-input__inner{
+    height: 32px;
+    line-height: 32px;
+    font-size: 16px;
+}
+.body-medium div .el-input-number .el-input{
+    display: flex;
+    height: 32px;
+}
+.body-medium .noEf.el-input-number.is-controls-right .el-input-number__decrease, .body-medium .noEf.el-input-number.is-controls-right .el-input-number__increase{
+    height: 16px;
+    line-height: 16px;
+}
+.body-medium .noEf.el-input-number.is-controls-right .el-input-number__decrease{
+    bottom: 2px;
+}
+.body-medium .el-range-editor--mini.el-input__inner{
+    height: 32px;
+    line-height: 32px;
+}
+
+
+/*开发用例和系统管理页面*/
+.body-medium .menu-home-header {
+    width: 100%;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 3px rgba(64, 158, 255, .5);
+}
+
+.body-medium .menu-home-title {
+    font-size: 16px;
+}
+
+.body-medium .menu-home-title:before {
+    content: '';
+    position: absolute;
+    left: 100%;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    /*border-color: transparent #f0f2f5; !*上下颜色 左右颜色*!*/
+    border-width: 0 34px 32px 0;
+    border-style: solid;
+}
+
+.body-medium .menu-home-header-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.body-medium .menu-home-box-img {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-right: solid 1px #ededed;
+    border-bottom: solid 1px #ededed;
+    box-sizing: border-box;
+}
+
+.body-medium .menu-home-box-pointer {
+    cursor: pointer;
+}
+
+.body-medium .menu-home-box {
+    box-shadow: 0 0 18px 0 rgba(122, 128, 136, .3);
+    background: #fff;
+}
+
+.body-medium .menu-bg-title {
+    flex: 1;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    word-break: break-word;
+    margin-left: 20px;
+}
+
+
+/*表单label样式调整*/
+
+
+.body-medium div .el-form-item__label{
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.body-medium .el-form--label-top .el-form-item__label{
+    justify-content: flex-start;
+}
+
+
+/*radio样式*/
+.body-medium .el-radio__label{
+    font-size: 16px;
+}
+
+
+.body-medium .exp-info .exp-info-content{
+    height: 32px;
+    line-height: 32px;
+    font-size: 16px;
+}
+
+/*划价页面,病种*/
+.body-medium .select-text-list .select-text-box .select-text-item span{
+    font-size: 16px;
+}
+
+
+/*el-table表格*/
+.body-medium .el-table .cell {
+    height: 38px;
+    line-height: 38px;
+    font-size: 16px;
+    /*text-align: center;*/
+}
+
+.body-medium .el-table .cell > div {
+    height: 38px;
+    line-height: 38px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*text-align: center;*/
+}
+.body-medium .el-table .cell > .table-input-show {
+    height: 38px;
+    /*line-height: 45px;*/
+    display: flex!important;
+    align-items: center;
+    /*white-space: nowrap;*/
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
+    /*text-align: center;*/
+}
+.body-medium .el-table .cell  .el-input {
+    height: 32px;
+    /*height: 37px;*/
+    /*line-height: 37px;*/
+    /*white-space: nowrap;*/
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
+    /*!*text-align: center;*!*/
+}
+
+/*盘点*/
+.body-medium .amout-box {
+    height: 32px;
+    line-height: 32px;
+}
+
+/*element-table中的select图标*/
+.body-medium div .el-input__icon{
+    line-height: 24px;
+}
+
+/*element中的radio*/
+.body-medium div label.el-radio{
+    height: 32px;
+    line-height: 32px;
+}

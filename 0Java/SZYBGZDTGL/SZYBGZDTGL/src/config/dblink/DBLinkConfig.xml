@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configroot>
+   <connections>
+      <connection id="1" ispool="true"  type="oracle" version="10">
+         <driver>oracle.jdbc.driver.OracleDriver</driver>
+         <url>jdbc:oracle:thin:@localhost:1521:MYDB</url>
+         <sid>MYDB</sid>
+         <user>test</user>
+         <password>test</password>
+         <pooljndiname>java:jboss/datasources/MYDB1</pooljndiname>
+      </connection>
+
+      <connection id="2" ispool="true"  type="sqlserver" version="2005">
+         <driver>oracle.jdbc.driver.OracleDriver</driver>
+         <url>jdbc:oracle:thin:@localhost:1521:MYDB</url>
+         <sid>MYDB</sid>
+         <user>eframe3</user>
+         <password>sssystem</password>
+         <pooljndiname>MYDB1</pooljndiname>
+      </connection>
+
+      <connection id="3" ispool="true" type="mysql" version="5">
+         <driver>oracle.jdbc.driver.OracleDriver</driver>
+         <url>jdbc:oracle:thin:@localhost:1521:MYDB</url>
+         <sid>MYDB</sid>
+         <user>sssystem</user>
+         <password>sssystem</password>
+         <pooljndiname>MYDB3</pooljndiname>
+      </connection>
+
+   </connections>
+</configroot>

@@ -1,0 +1,253 @@
+<template>
+  <el-container style="height: 100%">
+    <el-header>
+      <div class="header-left">
+        <el-button-group style="margin-left: 5px">
+          <el-button v-prevent-re-click icon="el-icon-plus" size="mini" type="primary" @click="dialogTableVisible = true">显示源码</el-button>
+          <el-button v-prevent-re-click icon="el-icon-delete" size="mini" type="danger">删除</el-button>
+          <el-button v-prevent-re-click icon="el-icon-folder-checked" size="mini" type="primary">保存</el-button>
+          <el-button v-prevent-re-click size="mini" type="primary">复制权限</el-button>
+        </el-button-group>
+      </div>
+      <div class="header-right">
+        <el-button-group style="margin-left: 5px">
+          <el-button v-prevent-re-click icon="el-icon-plus" size="mini" type="primary">添加</el-button>
+        </el-button-group>
+      </div>
+      <!--      显示源码-->
+      <el-dialog title="源码展示" :visible.sync="dialogTableVisible" :modal-append-to-body="false">
+        <iframe src="/static/frame/example/showpageexample/showpage5.html" frameborder="0"
+                style="width: 100%;height: 400px"></iframe>
+      </el-dialog>
+    </el-header>
+    <el-main style="height: calc(100% - 37px);overflow: auto;">
+      <div class="main-bg main-content">
+        <el-row>
+          <el-col :span="12" :offset="6">
+            <el-row style="margin-top: 10px">
+              <el-col :span="24">
+                <base-block class="out-block" rounded ref="exampleBlock1">
+                  <div class="header-title" slot="title"><i class="el-icon-user-solid"></i>基础信息</div>
+                  <!--          没有header的block添加下面的div-->
+                  <!--          <div class="without-header"></div>-->
+
+                  <el-form @submit.native.prevent ref="form3" :model="form" label-width="80px" label-position="right">
+                    <el-row :gutter="20">
+                      <el-col :span="8">
+                        <ef-show :show-type="showType" label="姓名" name="name" v-model="name"/>
+                      </el-col>
+                      <el-col :span="8">
+                        <ef-show :show-type="showType" label="性别" name="sex" v-model="sex"/>
+                      </el-col>
+                      <el-col :span="8">
+                        <ef-show :show-type="showType" label="年龄" name="age" v-model="age"/>
+                      </el-col>
+                    </el-row>
+                    <el-row :gutter="20">
+                      <el-col :span="16">
+                        <ef-show :show-type="showType" label="电话号码" name="tel" v-model="tel"/>
+                      </el-col>
+                      <el-col :span="8">
+                        <ef-show :show-type="showType" label="籍贯" name="place1" v-model="place1"/>
+                      </el-col>
+                    </el-row>
+                    <el-row :gutter="20">
+                      <el-col :span="24">
+                        <ef-show :show-type="showType" label="联系地址" name="place2" v-model="place2"/>
+                      </el-col>
+                    </el-row>
+                    <el-row :gutter="20">
+                      <el-col :span="8">
+                        <ef-show :show-type="showType" label="婚姻状况" name="marry" v-model="marry"/>
+                      </el-col>
+                      <el-col :span="8">
+                        <ef-show :show-type="showType" label="名族" name="mz" v-model="mz"/>
+                      </el-col>
+                      <el-col :span="8">
+                        <ef-show :show-type="showType" label="健康状况" name="health" v-model="health"/>
+                      </el-col>
+                    </el-row>
+                    <el-row :gutter="20">
+                      <el-col :span="8">
+                        <ef-show :show-type="showType" label="籍贯" name="place1" v-model="place1"/>
+                      </el-col>
+                      <el-col :span="16">
+                        <ef-show :show-type="showType" label="电话号码" name="tel" v-model="tel"/>
+                      </el-col>
+                    </el-row>
+                  </el-form>
+                </base-block>
+              </el-col>
+            </el-row>
+            <el-row style="margin-top: 10px">
+              <el-col :span="24">
+                <base-block class="out-block" rounded ref="exampleBlock2">
+                  <div class="header-title" slot="title"><i class="el-icon-user-solid"></i>查询信息</div>
+                  <template slot="options">
+                    <div class="options-content">
+                      <el-form @submit.native.prevent ref="form4" :model="form" label-width="0">
+                        <ef-text v-model="form.user1" :maxlength=20 :minlength=5 name="user1" placeholder="user1"/>
+                      </el-form>
+                      <el-button-group style="margin: 0 5px">
+                        <el-button v-prevent-re-click icon="el-icon-search" type="info" plain size="mini"></el-button>
+                        <el-button v-prevent-re-click icon="el-icon-refresh" type="info" plain size="mini"
+                                   @click="loadData('exampleBlock2')"></el-button>
+                        <el-popover
+                            popper-class="popover-content"
+                            placement="bottom"
+                            width="400"
+                            v-model="visable"
+                            trigger="click">
+                          <!--      更多筛选-->
+                          <div>
+                            <el-form @submit.native.prevent ref="form2" :model="form" label-position="top" label-width="90px">
+                              <el-row :gutter="20">
+                                <el-col :span="24">
+                                  <ef-text label="用户1" v-model="form.user1" :maxlength=20 :minlength=5 name="user1"
+                                           validationMessage="请输入用户1.validationMessage" :isRequirded="true"
+                                           placeholder="user1"/>
+                                </el-col>
+                              </el-row>
+                              <el-row :gutter="20">
+                                <el-col :span="24">
+                                  <ef-text label="用户2222222" v-model="form.user2" maxlength="5" name="user2" require="true"/>
+                                </el-col>
+                              </el-row>
+                              <el-row :gutter="20">
+                                <el-col :span="24">
+                                  <ef-select
+                                      label="单项选择"
+                                      name="test"
+                                      v-model="form.test"
+                                      :require="true"
+                                      :emptyOption="true"
+                                      dictionaryNo="D_Frame_UserType"
+                                  />
+                                </el-col>
+                              </el-row>
+                              <el-row :gutter="20">
+                                <el-col :span="24">
+                                  <ef-select
+                                      label="单项选择"
+                                      name="test"
+                                      v-model="form.test"
+                                      :require="true"
+                                      :emptyOption="true"
+                                      dictionaryNo="D_Frame_UserType"
+                                  />
+                                </el-col>
+                              </el-row>
+                              <div class="more-button">
+                                <el-button v-prevent-re-click icon="el-icon-s-open" size="mini" type="primary">筛选</el-button>
+                                <el-button v-prevent-re-click icon="el-icon-refresh" size="mini" type="primary" plain>重置</el-button>
+                              </div>
+                            </el-form>
+                          </div>
+                          <el-button v-prevent-re-click slot="reference" icon="el-icon-s-open" size="mini" type="info" plain>更多筛选</el-button>
+                        </el-popover>
+                      </el-button-group>
+                    </div>
+                  </template>
+                  <!--          没有header的block添加下面的div-->
+                  <!--          <div class="without-header"></div>-->
+                  <ef-page-grid ref="grid1" queryNo="Frame_Query_002" pageSize="20" queryWindow="1"
+                                      style="height:300px;"/>
+                </base-block>
+              </el-col>
+            </el-row>
+          </el-col>
+        </el-row>
+      </div>
+    </el-main>
+  </el-container>
+</template>
+
+<script>
+import {BaseCtrl} from '../../../../util/eframe'
+
+export default {
+  name: "showpage5",
+  mixins: [BaseCtrl],
+  data() {
+    return {
+      dialogTableVisible: false,
+      showType:['type2','textRight'],
+      visable:false,
+      name:'张三',
+      sex:'男',
+      age:'18',
+      tel:'18896960909',
+      place1:'江苏苏州',
+      place2:'江苏省苏州市相城区港龙路',
+      mz:'汉',
+      marry:'已婚',
+      health:'健康',
+      form: {
+        user1: '',
+        user2: '',
+        telephone1: '',
+        mail1: '',
+        password2: '',
+        date1: '',
+        month1: '',
+        time1: '',
+        datetime1: '',
+        number1: '',
+        money1: '',
+        switch1: false,
+        textarea: ''
+      }
+    }
+  },
+  beforeRouteLeave(to,from,next){
+    this.visable = false
+    next()
+  },
+  created() {
+    this.$nextTick(() => {
+      this.$refs['grid1'].setInitFun((queryGrid) => {
+        queryGrid.selectAll = function (e, grid) {
+          console.log("selectAll");
+        };
+        queryGrid.selectRow = function (e, dataItem, grid, row) {
+          console.log("selectRole" + dataItem.QUERYNO);
+        };
+        //扩展Grid函数
+        queryGrid.onSelect = function (dataItem, grid, row) {
+          let queryNo = dataItem.get("QUERYNO");
+          alert(queryNo);
+        };
+        queryGrid.doRefresh();
+      });
+    });
+  },
+  mounted() {
+
+  },
+  methods: {
+    loadData(ref) {
+      // Set the block to loading state
+      this.$refs[ref].stateLoading()
+
+      // .. here you could load your data
+
+      // Set a timeout for demo purposes
+      setTimeout(() => {
+        // Set the block back to normal state
+        this.$refs[ref].stateNormal()
+      }, 2000)
+    },
+    testOnChange(data) {
+      console.log("testOnChange::::" + data);
+    },
+
+    testOnInput(data) {
+      console.log("testOnInput::" + data);
+    },
+  }
+}
+</script>
+<style lang="scss" scoped>
+
+
+</style>

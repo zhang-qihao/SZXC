@@ -1,0 +1,24 @@
+
+//css的主要配置
+
+//main
+//$mainBg: #409eff;
+$mainBg:#f0f2f5;  //内容背景
+$headerBg:linear-gradient(to right,#398fd7,#42c09c); //头部背景
+$slideBg:linear-gradient(#2d81c0,#18659e);  //侧边菜单背景
+$slideColor:#b2cdf1;   //侧边栏字颜色
+$slideActiveColor:#fff;  //侧边栏选中颜色
+$borderRadius:4px;  //圆角
+$borderColor:#d2d2d2;  //下滑线颜色
+$successColor:#42c09c;  //成功颜色
+$mainColor:#5c90d2;     //主色
+$warnColor:#ff9a64;     //警告颜色
+$dangerColor:#fe7474;   //错误颜色
+$titleFontSize:18px;        //标题字号
+$titleColor:#262626;       //标题颜色
+$subTitleFontSize:16px;     //副标题字号
+$subTitleFontColor:#595959; //副标题颜色
+$maintextSize:12px;            //正文字号
+$maintextColor:#333;      //正文颜色
+$labelColor:#606266;        //label颜色
+$placeholderColor:#bfbfbf;  //placeholder颜色

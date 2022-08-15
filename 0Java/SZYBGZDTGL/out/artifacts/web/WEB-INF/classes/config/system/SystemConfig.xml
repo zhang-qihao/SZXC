@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIGROOT>
+    <PROGRAMNO>SZYBGZDTGL</PROGRAMNO>                              <!-- 系统编号 -->
+	<PROGRAMID>SZYBGZDTGL</PROGRAMID>                              <!-- 系统ID -->
+	<JSVERSION>1.0.0.00</JSVERSION>                             <!-- JS版本号，用户系统版本更新 -->
+	<PROGRAMNAME>苏州医保中心岗位职责动态管理系统</PROGRAMNAME>
+	<PROGRAMICON>/logo.png</PROGRAMICON>
+
+	<LOG>
+		<MENU>false</MENU> <!-- 是否记录菜单日志 -->
+		<SQL>false</SQL>   <!-- 是否记录查询日志 -->
+	</LOG>
+
+	<CRYPTO>
+		<FLAG>true</FLAG> <!--请求是否加密-->
+		<KEY>12345678901234567890123456789012</KEY><!--加密密钥 要求32位-->
+	</CRYPTO>
+
+	<CACHE>                                                     <!-- 缓存 -->
+		<ORG>true</ORG>
+		<USER>true</USER>
+	</CACHE>
+
+	<SOCKET > <!--socket服务器-->
+		<SOCKETFLAG>true</SOCKETFLAG>       <!-- 是否启动 -->
+		<POOLSIZE>15</POOLSIZE>              <!-- 最大连接总数 -->
+		<LISTENPORT>8001</LISTENPORT>        <!-- 监听端口 -->
+		<HEADSIZE>6</HEADSIZE>               <!-- socket报文头长度 -->
+	</SOCKET>
+
+	<STARTCLASS>com.eframework.web.servlet.TestStartBean</STARTCLASS>      <!-- 系统启动回调类，主要用于初始化系统守护进程等工作,服务器启动时只调用一次  实现：com.eframework.web.servlet.IStart接口-->
+
+
+	<AUTOPERSISTOPIAUTHORITY>false</AUTOPERSISTOPIAUTHORITY><!-- 是否自动创建权限定义(true/false)，若为false则需要在界面上手动创建 -->
+    <DEBUG>false</DEBUG>                                          <!-- 调试状态 (true/false) -->
+    <ACCOUNT>false</ACCOUNT>                                      <!-- 关联帐套 (true/false) -->
+	<SMS>true</SMS>                                                 <!-- 关联SMS平台 (true/false) -->
+	<REPORT>                                                                                           <!-- 报表打印组件 -->
+	   <FINEREPORT>                                                                                   <!-- 帆软报表 -->
+	   		<URL>http://localhost:7001/WebReport/ReportServer</URL>                                    <!-- 帆软报表服务器URL -->
+	   	</FINEREPORT>   
+	</REPORT>
+	
+	
+	<EIM>                                                                  <!--企业即时通信-->
+		<EIMFLAG>false</EIMFLAG>                                         <!-- 是否启动 -->
+		<EIMTYPE>RTX</EIMTYPE>                                           <!-- 即时通信类型 (RTX/AM) -->
+		<EIMSERVERIP>127.0.0.1</EIMSERVERIP>                                    <!-- 即时通信服务器IP，针对web服务器而言的IP地址 -->
+		<!--<EIMSERVERIP>192.168.111.120</EIMSERVERIP>    -->                                  <!-- 即时通信IP -->
+		<EIMSERVERPORT>6000</EIMSERVERPORT>                       <!-- 即时通信端口    RTX 默认：6000    AM默认： 5001 -->
+		<EIMSDKSERVERPORT>6000</EIMSDKSERVERPORT>                     <!-- 即时通信服务SDK端口    RTX 默认：6000    AM默认： 5001 -->
+		<EIMCONNSERVERPORT>8000</EIMCONNSERVERPORT>             <!-- 即时通信服务端口    RTX 默认：8000    AM默认： 5001 -->
+		<!--<EIMSERVERPORT>6000</EIMSERVERPORT>   -->                    <!-- 即时通信端口 -->
+		<EIMURL>http://108.118.5.80:8012/</EIMURL>
+		
+		<!--<EIMLOGINIP  web='localhost'  eim='localhost111'  />         -->                                         <!--通信登陆地址，针对客户端而言 -->
+		<EIMLOGINIP  web='127.0.0.1'  eim='127.0.0.1'  />                                  <!--通信登陆地址，针对客户端而言 -->
+		<EIMLOGINIP  web='192.168.111.120'  eim='192.168.111.121'   />                   <!--通信登陆地址，针对客户端而言 -->
+		<EIMLOGINIP  web='192.168.0.120'  eim='192.168.0.121'   />  
+		<SSOFLAG>true</SSOFLAG>                                                                 <!--通信登陆地址，针对客户端而言 -->
+	</EIM>	
+
+	<PLATFORM>true</PLATFORM>                                     <!-- 是否以平台模式启动 (true/false) -->
+	<PLATFORMTYPE>T1</PLATFORMTYPE>                              <!-- 平台模式( T1:划出菜单平台 其它:传统大图片切换模式 )  -->
+	<NOTICECLASS>login.UserNotice</NOTICECLASS>                  <!-- 通知、公告、代办 -->
+    <QUERYEXTENSION>true</QUERYEXTENSION>                       <!-- 扩展查询 (true/false) -->
+    <QUERYEXTENSIONORDER>T1</QUERYEXTENSIONORDER>             <!-- 扩展查询  顺序 （T1 以XML中配置优先 T2 以数据库中配置优先）-->
+    <MENUEXTENSION>true</MENUEXTENSION>                         <!-- 扩展菜单 (true/false) -->
+    <SERVERTYPE>20</SERVERTYPE>                                  <!-- 服务类型 (20:jboss/jboss 4/jboss 5/   10:weblogic/weblogic 10) -->
+    <CONTEXTURL>localhost:7001</CONTEXTURL>                      <!-- 服务器上下文地址 -->
+    <PROGRAMMONITOR>
+    	<MONITORTYPE>1</MONITORTYPE>                            <!-- 系统监控类型 1:系统内部监控  2:平台监控器  默认为1-->
+    	<MONITORFLAG>false</MONITORFLAG>                         <!-- 是否启动系统监控 -->
+    	<SAVEFLAG>true</SAVEFLAG>                               <!-- 是否保存系统监控结果 -->
+    	<TARGETSERVERTYPE>20</TARGETSERVERTYPE>                 <!-- 监控目标服务类型 (20:jboss/jboss 4/jboss 5/   10:weblogic/weblogic 10) -->
+    	<TARGETIP>localhost</TARGETIP>                          <!-- 监控目标服务器IP -->
+    	<TARGETPORT>7001</TARGETPORT>                           <!-- 监控目标服务器端口 -->
+    	<TARGETUSERNAME>weblogic</TARGETUSERNAME>               <!-- 监控目标服务器登录用户名 -->
+    	<TARGETPASSWORD>weblogic10</TARGETPASSWORD>             <!-- 监控目标服务器登录密码 -->
+    </PROGRAMMONITOR>
+
+    <!--<LOGIN>/login4/login.jsp</LOGIN>                            &lt;!&ndash; 登陆界面扩展 &ndash;&gt;-->
+	<LOGIN>/login/login.jsp</LOGIN>  <!-- 登陆界面扩展 -->
+	<LOGINCLASS></LOGINCLASS>
+    <!--<LOGINCLASS>login.LoginUser</LOGINCLASS> ;-->                <!-- 用户登陆类 -->
+    <USERMANAGEMENTCLASS>login.ChangeOAPassword</USERMANAGEMENTCLASS>                    <!-- 用户管理扩展类 -->
+	<SESSIONTHREADBINDINGCLASS>                                <!--在过滤器中绑定的，线程绑定Session类,主要用于缓存用户登录信息，并以配置的方式让开发者配入 -->
+		<CLASS>com.sumec.comp.login.LoginUserCacheManager</CLASS>
+	</SESSIONTHREADBINDINGCLASS>
+    <LOGINRULE>false</LOGINRULE>                                <!-- 是否使用登陆规则 (true/false) 登录防火墙规则-->
+    <LOGINLOGRULE>                                                 <!-- 用户记录日志的规则设置 -->    
+    	<SIGNIN from='14:00:00' to='14:10:00'>1,2,3,</SIGNIN>       <!-- 记录来源 1：本系统 2:其他系统 3:考勤机 其他:全部记录 签到有效登记时间 格式：HH:mm:ss 如不填写默认from 08:00:00 to 09:00:00-->
+    	<LUNCH>1,2,3</LUNCH>                                       <!-- 记录来源 1：本系统 2:其他系统 3:考勤机 其他:全部记录 午餐有效登记时间 格式：HH:mm:ss 如不填写默认无-->
+    	<SIGNOUT  from='17:10:00' >1,2,3</SIGNOUT>                 <!-- 记录来源 1：本系统 2:其他系统 3:考勤机 其他:全部记录 下班有效登记时间 格式：HH:mm:ss 如不填写默认from 17:00:00 to 23:59:59-->
+    </LOGINLOGRULE>         
+        
+    <ARCHIVEROOT>C:\AM</ARCHIVEROOT>                             <!-- 文档管理根目录 --> 
+	<ADMINPASSWORD>manager</ADMINPASSWORD>                      <!-- 系统管理员密码 -->
+    
+   	<SYSTEMAPPEARANCE>                                          <!-- 系统外观设置 -->
+	    <WELCOME>
+			<URL>/frame/systemmanagement/portalmanagement/portal.action?frameControlSubmitFunction=init</URL>
+			<JS>/frame/systemmanagement/portalmanagement/portal.js</JS>
+		</WELCOME>
+	    <SKINS>														<!-- 皮肤 -->  
+	    	<SKINFRAME>dhx_skyblue</SKINFRAME>
+	    	<SKINWORKAREA>e_clearshowger</SKINWORKAREA>
+	    </SKINS>
+	    <MENUTYPE>T1</MENUTYPE>                                   <!-- 菜单类型 T1:无权限不显示  T2:无权限变灰  默认T1-->
+	    <MENUBARVALIGN>bottom</MENUBARVALIGN>                   <!-- 菜单栏位置 top:上 bottom:下 默认top--> 
+	    <TITLEALIGN>right</TITLEALIGN>                           <!-- 标题对齐方式 lift:左对齐 right:右对齐  默认left-->
+    </SYSTEMAPPEARANCE>     
+    
+    
+    <MOBILE>
+    	<PHONE>
+    		<LOGIN>/frame/login/loginindex_touch.jsp</LOGIN>                            <!-- 登陆界面扩展 -->    
+    	 	<WELCOME>/html/welcome/welcomeiphone.jsp</WELCOME>
+    	 </PHONE>	 
+    	 <TOUCH>
+    		<LOGIN>/frame/login/loginindex_touch.jsp</LOGIN>                            <!-- 登陆界面扩展 -->    
+    	 	<WELCOME>/html/welcome/welcomeipad.jsp</WELCOME>    	 
+    	 </TOUCH>	
+    	 <TITLEALIGN>left</TITLEALIGN>             <!-- 标题对齐方式 lift:左对齐 right:右对齐  默认left--> 
+    	 <ANIMATE>true</ANIMATE>                  <!--是否支持动画效果  默认true--> 
+    	<PUSHNOTIFICATION>                            <!-- IOS通知推送服务 -->    
+    	 	<!-- IOS配置 -->
+    	 	<HOST>gateway.push.apple.com</HOST>                    <!-- 推送服务地址 -->    
+    	 	<PORT>2195</PORT>                                                                <!-- 推送服务端口 --> 
+    	 	<CERTIFICATE>/config/system/aps_production_identity.p12</CERTIFICATE>       <!-- 证书文件名--> 
+    	 	<CERTIFICATEPASSWORD>abc123</CERTIFICATEPASSWORD>         <!-- 证书密码--> 
+    	 	<!-- android 配置 -->
+        	<APIKEY>kmshh3mhQcKmu2XNWCWjgHfG</APIKEY>     
+    	 	<SECRETKEY>27apCuePV4UG7j3CS5lssx5PO1CSbDQq</SECRETKEY> 
+    	 </PUSHNOTIFICATION>
+    </MOBILE>
+    
+    
+    
+	<SERVICEPROGRAMCENTER  servicetype="bean" serviceno=''>     <!-- 系统服务 --> <!-- servicetype (bean ejb webservice) -->
+		<SERVERTYPE>20</SERVERTYPE>                             <!-- 服务器类型 (jboss/weblogic) -->
+		<CONTEXTURL>localhost:7001</CONTEXTURL>
+		<SERVICE>ServiceProgramCenterMap</SERVICE>
+	</SERVICEPROGRAMCENTER>
+	<SERVICEMONITORCENTER servicetype="bean" serviceno=''>     <!-- 监控服务 --> <!-- servicetype (bean ejb webservice) -->
+		<SERVERTYPE>20</SERVERTYPE>                             <!-- 服务类型 (20:jboss/jboss 4/jboss 5/   10:weblogic/weblogic 10) -->
+		<CONTEXTURL>localhost:7001</CONTEXTURL>
+		<SERVICE>ServiceMonitorCenterMap</SERVICE>
+	</SERVICEMONITORCENTER>
+    <SERVICEMONITORCENTER servicetype="bean" serviceno=''>      <!-- 默认系统性能跟踪器 --><!-- servicetype (bean ejb webservice) -->
+    	<SERVERTYPE>20</SERVERTYPE>                             <!-- 服务类型 (20:jboss/jboss 4/jboss 5/   10:weblogic/weblogic 10) -->
+		<CONTEXTURL>localhost:7001</CONTEXTURL>
+		<SERVICE>ServiceMonitorCenterMap</SERVICE>
+    </SERVICEMONITORCENTER>           
+    <SERVICEPROCEDURECENTER servicetype="bean" serviceno=''>    <!-- 默认存储过程定义器 --><!-- servicetype (bean ejb webservice) -->
+    	<SERVERTYPE>20</SERVERTYPE>                             <!-- 服务类型 (20:jboss/jboss 4/jboss 5/   10:weblogic/weblogic 10) -->
+		<CONTEXTURL>localhost:7001</CONTEXTURL>
+		<SERVICE>ServiceProcedureCenterMap</SERVICE>
+    </SERVICEPROCEDURECENTER>               
+    <SERVICEPROCEDUREEXECUTION servicetype="bean" serviceno=''> <!-- 默认存储过程执行器 --><!-- servicetype (bean ejb webservice) --> 
+    	<SERVERTYPE>20</SERVERTYPE>                             <!-- 服务类型 (20:jboss/jboss 4/jboss 5/   10:weblogic/weblogic 10) -->
+		<CONTEXTURL>localhost:7001</CONTEXTURL>
+		<SERVICE>ServiceProcedureExcuteMap</SERVICE>    
+    </SERVICEPROCEDUREEXECUTION>
+    <TT1 servicetype="bean" serviceno=''>                       <!-- 默认存储过程执行器 --><!-- servicetype (bean ejb webservice) --> 
+    	<SERVERTYPE>20</SERVERTYPE>                             <!-- 服务类型 (20:jboss/jboss 4/jboss 5/   10:weblogic/weblogic 10) -->
+		<CONTEXTURL>localhost:7001</CONTEXTURL>
+		<CONNECTIONID>3</CONNECTIONID>
+		<SERVICE>ServiceQueryExcuteMap</SERVICE>    
+    </TT1>
+	<SERVICEQUERYCENTER servicetype="bean" serviceno=''>        <!-- 默认查询程定义器 --><!-- servicetype (bean ejb webservice) --> 
+		<SERVERTYPE>20</SERVERTYPE>                             <!-- 服务类型 (20:jboss/jboss 4/jboss 5/   10:weblogic/weblogic 10) -->
+		<CONTEXTURL>localhost:7001</CONTEXTURL>
+		<SERVICE>ServiceQueryCenterMap</SERVICE>
+	</SERVICEQUERYCENTER>                     
+	<SERVICEQUERYEXECUTION servicetype="bean" serviceno=''>     <!-- 默认查询程执行器 --><!-- servicetype (bean ejb webservice) -->
+		<SERVERTYPE>20</SERVERTYPE>                             <!-- 服务类型 (20:jboss/jboss 4/jboss 5/   10:weblogic/weblogic 10) -->
+		<CONTEXTURL>localhost:7001</CONTEXTURL>
+		<SERVICE>ServiceQueryExcuteMap</SERVICE>
+	</SERVICEQUERYEXECUTION>               
+	<SERVICEMENUCENTER servicetype="bean" serviceno=''>         <!-- 菜单服务及菜单权限服务 --><!-- servicetype (bean ejb webservice) -->
+		<SERVERTYPE>20</SERVERTYPE>                             <!-- 服务类型 (20:jboss/jboss 4/jboss 5/   10:weblogic/weblogic 10) -->
+		<CONTEXTURL>localhost:7001</CONTEXTURL>
+		<SERVICE>ServiceMenuCenterMap</SERVICE>
+	</SERVICEMENUCENTER>    	
+	<SERVICEUSERCENTER servicetype="bean" serviceno=''>         <!-- 用户服务 --><!-- servicetype (bean ejb webservice) -->
+		<SERVERTYPE>20</SERVERTYPE>                             <!-- 服务类型 (20:jboss/jboss 4/jboss 5/   10:weblogic/weblogic 10) -->
+		<CONTEXTURL>localhost:7001</CONTEXTURL>
+		<SERVICE>ServiceUserCenterMap</SERVICE>
+	</SERVICEUSERCENTER>	    
+   	 
+</CONFIGROOT>

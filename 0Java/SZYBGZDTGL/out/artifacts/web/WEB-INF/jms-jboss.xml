@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="jnditemplate" class="org.springframework.jndi.JndiTemplate">
+        <property name="environment">
+            <props>
+                <prop key="java.naming.factory.initial">org.jboss.naming.remote.client.InitialContextFactory</prop>
+                <prop key="java.naming.provider.url">http-remoting://127.0.0.1:8080</prop>
+                <prop key="java.naming.security.principal">guest</prop>
+                <prop key="java.naming.security.credentials">guest</prop>
+            </props>
+        </property>
+    </bean>
+    <bean id="connectionfactory" class="org.springframework.jndi.JndiObjectFactoryBean">
+        <property name="jndiTemplate" ref="jnditemplate"/>
+        <property name="jndiName" value="jms/RemoteConnectionFactory"/>
+    </bean>
+    <bean id="credentialsconnectionfactory"
+          class="org.springframework.jms.connection.UserCredentialsConnectionFactoryAdapter">
+        <property name="targetConnectionFactory" ref="connectionfactory"/>
+        <property name="username" value="guest"/>
+        <property name="password" value="guest"/>
+    </bean>
+
+
+    <!-- 队列（同一个服务器下，一条队列配置一个） -->
+    <bean id="log_service_queue" class="org.springframework.jndi.JndiObjectFactoryBean">
+        <property name="jndiTemplate" ref="jnditemplate"/>
+        <property name="jndiName" value="jms/queue/LogServiceQueue"/>
+    </bean>
+
+
+    <!-- 向队列发送（同一个服务器下，一条队列配置一个）  -->
+    <bean id="log_service_sender" class="org.springframework.jms.core.JmsTemplate">
+        <property name="connectionFactory" ref="credentialsconnectionfactory"/>
+        <property name="defaultDestination" ref="log_service_queue"/>
+    </bean>
+
+
+
+    <!-- 向队列监听（同一个服务器下，一条队列配置一个）  -->
+    <bean id="log_service_listener" class="com.eframework.module.service.mq.logservice.LogServiceListener"/>
+
+    <bean class="org.springframework.jms.listener.SimpleMessageListenerContainer">
+        <property name="connectionFactory" ref="credentialsconnectionfactory"/>
+        <property name="destination" ref="log_service_queue"/>
+        <property name="messageListener" ref="log_service_listener"/>
+    </bean>
+
+</beans>

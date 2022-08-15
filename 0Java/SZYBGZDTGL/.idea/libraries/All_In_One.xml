@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="All-In-One">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/Libs/All-In-One" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/Libs/All-In-One" recursive="false" />
+  </library>
+</component>

@@ -1,0 +1,3922 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost">
+  <database-model serializer="dbm" dbms="ORACLE" family-id="ORACLE" format-version="4.17">
+    <root id="1"/>
+    <schema id="2" parent="1" name="ZJGDWRY">
+      <ObjectId>61</ObjectId>
+      <CreatedTimestamp>2017-08-02.13:09:38</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-02.14:36:01</ModifiedTimestamp>
+      <IntrospectionTimestamp>2017-08-02.14:38:52</IntrospectionTimestamp>
+      <CommentsHash>4638788790998226</CommentsHash>
+      <Current>1</Current>
+    </schema>
+    <schema id="3" parent="1" name="PUBLIC">
+      <ObjectId>1</ObjectId>
+    </schema>
+    <schema id="4" parent="1" name="SYS">
+      <ObjectId>0</ObjectId>
+    </schema>
+    <schema id="5" parent="1" name="SYSTEM">
+      <ObjectId>5</ObjectId>
+    </schema>
+    <schema id="6" parent="1" name="OUTLN">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="7" parent="1" name="DIP">
+      <ObjectId>19</ObjectId>
+    </schema>
+    <schema id="8" parent="1" name="TSMSYS">
+      <ObjectId>21</ObjectId>
+    </schema>
+    <schema id="9" parent="1" name="DBSNMP">
+      <ObjectId>24</ObjectId>
+    </schema>
+    <schema id="10" parent="1" name="WMSYS">
+      <ObjectId>25</ObjectId>
+    </schema>
+    <schema id="11" parent="1" name="EXFSYS">
+      <ObjectId>34</ObjectId>
+    </schema>
+    <schema id="12" parent="1" name="DMSYS">
+      <ObjectId>35</ObjectId>
+    </schema>
+    <schema id="13" parent="1" name="CTXSYS">
+      <ObjectId>36</ObjectId>
+    </schema>
+    <schema id="14" parent="1" name="XDB">
+      <ObjectId>38</ObjectId>
+    </schema>
+    <schema id="15" parent="1" name="ANONYMOUS">
+      <ObjectId>39</ObjectId>
+    </schema>
+    <schema id="16" parent="1" name="ORDSYS">
+      <ObjectId>43</ObjectId>
+    </schema>
+    <schema id="17" parent="1" name="ORDPLUGINS">
+      <ObjectId>44</ObjectId>
+    </schema>
+    <schema id="18" parent="1" name="SI_INFORMTN_SCHEMA">
+      <ObjectId>45</ObjectId>
+    </schema>
+    <schema id="19" parent="1" name="MDSYS">
+      <ObjectId>46</ObjectId>
+    </schema>
+    <schema id="20" parent="1" name="OLAPSYS">
+      <ObjectId>47</ObjectId>
+    </schema>
+    <schema id="21" parent="1" name="MDDATA">
+      <ObjectId>50</ObjectId>
+    </schema>
+    <schema id="22" parent="1" name="SYSMAN">
+      <ObjectId>51</ObjectId>
+    </schema>
+    <schema id="23" parent="1" name="MGMT_VIEW">
+      <ObjectId>53</ObjectId>
+    </schema>
+    <schema id="24" parent="1" name="SCOTT">
+      <ObjectId>54</ObjectId>
+    </schema>
+    <schema id="25" parent="1" name="SBCXPT">
+      <ObjectId>55</ObjectId>
+    </schema>
+    <schema id="26" parent="1" name="SYDPT">
+      <ObjectId>56</ObjectId>
+    </schema>
+    <schema id="27" parent="1" name="SYDPTTEST">
+      <ObjectId>57</ObjectId>
+    </schema>
+    <schema id="28" parent="1" name="SA">
+      <ObjectId>58</ObjectId>
+    </schema>
+    <schema id="29" parent="1" name="EFRAME5">
+      <ObjectId>59</ObjectId>
+    </schema>
+    <schema id="30" parent="1" name="WEBSITE">
+      <ObjectId>60</ObjectId>
+    </schema>
+    <table id="31" parent="2" name="AA01">
+      <ObjectId>66186</ObjectId>
+      <Comment>综合参数</Comment>
+      <CreatedTimestamp>2017-08-02.13:09:38</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-02.14:35:54</ModifiedTimestamp>
+    </table>
+    <table id="32" parent="2" name="AA09">
+      <ObjectId>66187</ObjectId>
+      <Comment>代码类别</Comment>
+      <CreatedTimestamp>2017-08-02.13:09:39</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-02.14:36:01</ModifiedTimestamp>
+    </table>
+    <table id="33" parent="2" name="AA10">
+      <ObjectId>66188</ObjectId>
+      <Comment>代码表</Comment>
+      <CreatedTimestamp>2017-08-02.13:09:39</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-02.13:09:39</ModifiedTimestamp>
+    </table>
+    <table id="34" parent="2" name="AA11">
+      <ObjectId>66189</ObjectId>
+      <Comment>行业代码</Comment>
+      <CreatedTimestamp>2017-08-02.13:09:39</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-02.13:09:39</ModifiedTimestamp>
+    </table>
+    <table id="35" parent="2" name="AA13">
+      <ObjectId>66190</ObjectId>
+      <Comment>统筹区</Comment>
+      <CreatedTimestamp>2017-08-02.13:09:40</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-02.13:09:40</ModifiedTimestamp>
+    </table>
+    <table id="36" parent="2" name="AA26">
+      <ObjectId>66191</ObjectId>
+      <Comment>行政区划</Comment>
+      <CreatedTimestamp>2017-08-02.13:09:40</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-02.13:09:40</ModifiedTimestamp>
+    </table>
+    <table id="37" parent="2" name="AB01">
+      <ObjectId>66192</ObjectId>
+      <Comment>单位信息表</Comment>
+      <CreatedTimestamp>2017-08-02.13:10:54</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-02.13:10:54</ModifiedTimestamp>
+    </table>
+    <table id="38" parent="2" name="AB09">
+      <ObjectId>66193</ObjectId>
+      <Comment>单位注册登记信息</Comment>
+      <CreatedTimestamp>2017-08-02.13:10:55</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-02.13:10:55</ModifiedTimestamp>
+    </table>
+    <table id="39" parent="2" name="AB24">
+      <ObjectId>66194</ObjectId>
+      <Comment>单位登记事件</Comment>
+      <CreatedTimestamp>2017-08-02.13:10:55</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-02.13:10:55</ModifiedTimestamp>
+    </table>
+    <table id="40" parent="2" name="AB54">
+      <ObjectId>66195</ObjectId>
+      <Comment>家庭表</Comment>
+      <CreatedTimestamp>2017-08-02.13:10:56</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-02.13:10:56</ModifiedTimestamp>
+    </table>
+    <table id="41" parent="2" name="AB55">
+      <ObjectId>66196</ObjectId>
+      <Comment>家庭成员表</Comment>
+      <CreatedTimestamp>2017-08-02.13:10:56</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-02.13:10:56</ModifiedTimestamp>
+    </table>
+    <table id="42" parent="2" name="AC00">
+      <ObjectId>66197</ObjectId>
+      <Comment>人员合并事件</Comment>
+      <CreatedTimestamp>2017-08-02.13:12:30</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-02.13:12:30</ModifiedTimestamp>
+    </table>
+    <table id="43" parent="2" name="AC01">
+      <ObjectId>66198</ObjectId>
+      <Comment>人员信息表</Comment>
+      <CreatedTimestamp>2017-08-02.13:19:51</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-02.13:19:51</ModifiedTimestamp>
+    </table>
+    <table id="44" parent="2" name="AC17">
+      <ObjectId>66199</ObjectId>
+      <Comment>人员登记事件</Comment>
+      <CreatedTimestamp>2017-08-02.13:21:02</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-02.13:21:02</ModifiedTimestamp>
+    </table>
+    <table id="45" parent="2" name="ACN8">
+      <ObjectId>66200</ObjectId>
+      <Comment>人员附加信息</Comment>
+      <CreatedTimestamp>2017-08-02.13:25:07</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-02.13:25:07</ModifiedTimestamp>
+    </table>
+    <table id="46" parent="2" name="ACN9">
+      <ObjectId>66201</ObjectId>
+      <Comment>人员附加信息变更事件</Comment>
+      <CreatedTimestamp>2017-08-02.13:25:07</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-02.13:25:07</ModifiedTimestamp>
+    </table>
+    <table id="47" parent="2" name="ADC4">
+      <ObjectId>66202</ObjectId>
+      <Comment>单位角色属性定义表</Comment>
+      <CreatedTimestamp>2017-08-02.13:25:22</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-02.13:25:22</ModifiedTimestamp>
+    </table>
+    <table id="48" parent="2" name="ADC5">
+      <ObjectId>66203</ObjectId>
+      <Comment>单位角色表</Comment>
+      <CreatedTimestamp>2017-08-02.13:25:22</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-02.13:25:22</ModifiedTimestamp>
+    </table>
+    <table id="49" parent="2" name="ADC6">
+      <ObjectId>66204</ObjectId>
+      <Comment>单位角色变更事件</Comment>
+      <CreatedTimestamp>2017-08-02.13:25:23</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-02.13:25:23</ModifiedTimestamp>
+    </table>
+    <table id="50" parent="2" name="ADC7">
+      <ObjectId>66205</ObjectId>
+      <Comment>单位角色变更明细</Comment>
+      <CreatedTimestamp>2017-08-02.13:25:23</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-02.13:25:23</ModifiedTimestamp>
+    </table>
+    <table id="51" parent="2" name="AE01">
+      <ObjectId>66206</ObjectId>
+      <Comment>当事人信息</Comment>
+      <CreatedTimestamp>2017-08-02.13:26:29</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-02.13:26:29</ModifiedTimestamp>
+    </table>
+    <table id="52" parent="2" name="AE02">
+      <ObjectId>66207</ObjectId>
+      <Comment>业务日志</Comment>
+      <CreatedTimestamp>2017-08-02.13:26:30</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-02.13:26:30</ModifiedTimestamp>
+    </table>
+    <table id="53" parent="2" name="AE03">
+      <ObjectId>66208</ObjectId>
+      <Comment>当事人银行账号</Comment>
+      <CreatedTimestamp>2017-08-02.13:26:32</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-02.13:26:32</ModifiedTimestamp>
+    </table>
+    <table id="54" parent="2" name="AE04">
+      <ObjectId>66209</ObjectId>
+      <Comment>当事人银行账号用途</Comment>
+      <CreatedTimestamp>2017-08-02.13:26:32</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-02.13:26:32</ModifiedTimestamp>
+    </table>
+    <table id="55" parent="2" name="AE05">
+      <ObjectId>66210</ObjectId>
+      <Comment>当事人</Comment>
+      <CreatedTimestamp>2017-08-02.13:26:32</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-02.13:26:32</ModifiedTimestamp>
+    </table>
+    <table id="56" parent="2" name="AF01">
+      <ObjectId>66211</ObjectId>
+      <Comment>经办机构维护事件表</Comment>
+      <CreatedTimestamp>2017-08-02.13:26:32</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-02.13:26:32</ModifiedTimestamp>
+    </table>
+    <table id="57" parent="2" name="AF03">
+      <ObjectId>66212</ObjectId>
+      <Comment>经办机构表</Comment>
+      <CreatedTimestamp>2017-08-02.13:26:32</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-02.13:26:32</ModifiedTimestamp>
+    </table>
+    <table id="58" parent="2" name="AF07">
+      <ObjectId>66213</ObjectId>
+      <Comment>银行</Comment>
+      <CreatedTimestamp>2017-08-02.13:26:33</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-02.13:26:33</ModifiedTimestamp>
+    </table>
+    <table id="59" parent="2" name="AZ02">
+      <ObjectId>66214</ObjectId>
+      <Comment>人员照片信息</Comment>
+      <CreatedTimestamp>2017-08-02.13:28:39</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-02.13:28:39</ModifiedTimestamp>
+    </table>
+    <column id="60" parent="31" name="AAZ499">
+      <Position>1</Position>
+      <Comment>综合参数ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="61" parent="31" name="AAA027">
+      <Position>2</Position>
+      <Comment>统筹区编码</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="62" parent="31" name="AAB301">
+      <Position>3</Position>
+      <Comment>行政区划代码</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="63" parent="31" name="AAA001">
+      <Position>4</Position>
+      <Comment>参数类别代码</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="64" parent="31" name="AAA002">
+      <Position>5</Position>
+      <Comment>参数类别名称</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="65" parent="31" name="AAA005">
+      <Position>6</Position>
+      <Comment>参数值</Comment>
+      <DataType>VARCHAR2(150)|0s</DataType>
+    </column>
+    <column id="66" parent="31" name="AAA104">
+      <Position>7</Position>
+      <Comment>代码可维护标志</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="67" parent="31" name="AAA105">
+      <Position>8</Position>
+      <Comment>参数值域说明</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="68" parent="31" name="AAE030">
+      <Position>9</Position>
+      <Comment>开始日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="69" parent="31" name="AAE031">
+      <Position>10</Position>
+      <Comment>终止日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="70" parent="31" name="SEQLOGID">
+      <Position>11</Position>
+      <Comment>回退线索日志编号</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="71" parent="32" name="AAZ094">
+      <Position>1</Position>
+      <Comment>代码类别ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="72" parent="32" name="AAA100">
+      <Position>2</Position>
+      <Comment>代码类别</Comment>
+      <DataType>VARCHAR2(20)|0s</DataType>
+    </column>
+    <column id="73" parent="32" name="AAA101">
+      <Position>3</Position>
+      <Comment>类别名称</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="74" parent="32" name="AAA104">
+      <Position>4</Position>
+      <Comment>代码可维护标志</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="75" parent="32" name="SEQLOGID">
+      <Position>5</Position>
+      <Comment>回退线索日志编号</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="76" parent="33" name="AAZ093">
+      <Position>1</Position>
+      <Comment>代码ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="77" parent="33" name="AAZ094">
+      <Position>2</Position>
+      <Comment>代码类别ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="78" parent="33" name="AAA100">
+      <Position>3</Position>
+      <Comment>代码类别</Comment>
+      <DataType>VARCHAR2(20)|0s</DataType>
+    </column>
+    <column id="79" parent="33" name="AAA102">
+      <Position>4</Position>
+      <Comment>代码值</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="80" parent="33" name="AAA103">
+      <Position>5</Position>
+      <Comment>代码名称</Comment>
+      <DataType>VARCHAR2(300)|0s</DataType>
+    </column>
+    <column id="81" parent="33" name="AAE030">
+      <Position>6</Position>
+      <Comment>开始日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="82" parent="33" name="AAE031">
+      <Position>7</Position>
+      <Comment>终止日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="83" parent="33" name="CAE008">
+      <Position>8</Position>
+      <Comment>排序编号</Comment>
+      <DataType>NUMBER(4)|0s</DataType>
+    </column>
+    <column id="84" parent="33" name="AAE013">
+      <Position>9</Position>
+      <Comment>备注</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="85" parent="33" name="AAE100">
+      <Position>10</Position>
+      <Comment>当前有效标志</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="86" parent="33" name="CZZ001">
+      <Position>11</Position>
+      <Comment>系统编号</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="87" parent="33" name="CZA001">
+      <Position>12</Position>
+      <Comment>参数一</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="88" parent="33" name="CZA002">
+      <Position>13</Position>
+      <Comment>参数二</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="89" parent="33" name="CZA003">
+      <Position>14</Position>
+      <Comment>参数三</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="90" parent="33" name="CZZ002">
+      <Position>15</Position>
+      <Comment>父代码ID</Comment>
+      <DataType>VARCHAR2(20)|0s</DataType>
+    </column>
+    <column id="91" parent="33" name="SEQLOGID">
+      <Position>16</Position>
+      <Comment>回退线索日志编号</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="92" parent="34" name="CAA008">
+      <Position>1</Position>
+      <Comment>行业代码</Comment>
+      <DataType>VARCHAR2(4)|0s</DataType>
+    </column>
+    <column id="93" parent="34" name="CAA009">
+      <Position>2</Position>
+      <Comment>行业名称</Comment>
+      <DataType>VARCHAR2(40)|0s</DataType>
+    </column>
+    <column id="94" parent="34" name="CAA046">
+      <Position>3</Position>
+      <Comment>上级行业代码</Comment>
+      <DataType>VARCHAR2(4)|0s</DataType>
+    </column>
+    <column id="95" parent="34" name="AAE100">
+      <Position>4</Position>
+      <Comment>有效标志</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="96" parent="34" name="AAB035">
+      <Position>5</Position>
+      <Comment>产业类别代码</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="97" parent="34" name="AAA149">
+      <Position>6</Position>
+      <Comment>行业风险类别</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="98" parent="34" name="SEQLOGID">
+      <Position>7</Position>
+      <Comment>回退线索日志编号</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="99" parent="35" name="AAA027">
+      <Position>1</Position>
+      <Comment>统筹区编码</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="100" parent="35" name="AAB301">
+      <Position>2</Position>
+      <Comment>行政区划代码</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="101" parent="35" name="AAB034">
+      <Position>3</Position>
+      <Comment>社会保险经办机构编码</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="102" parent="35" name="AAA129">
+      <Position>4</Position>
+      <Comment>统筹区名称</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="103" parent="35" name="AAA096">
+      <Position>5</Position>
+      <Comment>统筹层次</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="104" parent="35" name="AAE013">
+      <Position>6</Position>
+      <Comment>备注</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="105" parent="35" name="SEQLOGID">
+      <Position>7</Position>
+      <Comment>回退线索日志编号</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="106" parent="36" name="AAB301">
+      <Position>1</Position>
+      <Comment>行政区划代码</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="107" parent="36" name="AAA146">
+      <Position>2</Position>
+      <Comment>行政区划名称</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="108" parent="36" name="AAA147">
+      <Position>3</Position>
+      <Comment>行政区级别</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="109" parent="36" name="AAA148">
+      <Position>4</Position>
+      <Comment>上级行政区代码</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="110" parent="36" name="SEQLOGID">
+      <Position>5</Position>
+      <Comment>回退线索日志编号</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="111" parent="37" name="AAB001">
+      <Position>1</Position>
+      <Comment>单位ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="112" parent="37" name="AAB999">
+      <Position>2</Position>
+      <Comment>单位编号</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="113" parent="37" name="AAB004">
+      <Position>3</Position>
+      <Comment>单位名称</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="114" parent="37" name="AAB003">
+      <Position>4</Position>
+      <Comment>组织机构代码</Comment>
+      <DataType>VARCHAR2(22)|0s</DataType>
+    </column>
+    <column id="115" parent="37" name="AAB005">
+      <Position>5</Position>
+      <Comment>统一社会信用代码</Comment>
+      <DataType>VARCHAR2(22)|0s</DataType>
+    </column>
+    <column id="116" parent="37" name="AAB019">
+      <Position>6</Position>
+      <Comment>单位性质</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="117" parent="37" name="AAB020">
+      <Position>7</Position>
+      <Comment>经济类型</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="118" parent="37" name="AAB022">
+      <Position>8</Position>
+      <Comment>行业分类</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="119" parent="37" name="AAE006">
+      <Position>9</Position>
+      <Comment>单位注册地址</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="120" parent="37" name="CAB002">
+      <Position>10</Position>
+      <Comment>实际经营场所地址</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="121" parent="37" name="AAE007">
+      <Position>11</Position>
+      <Comment>邮政编码</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="122" parent="37" name="AAE048">
+      <Position>12</Position>
+      <Comment>批准单位</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="123" parent="37" name="AAE049">
+      <Position>13</Position>
+      <Comment>批准成立日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="124" parent="37" name="AAE051">
+      <Position>14</Position>
+      <Comment>批准文号</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="125" parent="37" name="AAB013">
+      <Position>15</Position>
+      <Comment>法定代表人姓名</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="126" parent="37" name="AAC058">
+      <Position>16</Position>
+      <Comment>法定代表人证件类型</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="127" parent="37" name="AAB014">
+      <Position>17</Position>
+      <Comment>法定代表人证件号码</Comment>
+      <DataType>VARCHAR2(18)|0s</DataType>
+    </column>
+    <column id="128" parent="37" name="BAE182">
+      <Position>18</Position>
+      <Comment>法定代表人电话</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="129" parent="37" name="CAB025">
+      <Position>19</Position>
+      <Comment>法定代表人所任职务</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="130" parent="37" name="AAB006">
+      <Position>20</Position>
+      <Comment>工商营业执照种类</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="131" parent="37" name="AAB007">
+      <Position>21</Position>
+      <Comment>工商登记注册号码</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="132" parent="37" name="AAB008">
+      <Position>22</Position>
+      <Comment>工商注册登记发证日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="133" parent="37" name="AAB009">
+      <Position>23</Position>
+      <Comment>工商注册登记有效起始日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="134" parent="37" name="AAB010">
+      <Position>24</Position>
+      <Comment>工商注册登记有效终止日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="135" parent="37" name="AAB035">
+      <Position>25</Position>
+      <Comment>产业分类</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="136" parent="37" name="AAB021">
+      <Position>26</Position>
+      <Comment>隶属关系</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="137" parent="37" name="AAA149">
+      <Position>27</Position>
+      <Comment>行业风险类别</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="138" parent="37" name="AAB023">
+      <Position>28</Position>
+      <Comment>主管部门</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="139" parent="37" name="CAB056">
+      <Position>29</Position>
+      <Comment>实体单位标识</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="140" parent="37" name="CAB083">
+      <Position>30</Position>
+      <Comment>企业国别</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="141" parent="37" name="CAB019">
+      <Position>31</Position>
+      <Comment>税务登记证号</Comment>
+      <DataType>VARCHAR2(40)|0s</DataType>
+    </column>
+    <column id="142" parent="37" name="CAB063">
+      <Position>32</Position>
+      <Comment>涉外标志</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="143" parent="37" name="CBA001">
+      <Position>33</Position>
+      <Comment>注册资金</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="144" parent="37" name="CAB005">
+      <Position>34</Position>
+      <Comment>级别规模</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="145" parent="37" name="AAE047">
+      <Position>35</Position>
+      <Comment>成立日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="146" parent="37" name="CAB084">
+      <Position>36</Position>
+      <Comment>是否保税区单位</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="147" parent="37" name="AAB024">
+      <Position>37</Position>
+      <Comment>单位简称</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="148" parent="37" name="CAB004">
+      <Position>38</Position>
+      <Comment>单位曾用名</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="149" parent="37" name="CAB055">
+      <Position>39</Position>
+      <Comment>单位英文名称</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="150" parent="37" name="CAB009">
+      <Position>40</Position>
+      <Comment>单位状态</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="151" parent="37" name="AAB073">
+      <Position>41</Position>
+      <Comment>所属镇</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="152" parent="37" name="CAE811">
+      <Position>42</Position>
+      <Comment>所属街道</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="153" parent="37" name="CAE812">
+      <Position>43</Position>
+      <Comment>所属社区</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="154" parent="37" name="AAE127">
+      <Position>44</Position>
+      <Comment>申请日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="155" parent="37" name="CAA030">
+      <Position>45</Position>
+      <Comment>投资国家或地区</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="156" parent="37" name="CAE950">
+      <Position>46</Position>
+      <Comment>经办联系人姓名</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="157" parent="37" name="AAE005">
+      <Position>47</Position>
+      <Comment>经办联系人电话</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="158" parent="37" name="AAE387">
+      <Position>48</Position>
+      <Comment>传真</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="159" parent="37" name="AAE159">
+      <Position>49</Position>
+      <Comment>联系电子邮箱</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="160" parent="37" name="AAE004">
+      <Position>50</Position>
+      <Comment>社保联系人姓名</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="161" parent="37" name="CAB003">
+      <Position>51</Position>
+      <Comment>社保联系人所在部门</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="162" parent="37" name="CAC003">
+      <Position>52</Position>
+      <Comment>社保联系人手机</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="163" parent="37" name="AAE013">
+      <Position>53</Position>
+      <Comment>备注</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="164" parent="37" name="CAE360">
+      <Position>54</Position>
+      <Comment>社保联系人地址</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="165" parent="37" name="CAC031">
+      <Position>55</Position>
+      <Comment>社保联系人地址邮编</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="166" parent="38" name="AAB001">
+      <Position>1</Position>
+      <Comment>单位ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="167" parent="38" name="AAB999">
+      <Position>2</Position>
+      <Comment>单位编号</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="168" parent="38" name="AAB301">
+      <Position>3</Position>
+      <Comment>所属县级市、区</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="169" parent="38" name="AAB004">
+      <Position>4</Position>
+      <Comment>单位名称</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="170" parent="38" name="AAB020">
+      <Position>5</Position>
+      <Comment>企业登记注册类型</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="171" parent="38" name="AAE006">
+      <Position>6</Position>
+      <Comment>单位地址</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="172" parent="38" name="AAB013">
+      <Position>7</Position>
+      <Comment>法人代表</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="173" parent="38" name="CBA001">
+      <Position>8</Position>
+      <Comment>注册资本</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="174" parent="38" name="AAE004">
+      <Position>9</Position>
+      <Comment>联系人姓名</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="175" parent="38" name="AAE005">
+      <Position>10</Position>
+      <Comment>联系电话</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="176" parent="38" name="AAE159">
+      <Position>11</Position>
+      <Comment>联系电子邮箱</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="177" parent="38" name="AAE007">
+      <Position>12</Position>
+      <Comment>邮政编码</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="178" parent="38" name="AAB026">
+      <Position>13</Position>
+      <Comment>单位申请类别</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="179" parent="38" name="AAB027">
+      <Position>14</Position>
+      <Comment>产业领域</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="180" parent="38" name="AAB028">
+      <Position>15</Position>
+      <Comment>所处创新创业载体</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="181" parent="38" name="AAZ003">
+      <Position>16</Position>
+      <Comment>银行账号ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="182" parent="38" name="BAE485">
+      <Position>17</Position>
+      <Comment>银行名称</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="183" parent="38" name="BAE486">
+      <Position>18</Position>
+      <Comment>开户名</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="184" parent="38" name="CAE498">
+      <Position>19</Position>
+      <Comment>银行帐号</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="185" parent="38" name="CKB021">
+      <Position>20</Position>
+      <Comment>企业在职人数博士</Comment>
+      <DataType>NUMBER(6)|0s</DataType>
+    </column>
+    <column id="186" parent="38" name="CKB022">
+      <Position>21</Position>
+      <Comment>企业在职人数硕士</Comment>
+      <DataType>NUMBER(6)|0s</DataType>
+    </column>
+    <column id="187" parent="38" name="CKB023">
+      <Position>22</Position>
+      <Comment>企业在职人数本科</Comment>
+      <DataType>NUMBER(6)|0s</DataType>
+    </column>
+    <column id="188" parent="38" name="CKB024">
+      <Position>23</Position>
+      <Comment>企业在职人数大专</Comment>
+      <DataType>NUMBER(6)|0s</DataType>
+    </column>
+    <column id="189" parent="38" name="CKB030">
+      <Position>24</Position>
+      <Comment>是否上市</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="190" parent="38" name="CKB031">
+      <Position>25</Position>
+      <Comment>上市公司代码</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="191" parent="38" name="CKB032">
+      <Position>26</Position>
+      <Comment>上市时间</Comment>
+      <DataType>VARCHAR2(8)|0s</DataType>
+    </column>
+    <column id="192" parent="38" name="AAB003">
+      <Position>27</Position>
+      <Comment>组织机构代码</Comment>
+      <DataType>VARCHAR2(22)|0s</DataType>
+    </column>
+    <column id="193" parent="38" name="CAA006">
+      <Position>28</Position>
+      <Comment>审核级别(第一位1\2\3标示单位\区\市级别,第二位0\1标示通过不通过)</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="194" parent="38" name="IDADDR">
+      <Position>29</Position>
+      <Comment>ID地址</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="195" parent="38" name="MACADD">
+      <Position>30</Position>
+      <Comment>MAC地址</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="196" parent="38" name="SEQLOGID">
+      <Position>31</Position>
+      <Comment>日志编号</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="197" parent="39" name="AAZ039">
+      <Position>1</Position>
+      <Comment>单位登记事件ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="198" parent="39" name="AAB001">
+      <Position>2</Position>
+      <Comment>单位ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="199" parent="39" name="AAB999">
+      <Position>3</Position>
+      <Comment>单位编号</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="200" parent="39" name="AAB003">
+      <Position>4</Position>
+      <Comment>组织机构代码</Comment>
+      <DataType>VARCHAR2(22)|0s</DataType>
+    </column>
+    <column id="201" parent="39" name="AAB005">
+      <Position>5</Position>
+      <Comment>统一社会信用代码</Comment>
+      <DataType>VARCHAR2(22)|0s</DataType>
+    </column>
+    <column id="202" parent="39" name="AAB024">
+      <Position>6</Position>
+      <Comment>单位简称</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="203" parent="39" name="AAB004">
+      <Position>7</Position>
+      <Comment>单位名称</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="204" parent="39" name="CAB004">
+      <Position>8</Position>
+      <Comment>单位曾用名</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="205" parent="39" name="CAB055">
+      <Position>9</Position>
+      <Comment>单位英文名称</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="206" parent="39" name="CAB056">
+      <Position>10</Position>
+      <Comment>实体单位标识</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="207" parent="39" name="CAB009">
+      <Position>11</Position>
+      <Comment>单位经营状态</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="208" parent="39" name="CAB019">
+      <Position>12</Position>
+      <Comment>地税税号</Comment>
+      <DataType>VARCHAR2(40)|0s</DataType>
+    </column>
+    <column id="209" parent="39" name="CAB021">
+      <Position>13</Position>
+      <Comment>地税机构编号</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="210" parent="39" name="CAB020">
+      <Position>14</Position>
+      <Comment>国税税号</Comment>
+      <DataType>VARCHAR2(15)|0s</DataType>
+    </column>
+    <column id="211" parent="39" name="CAB022">
+      <Position>15</Position>
+      <Comment>国税机构编号</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="212" parent="39" name="AAE047">
+      <Position>16</Position>
+      <Comment>成立日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="213" parent="39" name="AAE048">
+      <Position>17</Position>
+      <Comment>批准成立部门</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="214" parent="39" name="AAE049">
+      <Position>18</Position>
+      <Comment>批准成立日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="215" parent="39" name="AAE051">
+      <Position>19</Position>
+      <Comment>批准成立文号</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="216" parent="39" name="AAB301">
+      <Position>20</Position>
+      <Comment>行政区划代码</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="217" parent="39" name="AAB073">
+      <Position>21</Position>
+      <Comment>所属街道</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="218" parent="39" name="CAE811">
+      <Position>22</Position>
+      <Comment>所属街道</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="219" parent="39" name="CAE812">
+      <Position>23</Position>
+      <Comment>所属社区</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="220" parent="39" name="AAB013">
+      <Position>24</Position>
+      <Comment>法定代表人姓名</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="221" parent="39" name="AAC058">
+      <Position>25</Position>
+      <Comment>法定代表人证件类型</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="222" parent="39" name="AAB014">
+      <Position>26</Position>
+      <Comment>法定代表人证件号码</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="223" parent="39" name="CAB025">
+      <Position>27</Position>
+      <Comment>法定代表人所任职务</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="224" parent="39" name="BAE182">
+      <Position>28</Position>
+      <Comment>法定代表人电话</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="225" parent="39" name="AAB006">
+      <Position>29</Position>
+      <Comment>工商营业执照种类</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="226" parent="39" name="AAB007">
+      <Position>30</Position>
+      <Comment>工商登记注册号码</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="227" parent="39" name="AAB008">
+      <Position>31</Position>
+      <Comment>工商注册登记发证日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="228" parent="39" name="AAB009">
+      <Position>32</Position>
+      <Comment>工商注册登记有效起始日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="229" parent="39" name="AAB010">
+      <Position>33</Position>
+      <Comment>工商注册登记有效终止日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="230" parent="39" name="AAE006">
+      <Position>34</Position>
+      <Comment>单位注册地址</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="231" parent="39" name="AAE007">
+      <Position>35</Position>
+      <Comment>邮政编码</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="232" parent="39" name="AAZ003">
+      <Position>36</Position>
+      <Comment>当事人银行账号ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="233" parent="39" name="CAB002">
+      <Position>37</Position>
+      <Comment>本地主要经营场所地址</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="234" parent="39" name="AAB019">
+      <Position>38</Position>
+      <Comment>单位类型</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="235" parent="39" name="AAB020">
+      <Position>39</Position>
+      <Comment>经济类型</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="236" parent="39" name="AAB021">
+      <Position>40</Position>
+      <Comment>隶属关系</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="237" parent="39" name="AAA149">
+      <Position>41</Position>
+      <Comment>行业风险类别</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="238" parent="39" name="AAB022">
+      <Position>42</Position>
+      <Comment>所属行业</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="239" parent="39" name="AAB023">
+      <Position>43</Position>
+      <Comment>主管部门或主管机构</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="240" parent="39" name="AAE004">
+      <Position>44</Position>
+      <Comment>联系人姓名</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="241" parent="39" name="CAB003">
+      <Position>45</Position>
+      <Comment>联系人所在部门</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="242" parent="39" name="CAC003">
+      <Position>46</Position>
+      <Comment>联系人手机</Comment>
+      <DataType>NUMBER(11)|0s</DataType>
+    </column>
+    <column id="243" parent="39" name="AAE005">
+      <Position>47</Position>
+      <Comment>联系电话</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="244" parent="39" name="AAE159">
+      <Position>48</Position>
+      <Comment>联系电子邮箱</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="245" parent="39" name="CAE360">
+      <Position>49</Position>
+      <Comment>联系地址</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="246" parent="39" name="CAC031">
+      <Position>50</Position>
+      <Comment>邮编</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="247" parent="39" name="CBA001">
+      <Position>51</Position>
+      <Comment>注册资金</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="248" parent="39" name="CAB005">
+      <Position>52</Position>
+      <Comment>级别规模</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="249" parent="39" name="CAA030">
+      <Position>53</Position>
+      <Comment>投资国家或地区</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="250" parent="39" name="AAB035">
+      <Position>54</Position>
+      <Comment>产业类别</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="251" parent="39" name="CAB063">
+      <Position>55</Position>
+      <Comment>涉外标志</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="252" parent="39" name="AAA027">
+      <Position>56</Position>
+      <Comment>统筹区</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="253" parent="39" name="AAE387">
+      <Position>57</Position>
+      <Comment>传真</Comment>
+      <DataType>VARCHAR2(40)|0s</DataType>
+    </column>
+    <column id="254" parent="39" name="AAE127">
+      <Position>58</Position>
+      <Comment>申请日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="255" parent="39" name="BAE127">
+      <Position>59</Position>
+      <Comment>备用标识</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="256" parent="39" name="CAB083">
+      <Position>60</Position>
+      <Comment>企业国别</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="257" parent="39" name="CAB084">
+      <Position>61</Position>
+      <Comment>直属园区</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="258" parent="39" name="AAA121">
+      <Position>62</Position>
+      <Comment>业务类型</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="259" parent="39" name="CAE219">
+      <Position>63</Position>
+      <Comment>业务办理渠道</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="260" parent="39" name="CAE251">
+      <Position>64</Position>
+      <Comment>登记经办人</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="261" parent="39" name="CAE249">
+      <Position>65</Position>
+      <Comment>登记经办人姓名</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="262" parent="39" name="AAE016">
+      <Position>66</Position>
+      <Comment>复核标志</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="263" parent="39" name="AAE014">
+      <Position>67</Position>
+      <Comment>最终复核人</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="264" parent="39" name="CAE250">
+      <Position>68</Position>
+      <Comment>最终复核人姓名</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="265" parent="39" name="AAE217">
+      <Position>69</Position>
+      <Comment>开始办理日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="266" parent="39" name="AAE218">
+      <Position>70</Position>
+      <Comment>办理完成日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="267" parent="39" name="AAE013">
+      <Position>71</Position>
+      <Comment>备注</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="268" parent="39" name="AAZ002">
+      <Position>72</Position>
+      <Comment>业务日志ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="269" parent="39" name="SEQLOGID">
+      <Position>73</Position>
+      <Comment>回退线索日志编号</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="270" parent="40" name="CAZ283">
+      <Position>1</Position>
+      <Comment>家庭编号</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="271" parent="40" name="AAB400">
+      <Position>2</Position>
+      <Comment>户主姓名</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="272" parent="40" name="AAB401">
+      <Position>3</Position>
+      <Comment>户口簿编号</Comment>
+      <DataType>VARCHAR2(20)|0s</DataType>
+    </column>
+    <column id="273" parent="40" name="AAC010">
+      <Position>4</Position>
+      <Comment>户口所在地址</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="274" parent="40" name="AAE004">
+      <Position>5</Position>
+      <Comment>联系人姓名</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="275" parent="40" name="AAE005">
+      <Position>6</Position>
+      <Comment>联系电话</Comment>
+      <DataType>VARCHAR2(20)|0s</DataType>
+    </column>
+    <column id="276" parent="40" name="AAE159">
+      <Position>7</Position>
+      <Comment>联系电子邮箱</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="277" parent="40" name="AAE006">
+      <Position>8</Position>
+      <Comment>地址</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="278" parent="40" name="AAB073">
+      <Position>9</Position>
+      <Comment>所属街道社区</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="279" parent="40" name="AAB077">
+      <Position>10</Position>
+      <Comment>所属区县</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="280" parent="40" name="SEQLOGID">
+      <Position>11</Position>
+      <Comment>回退线索日志编号</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="281" parent="41" name="AAZ067">
+      <Position>1</Position>
+      <Comment>家庭ID</Comment>
+      <DataType>NUMBER(20)|0s</DataType>
+    </column>
+    <column id="282" parent="41" name="AAC001">
+      <Position>2</Position>
+      <Comment>人员ID</Comment>
+      <DataType>NUMBER(20)|0s</DataType>
+    </column>
+    <column id="283" parent="41" name="AAC069">
+      <Position>3</Position>
+      <Comment>与户主关系</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="284" parent="41" name="AAE030">
+      <Position>4</Position>
+      <Comment>开始日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="285" parent="41" name="AAE031">
+      <Position>5</Position>
+      <Comment>终止日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="286" parent="41" name="SEQLOGID">
+      <Position>6</Position>
+      <Comment>回退线索日志编号</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="287" parent="42" name="CAZ372">
+      <Position>1</Position>
+      <Comment>人员合并事件ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="288" parent="42" name="CAE971">
+      <Position>2</Position>
+      <Comment>主合并人员ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="289" parent="42" name="CAE972">
+      <Position>3</Position>
+      <Comment>被合并人员ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="290" parent="42" name="AAC999">
+      <Position>4</Position>
+      <Comment>人员编号</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="291" parent="42" name="AAC003">
+      <Position>5</Position>
+      <Comment>姓名</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="292" parent="42" name="AAC058">
+      <Position>6</Position>
+      <Comment>证件类型</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="293" parent="42" name="AAC147">
+      <Position>7</Position>
+      <Comment>证件号码</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="294" parent="42" name="AAC002">
+      <Position>8</Position>
+      <Comment>社会保障号</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="295" parent="42" name="AAC004">
+      <Position>9</Position>
+      <Comment>性别</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="296" parent="42" name="AAC006">
+      <Position>10</Position>
+      <Comment>出生日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="297" parent="42" name="CAC001">
+      <Position>11</Position>
+      <Comment>档案出生日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="298" parent="42" name="CAC220">
+      <Position>12</Position>
+      <Comment>国籍或地区</Comment>
+      <DataType>VARCHAR2(4)|0s</DataType>
+    </column>
+    <column id="299" parent="42" name="AAC005">
+      <Position>13</Position>
+      <Comment>民族</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="300" parent="42" name="AAC007">
+      <Position>14</Position>
+      <Comment>首次参加工作日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="301" parent="42" name="AAC017">
+      <Position>15</Position>
+      <Comment>婚姻状况</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="302" parent="42" name="AAC024">
+      <Position>16</Position>
+      <Comment>政治面貌</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="303" parent="42" name="AAC020">
+      <Position>17</Position>
+      <Comment>行政职务(级别)</Comment>
+      <DataType>VARCHAR2(4)|0s</DataType>
+    </column>
+    <column id="304" parent="42" name="AAC009">
+      <Position>18</Position>
+      <Comment>户口性质</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="305" parent="42" name="AAZ500">
+      <Position>19</Position>
+      <Comment>社会保障(市民)卡号</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="306" parent="42" name="AAC012">
+      <Position>20</Position>
+      <Comment>个人身份</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="307" parent="42" name="CAC221">
+      <Position>21</Position>
+      <Comment>是否干部身份</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="308" parent="42" name="AAC028">
+      <Position>22</Position>
+      <Comment>农民工标志</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="309" parent="42" name="CAE457">
+      <Position>23</Position>
+      <Comment>户口登记日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="310" parent="42" name="CAC209">
+      <Position>24</Position>
+      <Comment>户籍证明编号</Comment>
+      <DataType>VARCHAR2(20)|0s</DataType>
+    </column>
+    <column id="311" parent="42" name="CAC205">
+      <Position>25</Position>
+      <Comment>户籍所属区县行政区代码</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="312" parent="42" name="AAF013">
+      <Position>26</Position>
+      <Comment>户籍所属街道</Comment>
+      <DataType>VARCHAR2(8)|0s</DataType>
+    </column>
+    <column id="313" parent="42" name="CAC351">
+      <Position>27</Position>
+      <Comment>户籍所属社区</Comment>
+      <DataType>VARCHAR2(30)|0s</DataType>
+    </column>
+    <column id="314" parent="42" name="AAC010">
+      <Position>28</Position>
+      <Comment>户籍地地址</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="315" parent="42" name="CAC217">
+      <Position>29</Position>
+      <Comment>居住地所属区县行政区代码</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="316" parent="42" name="CAC218">
+      <Position>30</Position>
+      <Comment>居住地所属街道（镇）</Comment>
+      <DataType>VARCHAR2(8)|0s</DataType>
+    </column>
+    <column id="317" parent="42" name="CAC219">
+      <Position>31</Position>
+      <Comment>居住地地址</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="318" parent="42" name="AAE006">
+      <Position>32</Position>
+      <Comment>通讯地址</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="319" parent="42" name="AAE007">
+      <Position>33</Position>
+      <Comment>邮政编码</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="320" parent="42" name="AAE005">
+      <Position>34</Position>
+      <Comment>联系电话</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="321" parent="42" name="AAE321">
+      <Position>35</Position>
+      <Comment>移动电话号码</Comment>
+      <DataType>VARCHAR2(20)|0s</DataType>
+    </column>
+    <column id="322" parent="42" name="AAE159">
+      <Position>36</Position>
+      <Comment>联系电子邮箱</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="323" parent="42" name="AAC011">
+      <Position>37</Position>
+      <Comment>学历</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="324" parent="42" name="AAC015">
+      <Position>38</Position>
+      <Comment>国家职业资格等级</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="325" parent="42" name="AAC184">
+      <Position>39</Position>
+      <Comment>取得职业资格日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="326" parent="42" name="AAC183">
+      <Position>40</Position>
+      <Comment>专业技术职务</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="327" parent="42" name="AAC014">
+      <Position>41</Position>
+      <Comment>专业技术职务等级</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="328" parent="42" name="AAC185">
+      <Position>42</Position>
+      <Comment>取得专技资格日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="329" parent="42" name="ALA040">
+      <Position>43</Position>
+      <Comment>伤残等级</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="330" parent="42" name="ALC060">
+      <Position>44</Position>
+      <Comment>护理依赖等级</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="331" parent="42" name="AAE004">
+      <Position>45</Position>
+      <Comment>联系人姓名</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="332" parent="42" name="CAC210">
+      <Position>46</Position>
+      <Comment>与联系人关系</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="333" parent="42" name="CAC216">
+      <Position>47</Position>
+      <Comment>联系人电话</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="334" parent="42" name="AAC008">
+      <Position>48</Position>
+      <Comment>人员参保状态</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="335" parent="42" name="AAC084">
+      <Position>49</Position>
+      <Comment>到龄离退休标识(0代表未退休,1代表退休,第一位代表养老,第二位代表医保)</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="336" parent="42" name="AAC114">
+      <Position>50</Position>
+      <Comment>异地安置人员标识</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="337" parent="42" name="AAC060">
+      <Position>51</Position>
+      <Comment>生存状态</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="338" parent="42" name="AAC033">
+      <Position>52</Position>
+      <Comment>健康状况</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="339" parent="42" name="AAC016">
+      <Position>53</Position>
+      <Comment>就业状态</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="340" parent="42" name="CAC357">
+      <Position>54</Position>
+      <Comment>残疾证号</Comment>
+      <DataType>VARCHAR2(30)|0s</DataType>
+    </column>
+    <column id="341" parent="42" name="CAC345">
+      <Position>55</Position>
+      <Comment>信息来源地行政区编码</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="342" parent="42" name="AAA027">
+      <Position>56</Position>
+      <Comment>统筹区</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="343" parent="42" name="CAC638">
+      <Position>57</Position>
+      <Comment>是否共产党员标记</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="344" parent="42" name="CAC642">
+      <Position>58</Position>
+      <Comment>毕业院校</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="345" parent="42" name="CAC639">
+      <Position>59</Position>
+      <Comment>毕业时间</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="346" parent="42" name="CAC640">
+      <Position>60</Position>
+      <Comment>所学专业</Comment>
+      <DataType>VARCHAR2(4)|0s</DataType>
+    </column>
+    <column id="347" parent="42" name="CAC641">
+      <Position>61</Position>
+      <Comment>是否留学人员</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="348" parent="42" name="CCC099">
+      <Position>62</Position>
+      <Comment>是否军转</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="349" parent="42" name="AAZ501">
+      <Position>63</Position>
+      <Comment>卡片序列号</Comment>
+      <DataType>VARCHAR2(40)|0s</DataType>
+    </column>
+    <column id="350" parent="42" name="AAE013">
+      <Position>64</Position>
+      <Comment>备注</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="351" parent="42" name="BAE127">
+      <Position>65</Position>
+      <Comment>备用标识</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="352" parent="42" name="SEQLOGID">
+      <Position>66</Position>
+      <Comment>回退线索日志编号</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="353" parent="42" name="AAA121">
+      <Position>67</Position>
+      <Comment>业务类型</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="354" parent="42" name="CAE219">
+      <Position>68</Position>
+      <Comment>业务办理渠道</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="355" parent="42" name="CAE251">
+      <Position>69</Position>
+      <Comment>登记经办人</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="356" parent="42" name="CAE249">
+      <Position>70</Position>
+      <Comment>登记经办人姓名</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="357" parent="42" name="AAE016">
+      <Position>71</Position>
+      <Comment>复核标志</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="358" parent="42" name="AAE014">
+      <Position>72</Position>
+      <Comment>最终复核人</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="359" parent="42" name="CAE250">
+      <Position>73</Position>
+      <Comment>最终复核人姓名</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="360" parent="42" name="AAE217">
+      <Position>74</Position>
+      <Comment>开始办理日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="361" parent="42" name="AAE218">
+      <Position>75</Position>
+      <Comment>办理完成日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="362" parent="42" name="AAZ002">
+      <Position>76</Position>
+      <Comment>业务日志ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="363" parent="43" name="AAC001">
+      <Position>1</Position>
+      <Comment>人员ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="364" parent="43" name="AAC999">
+      <Position>2</Position>
+      <Comment>人员编号</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="365" parent="43" name="AAC003">
+      <Position>3</Position>
+      <Comment>姓名</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="366" parent="43" name="AAC058">
+      <Position>4</Position>
+      <Comment>证件类型</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="367" parent="43" name="AAC147">
+      <Position>5</Position>
+      <Comment>证件号码</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="368" parent="43" name="AAZ500">
+      <Position>6</Position>
+      <Comment>社会保障(市民)卡号</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="369" parent="43" name="AAC004">
+      <Position>7</Position>
+      <Comment>性别</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="370" parent="43" name="AAC006">
+      <Position>8</Position>
+      <Comment>出生日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="371" parent="43" name="AAC007">
+      <Position>9</Position>
+      <Comment>首次参加工作日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="372" parent="43" name="AAC009">
+      <Position>10</Position>
+      <Comment>户口性质</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="373" parent="43" name="AAC005">
+      <Position>11</Position>
+      <Comment>民族</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="374" parent="43" name="AAC011">
+      <Position>12</Position>
+      <Comment>文化程度</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="375" parent="43" name="AAC024">
+      <Position>13</Position>
+      <Comment>政治面貌</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="376" parent="43" name="AAC017">
+      <Position>14</Position>
+      <Comment>婚姻状况</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="377" parent="43" name="CAC205">
+      <Position>15</Position>
+      <Comment>户籍所属区/县（市）</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="378" parent="43" name="AAF013">
+      <Position>16</Position>
+      <Comment>户籍所属乡镇</Comment>
+      <DataType>VARCHAR2(8)|0s</DataType>
+    </column>
+    <column id="379" parent="43" name="CAC099">
+      <Position>17</Position>
+      <Comment>户籍所属街道</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="380" parent="43" name="CAC351">
+      <Position>18</Position>
+      <Comment>户籍所属村（社区）</Comment>
+      <DataType>VARCHAR2(30)|0s</DataType>
+    </column>
+    <column id="381" parent="43" name="CAE457">
+      <Position>19</Position>
+      <Comment>户口登记日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="382" parent="43" name="AAC010">
+      <Position>20</Position>
+      <Comment>户籍地址</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="383" parent="43" name="CAC352">
+      <Position>21</Position>
+      <Comment>户籍迁入前所在地</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="384" parent="43" name="CAC353">
+      <Position>22</Position>
+      <Comment>户籍迁入日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="385" parent="43" name="CAC354">
+      <Position>23</Position>
+      <Comment>户籍迁出日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="386" parent="43" name="CAC355">
+      <Position>24</Position>
+      <Comment>户籍迁往地</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="387" parent="43" name="AAE321">
+      <Position>25</Position>
+      <Comment>手机号码</Comment>
+      <DataType>VARCHAR2(20)|0s</DataType>
+    </column>
+    <column id="388" parent="43" name="AAE005">
+      <Position>26</Position>
+      <Comment>电话</Comment>
+      <DataType>VARCHAR2(40)|0s</DataType>
+    </column>
+    <column id="389" parent="43" name="AAE159">
+      <Position>27</Position>
+      <Comment>电子邮箱</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="390" parent="43" name="CAC642">
+      <Position>28</Position>
+      <Comment>毕业学校</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="391" parent="43" name="CAC639">
+      <Position>29</Position>
+      <Comment>毕业时间</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="392" parent="43" name="CAC640">
+      <Position>30</Position>
+      <Comment>所学专业</Comment>
+      <DataType>VARCHAR2(4)|0s</DataType>
+    </column>
+    <column id="393" parent="43" name="CAC344">
+      <Position>31</Position>
+      <Comment>个人简历</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="394" parent="43" name="AAC012">
+      <Position>32</Position>
+      <Comment>个人身份</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="395" parent="43" name="AAC015">
+      <Position>33</Position>
+      <Comment>国家职业资格等级</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="396" parent="43" name="AAC184">
+      <Position>34</Position>
+      <Comment>取得职业资格日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="397" parent="43" name="AAC014">
+      <Position>35</Position>
+      <Comment>专业技术职务等级</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="398" parent="43" name="AAC185">
+      <Position>36</Position>
+      <Comment>取得专技资格日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="399" parent="43" name="AAC183">
+      <Position>37</Position>
+      <Comment>职称</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="400" parent="43" name="AAC020">
+      <Position>38</Position>
+      <Comment>行政职务</Comment>
+      <DataType>VARCHAR2(4)|0s</DataType>
+    </column>
+    <column id="401" parent="43" name="AAC033">
+      <Position>39</Position>
+      <Comment>健康状态</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="402" parent="43" name="CAC357">
+      <Position>40</Position>
+      <Comment>残疾证号</Comment>
+      <DataType>VARCHAR2(30)|0s</DataType>
+    </column>
+    <column id="403" parent="43" name="ALA040">
+      <Position>41</Position>
+      <Comment>伤残等级</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="404" parent="43" name="ALC060">
+      <Position>42</Position>
+      <Comment>护理依赖等级</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="405" parent="43" name="AAC016">
+      <Position>43</Position>
+      <Comment>就业状态</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="406" parent="43" name="AAC021">
+      <Position>44</Position>
+      <Comment>就失业登记证编号</Comment>
+      <DataType>VARCHAR2(20)|0s</DataType>
+    </column>
+    <column id="407" parent="43" name="CAC356">
+      <Position>45</Position>
+      <Comment>是否就业对象</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="408" parent="43" name="CAC221">
+      <Position>46</Position>
+      <Comment>是否干部身份</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="409" parent="43" name="CAC641">
+      <Position>47</Position>
+      <Comment>是否留学人员</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="410" parent="43" name="CAC638">
+      <Position>48</Position>
+      <Comment>是否共产党员</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="411" parent="43" name="CCC099">
+      <Position>49</Position>
+      <Comment>是否军转</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="412" parent="43" name="CAC981">
+      <Position>50</Position>
+      <Comment>是否普通高校毕业生</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="413" parent="43" name="CHD982">
+      <Position>51</Position>
+      <Comment>是否征地劳动力</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="414" parent="43" name="AAC028">
+      <Position>52</Position>
+      <Comment>农民工标志</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="415" parent="43" name="CAC220">
+      <Position>53</Position>
+      <Comment>国籍或地区</Comment>
+      <DataType>VARCHAR2(4)|0s</DataType>
+    </column>
+    <column id="416" parent="43" name="CAC362">
+      <Position>54</Position>
+      <Comment>英文姓名</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="417" parent="43" name="CAE747">
+      <Position>55</Position>
+      <Comment>入境证件类型</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="418" parent="43" name="CAE745">
+      <Position>56</Position>
+      <Comment>入境证件号码</Comment>
+      <DataType>VARCHAR2(30)|0s</DataType>
+    </column>
+    <column id="419" parent="43" name="CAE746">
+      <Position>57</Position>
+      <Comment>入境证件有效期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="420" parent="43" name="CAE744">
+      <Position>58</Position>
+      <Comment>入境日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="421" parent="43" name="CAC361">
+      <Position>59</Position>
+      <Comment>签证签注类别</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="422" parent="43" name="CAC358">
+      <Position>60</Position>
+      <Comment>签证签注有效日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="423" parent="43" name="CAC359">
+      <Position>61</Position>
+      <Comment>签证签注签发地点</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="424" parent="43" name="CAC360">
+      <Position>62</Position>
+      <Comment>签证签注签发日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="425" parent="43" name="CAC209">
+      <Position>63</Position>
+      <Comment>户籍证明编号</Comment>
+      <DataType>VARCHAR2(20)|0s</DataType>
+    </column>
+    <column id="426" parent="43" name="CAZ283">
+      <Position>64</Position>
+      <Comment>家庭户号</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="427" parent="43" name="CAC217">
+      <Position>65</Position>
+      <Comment>居住地所属区县行政区</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="428" parent="43" name="CAC218">
+      <Position>66</Position>
+      <Comment>居住地所属镇</Comment>
+      <DataType>VARCHAR2(8)|0s</DataType>
+    </column>
+    <column id="429" parent="43" name="CAC219">
+      <Position>67</Position>
+      <Comment>居住地址</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="430" parent="43" name="AAE004">
+      <Position>68</Position>
+      <Comment>联系人姓名</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="431" parent="43" name="CAC216">
+      <Position>69</Position>
+      <Comment>其他联系人电话</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="432" parent="43" name="CAC210">
+      <Position>70</Position>
+      <Comment>与联系人关系</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="433" parent="43" name="AAE013">
+      <Position>71</Position>
+      <Comment>备注</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="434" parent="44" name="AAZ177">
+      <Position>1</Position>
+      <Comment>人员登记事件ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="435" parent="44" name="AAC001">
+      <Position>2</Position>
+      <Comment>人员ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="436" parent="44" name="AAC999">
+      <Position>3</Position>
+      <Comment>人员编号</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="437" parent="44" name="AAC003">
+      <Position>4</Position>
+      <Comment>姓名</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="438" parent="44" name="AAC058">
+      <Position>5</Position>
+      <Comment>证件类型</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="439" parent="44" name="AAC147">
+      <Position>6</Position>
+      <Comment>证件号码</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="440" parent="44" name="AAC002">
+      <Position>7</Position>
+      <Comment>社会保障号</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="441" parent="44" name="AAC004">
+      <Position>8</Position>
+      <Comment>性别</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="442" parent="44" name="AAC006">
+      <Position>9</Position>
+      <Comment>出生日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="443" parent="44" name="CAC001">
+      <Position>10</Position>
+      <Comment>档案出生日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="444" parent="44" name="CAC220">
+      <Position>11</Position>
+      <Comment>国籍或地区</Comment>
+      <DataType>VARCHAR2(4)|0s</DataType>
+    </column>
+    <column id="445" parent="44" name="AAC005">
+      <Position>12</Position>
+      <Comment>民族</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="446" parent="44" name="AAC007">
+      <Position>13</Position>
+      <Comment>首次参加工作日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="447" parent="44" name="AAC017">
+      <Position>14</Position>
+      <Comment>婚姻状况</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="448" parent="44" name="AAC024">
+      <Position>15</Position>
+      <Comment>政治面貌</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="449" parent="44" name="AAC020">
+      <Position>16</Position>
+      <Comment>行政职务(级别)</Comment>
+      <DataType>VARCHAR2(4)|0s</DataType>
+    </column>
+    <column id="450" parent="44" name="AAC009">
+      <Position>17</Position>
+      <Comment>户口性质</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="451" parent="44" name="AAZ500">
+      <Position>18</Position>
+      <Comment>社会保障(市民)卡号</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="452" parent="44" name="AAC012">
+      <Position>19</Position>
+      <Comment>个人身份</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="453" parent="44" name="CAC221">
+      <Position>20</Position>
+      <Comment>是否干部身份</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="454" parent="44" name="AAC028">
+      <Position>21</Position>
+      <Comment>农民工标志</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="455" parent="44" name="CAE457">
+      <Position>22</Position>
+      <Comment>户口登记日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="456" parent="44" name="CAC209">
+      <Position>23</Position>
+      <Comment>户籍证明编号</Comment>
+      <DataType>VARCHAR2(20)|0s</DataType>
+    </column>
+    <column id="457" parent="44" name="CAC205">
+      <Position>24</Position>
+      <Comment>户籍所属区县行政区代码</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="458" parent="44" name="AAF013">
+      <Position>25</Position>
+      <Comment>户籍所属街道</Comment>
+      <DataType>VARCHAR2(8)|0s</DataType>
+    </column>
+    <column id="459" parent="44" name="CAC351">
+      <Position>26</Position>
+      <Comment>户籍所属社区</Comment>
+      <DataType>VARCHAR2(30)|0s</DataType>
+    </column>
+    <column id="460" parent="44" name="AAC010">
+      <Position>27</Position>
+      <Comment>户籍地地址</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="461" parent="44" name="CAC217">
+      <Position>28</Position>
+      <Comment>居住地所属区县行政区代码</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="462" parent="44" name="CAC218">
+      <Position>29</Position>
+      <Comment>居住地所属街道（镇）</Comment>
+      <DataType>VARCHAR2(8)|0s</DataType>
+    </column>
+    <column id="463" parent="44" name="CAC219">
+      <Position>30</Position>
+      <Comment>居住地地址</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="464" parent="44" name="AAE006">
+      <Position>31</Position>
+      <Comment>通讯地址</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="465" parent="44" name="AAE007">
+      <Position>32</Position>
+      <Comment>邮政编码</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="466" parent="44" name="AAE005">
+      <Position>33</Position>
+      <Comment>联系电话</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="467" parent="44" name="AAE321">
+      <Position>34</Position>
+      <Comment>移动电话号码</Comment>
+      <DataType>VARCHAR2(20)|0s</DataType>
+    </column>
+    <column id="468" parent="44" name="AAE159">
+      <Position>35</Position>
+      <Comment>联系电子邮箱</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="469" parent="44" name="AAC011">
+      <Position>36</Position>
+      <Comment>学历</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="470" parent="44" name="AAC015">
+      <Position>37</Position>
+      <Comment>国家职业资格等级</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="471" parent="44" name="AAC184">
+      <Position>38</Position>
+      <Comment>取得职业资格日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="472" parent="44" name="AAC183">
+      <Position>39</Position>
+      <Comment>专业技术职务</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="473" parent="44" name="AAC014">
+      <Position>40</Position>
+      <Comment>专业技术职务等级</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="474" parent="44" name="AAC185">
+      <Position>41</Position>
+      <Comment>取得专技资格日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="475" parent="44" name="ALA040">
+      <Position>42</Position>
+      <Comment>伤残等级</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="476" parent="44" name="ALC060">
+      <Position>43</Position>
+      <Comment>护理依赖等级</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="477" parent="44" name="AAE004">
+      <Position>44</Position>
+      <Comment>联系人姓名</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="478" parent="44" name="CAC210">
+      <Position>45</Position>
+      <Comment>与联系人关系</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="479" parent="44" name="CAC216">
+      <Position>46</Position>
+      <Comment>联系人电话</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="480" parent="44" name="AAC008">
+      <Position>47</Position>
+      <Comment>人员参保状态</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="481" parent="44" name="AAC084">
+      <Position>48</Position>
+      <Comment>离退休标识</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="482" parent="44" name="AAC114">
+      <Position>49</Position>
+      <Comment>异地安置人员标识</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="483" parent="44" name="AAC060">
+      <Position>50</Position>
+      <Comment>生存状态</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="484" parent="44" name="AAC033">
+      <Position>51</Position>
+      <Comment>健康状况</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="485" parent="44" name="AAC016">
+      <Position>52</Position>
+      <Comment>就业状态</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="486" parent="44" name="CAC357">
+      <Position>53</Position>
+      <Comment>残疾证号</Comment>
+      <DataType>VARCHAR2(30)|0s</DataType>
+    </column>
+    <column id="487" parent="44" name="CAC345">
+      <Position>54</Position>
+      <Comment>信息来源</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="488" parent="44" name="AAA027">
+      <Position>55</Position>
+      <Comment>统筹区</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="489" parent="44" name="CAC638">
+      <Position>56</Position>
+      <Comment>是否共产党员标记</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="490" parent="44" name="CAC642">
+      <Position>57</Position>
+      <Comment>毕业院校</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="491" parent="44" name="CAC639">
+      <Position>58</Position>
+      <Comment>毕业时间</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="492" parent="44" name="CAC640">
+      <Position>59</Position>
+      <Comment>所学专业</Comment>
+      <DataType>VARCHAR2(4)|0s</DataType>
+    </column>
+    <column id="493" parent="44" name="CAC641">
+      <Position>60</Position>
+      <Comment>是否留学人员</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="494" parent="44" name="CCC099">
+      <Position>61</Position>
+      <Comment>是否军转</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="495" parent="44" name="BAE127">
+      <Position>62</Position>
+      <Comment>备用标识</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="496" parent="44" name="AAZ501">
+      <Position>63</Position>
+      <Comment>卡序列号</Comment>
+      <DataType>VARCHAR2(40)|0s</DataType>
+    </column>
+    <column id="497" parent="44" name="AAA121">
+      <Position>64</Position>
+      <Comment>业务类型</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="498" parent="44" name="CAE219">
+      <Position>65</Position>
+      <Comment>业务办理渠道</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="499" parent="44" name="CAE251">
+      <Position>66</Position>
+      <Comment>登记经办人</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="500" parent="44" name="CAE249">
+      <Position>67</Position>
+      <Comment>登记经办人姓名</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="501" parent="44" name="AAE016">
+      <Position>68</Position>
+      <Comment>复核标志</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="502" parent="44" name="AAE014">
+      <Position>69</Position>
+      <Comment>最终复核人</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="503" parent="44" name="CAE250">
+      <Position>70</Position>
+      <Comment>最终复核人姓名</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="504" parent="44" name="AAE217">
+      <Position>71</Position>
+      <Comment>开始办理日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="505" parent="44" name="AAE218">
+      <Position>72</Position>
+      <Comment>办理完成日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="506" parent="44" name="AAE013">
+      <Position>73</Position>
+      <Comment>备注</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="507" parent="44" name="AAZ002">
+      <Position>74</Position>
+      <Comment>业务日志ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="508" parent="44" name="SEQLOGID">
+      <Position>75</Position>
+      <Comment>回退线索日志编号</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="509" parent="45" name="AAC001">
+      <Position>1</Position>
+      <Comment>人员ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="510" parent="45" name="CAC362">
+      <Position>2</Position>
+      <Comment>英文姓名</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="511" parent="45" name="CAE747">
+      <Position>3</Position>
+      <Comment>入境证件类型</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="512" parent="45" name="CAE745">
+      <Position>4</Position>
+      <Comment>入境证件号码</Comment>
+      <DataType>VARCHAR2(30)|0s</DataType>
+    </column>
+    <column id="513" parent="45" name="CAE746">
+      <Position>5</Position>
+      <Comment>入境证件有效期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="514" parent="45" name="CAE744">
+      <Position>6</Position>
+      <Comment>入境日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="515" parent="45" name="CAC361">
+      <Position>7</Position>
+      <Comment>签证签注类别</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="516" parent="45" name="CAC360">
+      <Position>8</Position>
+      <Comment>签证签注签发日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="517" parent="45" name="CAC359">
+      <Position>9</Position>
+      <Comment>签证签注签发地点</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="518" parent="45" name="CAC358">
+      <Position>10</Position>
+      <Comment>签证签注有效日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="519" parent="45" name="CAC350">
+      <Position>11</Position>
+      <Comment>居住地址</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="520" parent="45" name="CAC344">
+      <Position>12</Position>
+      <Comment>个人简历</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="521" parent="45" name="CAC356">
+      <Position>13</Position>
+      <Comment>是否就业对象</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="522" parent="45" name="AAC021">
+      <Position>14</Position>
+      <Comment>就业失业登记证编号</Comment>
+      <DataType>VARCHAR2(20)|0s</DataType>
+    </column>
+    <column id="523" parent="45" name="CAC353">
+      <Position>15</Position>
+      <Comment>户籍迁入日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="524" parent="45" name="CAC352">
+      <Position>16</Position>
+      <Comment>户籍迁入前所在地</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="525" parent="45" name="CAC354">
+      <Position>17</Position>
+      <Comment>户籍迁出日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="526" parent="45" name="CAC355">
+      <Position>18</Position>
+      <Comment>户籍迁往地</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="527" parent="45" name="CNC001">
+      <Position>19</Position>
+      <Comment>本地户籍满20年标志</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="528" parent="45" name="AAZ003">
+      <Position>20</Position>
+      <Comment>当事人银行账号ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="529" parent="45" name="CAC342">
+      <Position>21</Position>
+      <Comment>人员属性</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="530" parent="45" name="CAC243">
+      <Position>22</Position>
+      <Comment>特困人群类型</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="531" parent="45" name="CAC347">
+      <Position>23</Position>
+      <Comment>特困证件号码</Comment>
+      <DataType>VARCHAR2(30)|0s</DataType>
+    </column>
+    <column id="532" parent="45" name="CAC346">
+      <Position>24</Position>
+      <Comment>信息登记方式</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="533" parent="45" name="CAC345">
+      <Position>25</Position>
+      <Comment>信息来源地行政区编码</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="534" parent="45" name="CKC286">
+      <Position>26</Position>
+      <Comment>联系人证件号码</Comment>
+      <DataType>VARCHAR2(20)|0s</DataType>
+    </column>
+    <column id="535" parent="45" name="SEQLOGID">
+      <Position>27</Position>
+      <Comment>回退线索日志编号</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="536" parent="46" name="CAZ278">
+      <Position>1</Position>
+      <Comment>人员附加信息变更ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="537" parent="46" name="AAZ002">
+      <Position>2</Position>
+      <Comment>业务日志ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="538" parent="46" name="AAC001">
+      <Position>3</Position>
+      <Comment>人员ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="539" parent="46" name="CAC362">
+      <Position>4</Position>
+      <Comment>英文姓名</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="540" parent="46" name="CAE747">
+      <Position>5</Position>
+      <Comment>入境证件类型</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="541" parent="46" name="CAE745">
+      <Position>6</Position>
+      <Comment>入境证件号码</Comment>
+      <DataType>VARCHAR2(20)|0s</DataType>
+    </column>
+    <column id="542" parent="46" name="CAE746">
+      <Position>7</Position>
+      <Comment>入境证件有效期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="543" parent="46" name="CAE744">
+      <Position>8</Position>
+      <Comment>入境日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="544" parent="46" name="CAC361">
+      <Position>9</Position>
+      <Comment>签证签注类别</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="545" parent="46" name="CAC360">
+      <Position>10</Position>
+      <Comment>签证签注签发日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="546" parent="46" name="CAC359">
+      <Position>11</Position>
+      <Comment>签证签注签发地点</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="547" parent="46" name="CAC358">
+      <Position>12</Position>
+      <Comment>签证签注有效日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="548" parent="46" name="CAC350">
+      <Position>13</Position>
+      <Comment>居住地址</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="549" parent="46" name="CAC344">
+      <Position>14</Position>
+      <Comment>个人简历</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="550" parent="46" name="CAC356">
+      <Position>15</Position>
+      <Comment>是否就业对象</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="551" parent="46" name="AAC021">
+      <Position>16</Position>
+      <Comment>就业失业登记证编号</Comment>
+      <DataType>VARCHAR2(20)|0s</DataType>
+    </column>
+    <column id="552" parent="46" name="CAC353">
+      <Position>17</Position>
+      <Comment>户籍迁入日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="553" parent="46" name="CAC352">
+      <Position>18</Position>
+      <Comment>户籍迁入前所在地</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="554" parent="46" name="CAC354">
+      <Position>19</Position>
+      <Comment>户籍迁出日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="555" parent="46" name="CAC355">
+      <Position>20</Position>
+      <Comment>户籍迁往地</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="556" parent="46" name="CNC001">
+      <Position>21</Position>
+      <Comment>本地户籍满20年标志</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="557" parent="46" name="CAC346">
+      <Position>22</Position>
+      <Comment>信息登记方式</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="558" parent="46" name="CAC345">
+      <Position>23</Position>
+      <Comment>信息来源地</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="559" parent="46" name="CKC286">
+      <Position>24</Position>
+      <Comment>联系人证件号码</Comment>
+      <DataType>VARCHAR2(20)|0s</DataType>
+    </column>
+    <column id="560" parent="46" name="SEQLOGID">
+      <Position>25</Position>
+      <Comment>回退线索日志编号</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="561" parent="47" name="CAD137">
+      <Position>1</Position>
+      <Comment>单位角色类型</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="562" parent="47" name="CAD182">
+      <Position>2</Position>
+      <Comment>角色属性指标</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="563" parent="47" name="CAD181">
+      <Position>3</Position>
+      <Comment>角色属性含义</Comment>
+      <DataType>VARCHAR2(1000)|0s</DataType>
+    </column>
+    <column id="564" parent="47" name="CAD183">
+      <Position>4</Position>
+      <Comment>角色属性数据类型</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="565" parent="47" name="CAD184">
+      <Position>5</Position>
+      <Comment>角色属性数据长度</Comment>
+      <DataType>NUMBER(6)|0s</DataType>
+    </column>
+    <column id="566" parent="47" name="CAD185">
+      <Position>6</Position>
+      <Comment>角色属性是否可空</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="567" parent="47" name="SEQLOGID">
+      <Position>7</Position>
+      <Comment>回退线索日志编号</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="568" parent="48" name="CAZ291">
+      <Position>1</Position>
+      <Comment>单位角色ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="569" parent="48" name="AAB001">
+      <Position>2</Position>
+      <Comment>单位ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="570" parent="48" name="CAD137">
+      <Position>3</Position>
+      <Comment>单位角色类型</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="571" parent="48" name="CAD135">
+      <Position>4</Position>
+      <Comment>单位角色信息表</Comment>
+      <DataType>VARCHAR2(20)|0s</DataType>
+    </column>
+    <column id="572" parent="48" name="CAD133">
+      <Position>5</Position>
+      <Comment>单位角色主关键字</Comment>
+      <DataType>VARCHAR2(20)|0s</DataType>
+    </column>
+    <column id="573" parent="48" name="CAD134">
+      <Position>6</Position>
+      <Comment>单位角色主关键字值</Comment>
+      <DataType>VARCHAR2(20)|0s</DataType>
+    </column>
+    <column id="574" parent="48" name="AAE100">
+      <Position>7</Position>
+      <Comment>当前有效标志</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="575" parent="48" name="CAD186">
+      <Position>8</Position>
+      <Comment>角色特征信息描述</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="576" parent="48" name="AAE013">
+      <Position>9</Position>
+      <Comment>备注</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="577" parent="48" name="SEQLOGID">
+      <Position>10</Position>
+      <Comment>回退线索日志编号</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="578" parent="49" name="CAZ292">
+      <Position>1</Position>
+      <Comment>单位角色变更事件ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="579" parent="49" name="AAZ002">
+      <Position>2</Position>
+      <Comment>业务日志ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="580" parent="49" name="CAD179">
+      <Position>3</Position>
+      <Comment>角色变更类型</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="581" parent="49" name="AAE035">
+      <Position>4</Position>
+      <Comment>变更日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="582" parent="49" name="AAE013">
+      <Position>5</Position>
+      <Comment>备注</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="583" parent="49" name="SEQLOGID">
+      <Position>6</Position>
+      <Comment>回退线索日志编号</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="584" parent="50" name="CAZ289">
+      <Position>1</Position>
+      <Comment>单位角色变更明细ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="585" parent="50" name="CAZ292">
+      <Position>2</Position>
+      <Comment>单位角色变更事件ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="586" parent="50" name="AAB001">
+      <Position>3</Position>
+      <Comment>单位ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="587" parent="50" name="CAD182">
+      <Position>4</Position>
+      <Comment>角色属性指标</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="588" parent="50" name="CAD181">
+      <Position>5</Position>
+      <Comment>角色属性含义</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="589" parent="50" name="CAD127">
+      <Position>6</Position>
+      <Comment>原值</Comment>
+      <DataType>VARCHAR2(1000)|0s</DataType>
+    </column>
+    <column id="590" parent="50" name="CAD152">
+      <Position>7</Position>
+      <Comment>新值</Comment>
+      <DataType>VARCHAR2(1000)|0s</DataType>
+    </column>
+    <column id="591" parent="50" name="SEQLOGID">
+      <Position>8</Position>
+      <Comment>回退线索日志编号</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="592" parent="51" name="AAC001">
+      <Position>1</Position>
+      <Comment>人员ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="593" parent="51" name="AAC999">
+      <Position>2</Position>
+      <Comment>人员编号</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="594" parent="51" name="AAC003">
+      <Position>3</Position>
+      <Comment>姓名</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="595" parent="51" name="AAC058">
+      <Position>4</Position>
+      <Comment>证件类型</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="596" parent="51" name="AAC147">
+      <Position>5</Position>
+      <Comment>证件号码</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="597" parent="51" name="AAC002">
+      <Position>6</Position>
+      <Comment>社会保障号</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="598" parent="51" name="AAC004">
+      <Position>7</Position>
+      <Comment>性别</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="599" parent="51" name="AAC006">
+      <Position>8</Position>
+      <Comment>出生日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="600" parent="51" name="CAC001">
+      <Position>9</Position>
+      <Comment>档案出生日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="601" parent="51" name="CAC220">
+      <Position>10</Position>
+      <Comment>国籍或地区</Comment>
+      <DataType>VARCHAR2(4)|0s</DataType>
+    </column>
+    <column id="602" parent="51" name="AAC005">
+      <Position>11</Position>
+      <Comment>民族</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="603" parent="51" name="AAC007">
+      <Position>12</Position>
+      <Comment>首次参加工作日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="604" parent="51" name="AAC017">
+      <Position>13</Position>
+      <Comment>婚姻状况</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="605" parent="51" name="AAC024">
+      <Position>14</Position>
+      <Comment>政治面貌</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="606" parent="51" name="AAC020">
+      <Position>15</Position>
+      <Comment>行政职务(级别)</Comment>
+      <DataType>VARCHAR2(4)|0s</DataType>
+    </column>
+    <column id="607" parent="51" name="AAC009">
+      <Position>16</Position>
+      <Comment>户口性质</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="608" parent="51" name="AAZ500">
+      <Position>17</Position>
+      <Comment>社会保障(市民)卡号</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="609" parent="51" name="AAC012">
+      <Position>18</Position>
+      <Comment>个人身份</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="610" parent="51" name="CAC221">
+      <Position>19</Position>
+      <Comment>是否干部身份</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="611" parent="51" name="AAC028">
+      <Position>20</Position>
+      <Comment>农民工标志</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="612" parent="51" name="CAE457">
+      <Position>21</Position>
+      <Comment>户口登记日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="613" parent="51" name="CAC209">
+      <Position>22</Position>
+      <Comment>户籍证明编号</Comment>
+      <DataType>VARCHAR2(20)|0s</DataType>
+    </column>
+    <column id="614" parent="51" name="CAC205">
+      <Position>23</Position>
+      <Comment>户籍所属区县行政区代码</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="615" parent="51" name="AAF013">
+      <Position>24</Position>
+      <Comment>户籍所属街道</Comment>
+      <DataType>VARCHAR2(8)|0s</DataType>
+    </column>
+    <column id="616" parent="51" name="CAC351">
+      <Position>25</Position>
+      <Comment>户籍所属社区</Comment>
+      <DataType>VARCHAR2(30)|0s</DataType>
+    </column>
+    <column id="617" parent="51" name="AAC010">
+      <Position>26</Position>
+      <Comment>户籍地地址</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="618" parent="51" name="CAC217">
+      <Position>27</Position>
+      <Comment>居住地所属区县行政区代码</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="619" parent="51" name="CAC218">
+      <Position>28</Position>
+      <Comment>居住地所属街道（镇）</Comment>
+      <DataType>VARCHAR2(8)|0s</DataType>
+    </column>
+    <column id="620" parent="51" name="CAC219">
+      <Position>29</Position>
+      <Comment>居住地地址</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="621" parent="51" name="AAE006">
+      <Position>30</Position>
+      <Comment>通讯地址</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="622" parent="51" name="AAE007">
+      <Position>31</Position>
+      <Comment>邮政编码</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="623" parent="51" name="AAE005">
+      <Position>32</Position>
+      <Comment>联系电话</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="624" parent="51" name="AAE321">
+      <Position>33</Position>
+      <Comment>移动电话号码</Comment>
+      <DataType>VARCHAR2(20)|0s</DataType>
+    </column>
+    <column id="625" parent="51" name="AAE159">
+      <Position>34</Position>
+      <Comment>联系电子邮箱</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="626" parent="51" name="AAC011">
+      <Position>35</Position>
+      <Comment>学历</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="627" parent="51" name="AAC015">
+      <Position>36</Position>
+      <Comment>国家职业资格等级</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="628" parent="51" name="AAC184">
+      <Position>37</Position>
+      <Comment>取得职业资格日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="629" parent="51" name="AAC183">
+      <Position>38</Position>
+      <Comment>专业技术职务</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="630" parent="51" name="AAC014">
+      <Position>39</Position>
+      <Comment>专业技术职务等级</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="631" parent="51" name="AAC185">
+      <Position>40</Position>
+      <Comment>取得专技资格日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="632" parent="51" name="ALA040">
+      <Position>41</Position>
+      <Comment>伤残等级</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="633" parent="51" name="ALC060">
+      <Position>42</Position>
+      <Comment>护理依赖等级</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="634" parent="51" name="AAE004">
+      <Position>43</Position>
+      <Comment>联系人姓名</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="635" parent="51" name="CAC210">
+      <Position>44</Position>
+      <Comment>与联系人关系</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="636" parent="51" name="CAC216">
+      <Position>45</Position>
+      <Comment>联系人电话</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="637" parent="51" name="AAC008">
+      <Position>46</Position>
+      <Comment>人员参保状态</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="638" parent="51" name="AAC084">
+      <Position>47</Position>
+      <Comment>到龄离退休标识</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="639" parent="51" name="AAC114">
+      <Position>48</Position>
+      <Comment>异地安置人员标识</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="640" parent="51" name="AAC060">
+      <Position>49</Position>
+      <Comment>生存状态</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="641" parent="51" name="AAC033">
+      <Position>50</Position>
+      <Comment>健康状况</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="642" parent="51" name="AAC016">
+      <Position>51</Position>
+      <Comment>就业状态</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="643" parent="51" name="CAC357">
+      <Position>52</Position>
+      <Comment>残疾证号</Comment>
+      <DataType>VARCHAR2(30)|0s</DataType>
+    </column>
+    <column id="644" parent="51" name="CAC345">
+      <Position>53</Position>
+      <Comment>信息来源地行政区编码</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="645" parent="51" name="AAA027">
+      <Position>54</Position>
+      <Comment>统筹区</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="646" parent="51" name="CAC638">
+      <Position>55</Position>
+      <Comment>是否共产党员标记</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="647" parent="51" name="CAC642">
+      <Position>56</Position>
+      <Comment>毕业院校</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="648" parent="51" name="CAC639">
+      <Position>57</Position>
+      <Comment>毕业时间</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="649" parent="51" name="CAC640">
+      <Position>58</Position>
+      <Comment>所学专业</Comment>
+      <DataType>VARCHAR2(4)|0s</DataType>
+    </column>
+    <column id="650" parent="51" name="CAC641">
+      <Position>59</Position>
+      <Comment>是否留学人员</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="651" parent="51" name="CCC099">
+      <Position>60</Position>
+      <Comment>是否军转</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="652" parent="51" name="AAZ501">
+      <Position>61</Position>
+      <Comment>卡片序列号</Comment>
+      <DataType>VARCHAR2(40)|0s</DataType>
+    </column>
+    <column id="653" parent="51" name="AAE013">
+      <Position>62</Position>
+      <Comment>备注</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="654" parent="51" name="SEQLOGID">
+      <Position>63</Position>
+      <Comment>回退线索日志编号</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="655" parent="52" name="AAZ002">
+      <Position>1</Position>
+      <Comment>业务日志ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="656" parent="52" name="CAZ219">
+      <Position>2</Position>
+      <Comment>批量业务日志ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="657" parent="52" name="CAZ220">
+      <Position>3</Position>
+      <Comment>业务经办过程日志ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="658" parent="52" name="AAB301">
+      <Position>4</Position>
+      <Comment>行政区划代码</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="659" parent="52" name="AAA027">
+      <Position>5</Position>
+      <Comment>统筹区编码</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="660" parent="52" name="AAB001">
+      <Position>6</Position>
+      <Comment>单位管理码</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="661" parent="52" name="CAZ291">
+      <Position>7</Position>
+      <Comment>单位角色ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="662" parent="52" name="AAC001">
+      <Position>8</Position>
+      <Comment>人员编号</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="663" parent="52" name="AAA121">
+      <Position>9</Position>
+      <Comment>业务类型编码</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="664" parent="52" name="CAE219">
+      <Position>10</Position>
+      <Comment>业务办理渠道</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="665" parent="52" name="CAE220">
+      <Position>11</Position>
+      <Comment>业务办理状态</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="666" parent="52" name="CAE221">
+      <Position>12</Position>
+      <Comment>业务状态</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="667" parent="52" name="CAA185">
+      <Position>13</Position>
+      <Comment>审批级数</Comment>
+      <DataType>NUMBER(3)|0s</DataType>
+    </column>
+    <column id="668" parent="52" name="CAE227">
+      <Position>14</Position>
+      <Comment>当前业务环节</Comment>
+      <DataType>NUMBER(3)|0s</DataType>
+    </column>
+    <column id="669" parent="52" name="CAE240">
+      <Position>15</Position>
+      <Comment>业务摘要</Comment>
+      <DataType>VARCHAR2(2000)|0s</DataType>
+    </column>
+    <column id="670" parent="52" name="CAE251">
+      <Position>16</Position>
+      <Comment>登记经办人</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="671" parent="52" name="CAE249">
+      <Position>17</Position>
+      <Comment>登记经办人姓名</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="672" parent="52" name="AAE014">
+      <Position>18</Position>
+      <Comment>最终复核人</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="673" parent="52" name="CAE250">
+      <Position>19</Position>
+      <Comment>最终复核人姓名</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="674" parent="52" name="AAE016">
+      <Position>20</Position>
+      <Comment>复核标志</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="675" parent="52" name="CAE239">
+      <Position>21</Position>
+      <Comment>终审标志</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="676" parent="52" name="AAE148">
+      <Position>22</Position>
+      <Comment>预约标志</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="677" parent="52" name="AAE215">
+      <Position>23</Position>
+      <Comment>预约办理日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="678" parent="52" name="AAE216">
+      <Position>24</Position>
+      <Comment>申请办理日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="679" parent="52" name="AAE217">
+      <Position>25</Position>
+      <Comment>开始办理日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="680" parent="52" name="AAE218">
+      <Position>26</Position>
+      <Comment>办理完成日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="681" parent="52" name="CAE809">
+      <Position>27</Position>
+      <Comment>初始经办人所属统筹区</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="682" parent="52" name="CAE810">
+      <Position>28</Position>
+      <Comment>初始经办人所属行政区</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="683" parent="52" name="CAE811">
+      <Position>29</Position>
+      <Comment>初始经办人所属街道</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="684" parent="52" name="CAE812">
+      <Position>30</Position>
+      <Comment>初始经办人所属社区</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="685" parent="52" name="CAE813">
+      <Position>31</Position>
+      <Comment>初始经办人所属经办机构</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="686" parent="52" name="CAE818">
+      <Position>32</Position>
+      <Comment>初始经办人所属部门</Comment>
+      <DataType>VARCHAR2(20)|0s</DataType>
+    </column>
+    <column id="687" parent="52" name="AAE013">
+      <Position>33</Position>
+      <Comment>备注</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="688" parent="52" name="CAE754">
+      <Position>34</Position>
+      <Comment>数字档案编号</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="689" parent="52" name="CAE753">
+      <Position>35</Position>
+      <Comment>数字档案名称</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="690" parent="52" name="CAE752">
+      <Position>36</Position>
+      <Comment>数字档案位置</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="691" parent="52" name="CAE755">
+      <Position>37</Position>
+      <Comment>纸质档案归档序号</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="692" parent="52" name="CAE901">
+      <Position>38</Position>
+      <Comment>摘要项目01</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="693" parent="52" name="CAE902">
+      <Position>39</Position>
+      <Comment>摘要项目02</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="694" parent="52" name="CAE903">
+      <Position>40</Position>
+      <Comment>摘要项目03</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="695" parent="52" name="CAE904">
+      <Position>41</Position>
+      <Comment>摘要项目04</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="696" parent="52" name="CAE905">
+      <Position>42</Position>
+      <Comment>摘要项目05</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="697" parent="52" name="CAE906">
+      <Position>43</Position>
+      <Comment>摘要项目06</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="698" parent="52" name="CAE907">
+      <Position>44</Position>
+      <Comment>摘要项目07</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="699" parent="52" name="CAE908">
+      <Position>45</Position>
+      <Comment>摘要项目08</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="700" parent="52" name="CAE909">
+      <Position>46</Position>
+      <Comment>摘要项目09</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="701" parent="52" name="CAE910">
+      <Position>47</Position>
+      <Comment>摘要项目10</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="702" parent="52" name="CAE931">
+      <Position>48</Position>
+      <Comment>摘要项目31</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="703" parent="52" name="CAE932">
+      <Position>49</Position>
+      <Comment>摘要项目32</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="704" parent="52" name="CAE933">
+      <Position>50</Position>
+      <Comment>摘要项目33</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="705" parent="52" name="CAE934">
+      <Position>51</Position>
+      <Comment>摘要项目34</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="706" parent="52" name="CAE935">
+      <Position>52</Position>
+      <Comment>摘要项目35</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="707" parent="52" name="CAE936">
+      <Position>53</Position>
+      <Comment>摘要项目36</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="708" parent="52" name="CAE937">
+      <Position>54</Position>
+      <Comment>摘要项目37</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="709" parent="52" name="CAE938">
+      <Position>55</Position>
+      <Comment>摘要项目38</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="710" parent="52" name="CAE939">
+      <Position>56</Position>
+      <Comment>摘要项目39</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="711" parent="52" name="CAE940">
+      <Position>57</Position>
+      <Comment>摘要项目40</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="712" parent="52" name="PAGEID">
+      <Position>58</Position>
+      <Comment>存档界面ID</Comment>
+      <DataType>NUMBER(19)|0s</DataType>
+    </column>
+    <column id="713" parent="52" name="SEQLOGID">
+      <Position>59</Position>
+      <Comment>回退线索日志编号</Comment>
+      <DataType>NUMBER(19)|0s</DataType>
+    </column>
+    <column id="714" parent="53" name="AAZ003">
+      <Position>1</Position>
+      <Comment>当事人银行账号ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="715" parent="53" name="AAZ010">
+      <Position>2</Position>
+      <Comment>当事人ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="716" parent="53" name="AAA028">
+      <Position>3</Position>
+      <Comment>当事人类别</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="717" parent="53" name="AAZ065">
+      <Position>4</Position>
+      <Comment>银行ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="718" parent="53" name="AAE009">
+      <Position>5</Position>
+      <Comment>银行户名</Comment>
+      <DataType>VARCHAR2(80)|0s</DataType>
+    </column>
+    <column id="719" parent="53" name="AAE010">
+      <Position>6</Position>
+      <Comment>银行帐号</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="720" parent="53" name="CAD142">
+      <Position>7</Position>
+      <Comment>开户所在省</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="721" parent="53" name="CAE274">
+      <Position>8</Position>
+      <Comment>开户所在市</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="722" parent="53" name="CAD143">
+      <Position>9</Position>
+      <Comment>开户支行名称</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="723" parent="53" name="CAD140">
+      <Position>10</Position>
+      <Comment>开户地区码</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="724" parent="53" name="CAZ291">
+      <Position>11</Position>
+      <Comment>单位角色ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="725" parent="53" name="SYSCODE">
+      <Position>12</Position>
+      <Comment>老系统代码（00已上线的居民养老、01社保人员、02供养家属、03学生、04征地农民、05征地农民（商）、06征地农民（03）、07劳动就业个人、08劳动就业老工伤、09劳动就业农村劳力、10劳动就业境外就业）</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="726" parent="53" name="SEQLOGID">
+      <Position>13</Position>
+      <Comment>回退线索日志编号</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="727" parent="54" name="AAZ004">
+      <Position>1</Position>
+      <Comment>当事人银行账号用途ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="728" parent="54" name="AAZ003">
+      <Position>2</Position>
+      <Comment>当事人银行账号ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="729" parent="54" name="AAA082">
+      <Position>3</Position>
+      <Comment>当事人银行账号用途类别</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="730" parent="54" name="AAE041">
+      <Position>4</Position>
+      <Comment>开始年月</Comment>
+      <DataType>NUMBER(6)|0s</DataType>
+    </column>
+    <column id="731" parent="54" name="AAE042">
+      <Position>5</Position>
+      <Comment>终止年月</Comment>
+      <DataType>NUMBER(6)|0s</DataType>
+    </column>
+    <column id="732" parent="54" name="AAE100">
+      <Position>6</Position>
+      <Comment>当前有效标志</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="733" parent="54" name="AAE140">
+      <Position>7</Position>
+      <Comment>险种类型</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="734" parent="54" name="AAZ010">
+      <Position>8</Position>
+      <Comment>当事人ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="735" parent="54" name="SEQLOGID">
+      <Position>9</Position>
+      <Comment>回退线索日志编号</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="736" parent="55" name="AAZ010">
+      <Position>1</Position>
+      <Comment>当事人ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="737" parent="55" name="AAA028">
+      <Position>2</Position>
+      <Comment>当事人类别</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="738" parent="55" name="CAD149">
+      <Position>3</Position>
+      <Comment>当事人名称</Comment>
+      <DataType>VARCHAR2(20)|0s</DataType>
+    </column>
+    <column id="739" parent="55" name="SEQLOGID">
+      <Position>4</Position>
+      <Comment>回退线索日志编号</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="740" parent="56" name="BAD002">
+      <Position>1</Position>
+      <Comment>经办机构维护事件ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="741" parent="56" name="BAD003">
+      <Position>2</Position>
+      <Comment>经办机构ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="742" parent="56" name="AAB004">
+      <Position>3</Position>
+      <Comment>经办机构名称</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="743" parent="56" name="AAE140">
+      <Position>4</Position>
+      <Comment>险种</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="744" parent="56" name="BAB001">
+      <Position>5</Position>
+      <Comment>行政区划</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="745" parent="56" name="AAE006">
+      <Position>6</Position>
+      <Comment>联系地址</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="746" parent="56" name="AAE007">
+      <Position>7</Position>
+      <Comment>邮政编码</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="747" parent="56" name="AAE005">
+      <Position>8</Position>
+      <Comment>联系电话</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="748" parent="56" name="AAE004">
+      <Position>9</Position>
+      <Comment>联系人</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="749" parent="56" name="AAE009">
+      <Position>10</Position>
+      <Comment>开户名</Comment>
+      <DataType>VARCHAR2(80)|0s</DataType>
+    </column>
+    <column id="750" parent="56" name="AAE010">
+      <Position>11</Position>
+      <Comment>银行账号</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="751" parent="56" name="CAD143">
+      <Position>12</Position>
+      <Comment>开户银行名称</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="752" parent="56" name="BAE127">
+      <Position>13</Position>
+      <Comment>备用标识</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="753" parent="56" name="AAE100">
+      <Position>14</Position>
+      <Comment>当前有效标志</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="754" parent="56" name="AAA121">
+      <Position>15</Position>
+      <Comment>业务类型</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="755" parent="56" name="CAE219">
+      <Position>16</Position>
+      <Comment>业务办理渠道</Comment>
+      <DataType>VARCHAR2(3)|0s</DataType>
+    </column>
+    <column id="756" parent="56" name="CAE251">
+      <Position>17</Position>
+      <Comment>登记经办人</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="757" parent="56" name="CAE249">
+      <Position>18</Position>
+      <Comment>登记经办人姓名</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="758" parent="56" name="AAE016">
+      <Position>19</Position>
+      <Comment>复核标志</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="759" parent="56" name="AAE014">
+      <Position>20</Position>
+      <Comment>最终复核人</Comment>
+      <DataType>VARCHAR2(10)|0s</DataType>
+    </column>
+    <column id="760" parent="56" name="CAE250">
+      <Position>21</Position>
+      <Comment>最终复核人姓名</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="761" parent="56" name="AAE217">
+      <Position>22</Position>
+      <Comment>开始办理日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="762" parent="56" name="AAE218">
+      <Position>23</Position>
+      <Comment>办理完成日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="763" parent="56" name="AAE013">
+      <Position>24</Position>
+      <Comment>备注</Comment>
+      <DataType>VARCHAR2(200)|0s</DataType>
+    </column>
+    <column id="764" parent="56" name="AAZ002">
+      <Position>25</Position>
+      <Comment>业务日志ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="765" parent="56" name="SEQLOGID">
+      <Position>26</Position>
+      <Comment>回退线索日志编号</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="766" parent="57" name="BAD003">
+      <Position>1</Position>
+      <Comment>经办机构ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="767" parent="57" name="AAB004">
+      <Position>2</Position>
+      <Comment>经办机构名称</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="768" parent="57" name="CAB091">
+      <Position>3</Position>
+      <Comment>上级机构</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="769" parent="57" name="CAB092">
+      <Position>4</Position>
+      <Comment>机构级别</Comment>
+      <DataType>VARCHAR2(2)|0s</DataType>
+    </column>
+    <column id="770" parent="57" name="BAB001">
+      <Position>5</Position>
+      <Comment>行政区划</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="771" parent="57" name="AAE140">
+      <Position>6</Position>
+      <Comment>险种</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="772" parent="57" name="AAE006">
+      <Position>7</Position>
+      <Comment>联系地址</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="773" parent="57" name="AAE007">
+      <Position>8</Position>
+      <Comment>邮政编码</Comment>
+      <DataType>VARCHAR2(6)|0s</DataType>
+    </column>
+    <column id="774" parent="57" name="AAE005">
+      <Position>9</Position>
+      <Comment>联系电话</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="775" parent="57" name="AAE004">
+      <Position>10</Position>
+      <Comment>联系人</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="776" parent="57" name="AAE009">
+      <Position>11</Position>
+      <Comment>开户名</Comment>
+      <DataType>VARCHAR2(80)|0s</DataType>
+    </column>
+    <column id="777" parent="57" name="AAE010">
+      <Position>12</Position>
+      <Comment>银行账号</Comment>
+      <DataType>VARCHAR2(50)|0s</DataType>
+    </column>
+    <column id="778" parent="57" name="CAD143">
+      <Position>13</Position>
+      <Comment>开户银行名称</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="779" parent="57" name="AAE100">
+      <Position>14</Position>
+      <Comment>当前有效标志</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+    <column id="780" parent="57" name="SEQLOGID">
+      <Position>15</Position>
+      <Comment>回退线索日志编号</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="781" parent="58" name="AAZ065">
+      <Position>1</Position>
+      <Comment>银行ID</Comment>
+      <DataType>NUMBER(16)|0s</DataType>
+    </column>
+    <column id="782" parent="58" name="AAE008">
+      <Position>2</Position>
+      <Comment>银行编号</Comment>
+      <DataType>VARCHAR2(20)|0s</DataType>
+    </column>
+    <column id="783" parent="58" name="AAF002">
+      <Position>3</Position>
+      <Comment>金融行业机构编码</Comment>
+      <DataType>VARCHAR2(20)|0s</DataType>
+    </column>
+    <column id="784" parent="58" name="AAB069">
+      <Position>4</Position>
+      <Comment>名称</Comment>
+      <DataType>VARCHAR2(100)|0s</DataType>
+    </column>
+    <column id="785" parent="58" name="SEQLOGID">
+      <Position>5</Position>
+      <Comment>回退线索日志编号</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="786" parent="59" name="AZC001">
+      <Position>1</Position>
+      <Comment>人员信息ID</Comment>
+      <DataType>VARCHAR2(20)|0s</DataType>
+    </column>
+    <column id="787" parent="59" name="AAC100">
+      <Position>2</Position>
+      <Comment>照片</Comment>
+      <DataType>BLOB|0s</DataType>
+    </column>
+    <column id="788" parent="59" name="AZE001">
+      <Position>3</Position>
+      <Comment>采集日期</Comment>
+      <DataType>NUMBER(8)|0s</DataType>
+    </column>
+    <column id="789" parent="59" name="AZZ181">
+      <Position>4</Position>
+      <Comment>有效标志</Comment>
+      <DataType>VARCHAR2(1)|0s</DataType>
+    </column>
+  </database-model>
+</dataSource>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="jnditemplate" class="org.springframework.jndi.JndiTemplate">
+        <property name="environment">
+            <props>
+                <prop key="java.naming.factory.initial">
+                    weblogic.jndi.WLInitialContextFactory</prop>
+                <prop key="java.naming.provider.url">t3://localhost:7001</prop>
+                <prop key="java.naming.security.principal">weblogic</prop>
+                <prop key="java.naming.security.credentials">weblogic10</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="connectionfactory"
+          class="org.springframework.jndi.JndiObjectFactoryBean">
+        <property name="jndiTemplate">
+            <ref bean="jnditemplate" />
+        </property>
+        <property name="jndiName">
+            <value>jms/connectionFactory</value>
+        </property>
+    </bean>
+
+    <!-- 队列（同一个服务器下，一条队列配置一个） -->
+    <bean id="log_service_queue" class="org.springframework.jndi.JndiObjectFactoryBean">
+        <property name="jndiTemplate" ref="jnditemplate"/>
+        <property name="jndiName" value="jms/LogServiceQueue"/>
+    </bean>
+
+    <!-- 向队列发送（同一个服务器下，一条队列配置一个）  -->
+    <bean id="log_service_sender" class="org.springframework.jms.core.JmsTemplate">
+        <property name="connectionFactory" ref="connectionfactory"/>
+        <property name="defaultDestination" ref="log_service_queue"/>
+    </bean>
+
+    <!-- 向队列监听（同一个服务器下，一条队列配置一个）  -->
+    <bean id="log_service_receiver" class="com.eframework.module.service.mq.logservice.LogServiceListener"/>
+
+    <bean class="org.springframework.jms.listener.SimpleMessageListenerContainer">
+        <property name="connectionFactory" ref="connectionfactory"/>
+        <property name="destination" ref="log_service_queue"/>
+        <property name="messageListener" ref="log_service_receiver"/>
+    </bean>
+
+
+</beans>
