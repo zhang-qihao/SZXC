@@ -5,7 +5,7 @@
       <div class="header-left">
         <!--        第一行页头表单-->
         <el-form ref="form" :model="form" label-width="auto" style="margin: 0 5px;">
-          <ef-text label="人员查询"
+          <ef-text label="人员查询："
                    v-model="form.info"
                    :maxlength=20
                    :minlength=5
@@ -13,7 +13,6 @@
                    placeholder="输入姓名、证件号码"
                    style="margin-right: 20px"/>
           <ef-select
-              @change="doQuery"
               label="人员性质："
               placeholder=""
               v-model="form.quality"
@@ -27,7 +26,6 @@
               ]"
               style="margin-right: 20px"/>
           <ef-select
-              @change="doQuery"
               label="政治面貌："
               placeholder=""
               v-model="form.mm"
@@ -42,7 +40,6 @@
               ]"
               style="margin-right: 20px"/>
           <ef-select
-              @change="doQuery"
               label="所属科室："
               placeholder=""
               v-model="form.ks"
@@ -50,10 +47,10 @@
               :emptyOption="false"
               :list="[
 
-              ]"/>
+              ]"
+              style="margin-right: 20px"/>
           <ef-date-range
-              label="出生日期"
-              @change="doQuery"
+              label="出生日期："
               :require="false"
               :emptyOption="false"
               v-model="form.dateRange"
@@ -70,7 +67,6 @@
         <!--        第二行页头表单-->
         <el-form ref="form" :model="form" label-width="auto" style="margin: 0 5px;">
           <ef-select
-              @change="doQuery"
               label="职务："
               placeholder=""
               v-model="form.zw"
@@ -88,7 +84,6 @@
               ]"
               style="margin-right: 20px"/>
           <ef-select
-              @change="doQuery"
               label="职级："
               placeholder=""
               v-model="form.zj"
@@ -124,7 +119,8 @@
           <el-form ref="form" :model="form" label-position="left" label-width="auto">
             <el-row>
               <el-col :span="24">
-                <ef-page-grid ref="grid1" queryNo="Query_RYZH" pageSize="20" queryWindow="1" style="height:500px;margin-top: 20px"/>
+                <ef-page-grid ref="grid1" queryNo="Query_RYZH" pageSize="20" queryWindow="1"
+                              style="margin-top: 25px"/>
               </el-col>
             </el-row>
           </el-form>
@@ -154,6 +150,14 @@ export default {
         dateRange: null
       }
     }
+  },
+
+  mounted() {
+    this.$nextTick(() => {
+      this.$refs['grid1'].setInitFun((queryGrid) => {
+        this.doQuery()
+      });
+    });
   },
 
   methods: {

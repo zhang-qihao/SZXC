@@ -96,6 +96,9 @@
       <dir>E:\Project\Frame\EF5Website\WebsiteServiceWeb\src</dir>
     </dirStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -135,7 +138,7 @@
     <option name="height" value="1048" />
   </component>
   <component name="ProjectId" id="1grfo9L76NafIsd5vVfLGjXckmW" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -767,7 +770,8 @@
       <workItem from="1660096684727" duration="3055000" />
       <workItem from="1660183462958" duration="3189000" />
       <workItem from="1660266261335" duration="3314000" />
-      <workItem from="1660525228495" duration="8087000" />
+      <workItem from="1660525228495" duration="10353000" />
+      <workItem from="1660612034091" duration="2129000" />
     </task>
     <task id="LOCAL-00119" summary="Default">
       <created>1513074713335</created>

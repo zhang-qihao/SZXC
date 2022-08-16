@@ -16,52 +16,64 @@
           <div class="header-title" slot="title">人员基础信息</div>
 
           <el-form ref="form" :model="form" label-position="left" label-width="auto">
-            <!--            工作照div-->
-            <div id="div_picture" style="text-align: center;display:block">
-              <img width="100" height="120" style="margin-left: 5px;" id="docid"
-                   src="/util/screen/gerenzhaopian.png"/><br>
-              <span><span style="color: red">*</span>工作照</span>
-            </div><!--工作照结束-->
 
-            <!--            基础信息div-->
-            <div id="div_basic_info">
-              <!--              第一行-->
-              <el-row :gutter="24">
-                <!--                第一行第一列-->
-                <el-col :span="8">
-                  <ef-text label="人员姓名" v-model="form.aac003" name="aac003" :require="false" readonly="true"/>
-                </el-col>
-                <!--                第一行第二列-->
-                <el-col :span="8">
-                  <ef-text label="性别" name="aac004" v-model="form.aac004" :require="false" readonly="true"/>
-                </el-col>
-              </el-row>
 
-              <!--              第二行-->
-              <el-row :gutter="24">
-                <!--                第二行第一列-->
-                <el-col :span="8">
-                  <ef-text label="证件号码" name="aac147" v-model="form.aac147" :require="false" readonly="true"/>
-                </el-col>
-                <!--                第二行第二列-->
-                <el-col :span="8">
-                  <ef-text label="人员性质" name="aac039" v-model="form.aac039" :require="false" readonly="true"/>
-                </el-col>
-              </el-row>
+            <el-row :gutter="24">
+              <el-col :span="6">
+                <!--            工作照div-->
+                <div id="div_picture" style="text-align: center">
+                  <img width="100" height="120" style="margin-left: 5px;" id="docid"
+                       src="/util/screen/gerenzhaopian.png"/><br>
+                  <div id="div_work_picture" style="text-align: center">
+                    <span><span style="color: red">*</span>工作照</span>
+                  </div>
+                </div><!--工作照结束-->
+              </el-col>
 
-              <!--              第三行-->
-              <el-row :gutter="24">
-                <!--                第三行第一列-->
-                <el-col :span="8">
-                  <ef-text label="出生日期" name="aac006" v-model="form.aac006" format="yyyyMMdd" :require="false"
-                           readonly="true"/>
-                </el-col>
-                <!--                第三行第二列-->
-                <el-col :span="8">
-                  <ef-text label="政治面貌" name="aac029" v-model="form.aac029" :require="false" readonly="true"/>
-                </el-col>
-              </el-row>
-            </div><!--基础信息结束-->
+              <el-col :span="18">
+                <!--            基础信息div-->
+                <div id="div_basic_info">
+                  <!--              第一行-->
+                  <el-row :gutter="24" style="margin-top: 10px">
+                    <!--                第一行第一列-->
+                    <el-col :span="12">
+                      <ef-text label="人员姓名" v-model="form.aac003" name="aac003" :require="false" readonly="true"/>
+                    </el-col>
+                    <!--                第一行第二列-->
+                    <el-col :span="12">
+                      <ef-text label="性别" name="aac004" v-model="form.aac004" :require="false" readonly="true"/>
+                    </el-col>
+                  </el-row>
+
+                  <!--              第二行-->
+                  <el-row :gutter="24" style="margin-top: 15px">
+                    <!--                第二行第一列-->
+                    <el-col :span="12">
+                      <ef-text label="证件号码" name="aac147" v-model="form.aac147" :require="false" readonly="true"/>
+                    </el-col>
+                    <!--                第二行第二列-->
+                    <el-col :span="12">
+                      <ef-text label="人员性质" name="aac039" v-model="form.aac039" :require="false" readonly="true"/>
+                    </el-col>
+                  </el-row>
+
+                  <!--              第三行-->
+                  <el-row :gutter="24" style="margin-top: 15px">
+                    <!--                第三行第一列-->
+                    <el-col :span="12">
+                      <ef-text label="出生日期" name="aac006" v-model="form.aac006" format="yyyyMMdd" :require="false"
+                               readonly="true"/>
+                    </el-col>
+                    <!--                第三行第二列-->
+                    <el-col :span="12">
+                      <ef-text label="政治面貌" name="aac029" v-model="form.aac029" :require="false" readonly="true"/>
+                    </el-col>
+                  </el-row>
+                </div><!--基础信息结束-->
+              </el-col>
+            </el-row>
+
+
           </el-form>
         </base-block><!--人员基础信息块结束-->
 
@@ -109,7 +121,16 @@
 
             <!--            第三行岗位表格-->
             <el-row :gutter="24">
-              <el-table></el-table>
+              <el-col :span="3">
+                <div style="text-align: right">
+                  <span>所在岗位</span>
+                </div>
+              </el-col>
+              <el-col :span="21" style="padding-left: 0px">
+                <el-form ref="form" :model="form" label-position="left" label-width="auto">
+                  <ef-page-grid ref="grid1" queryNo="Query_POSTS" pageSize="5" queryWindow="1"/>
+                </el-form>
+              </el-col>
             </el-row>
 
           </el-form>
@@ -151,7 +172,7 @@ export default {
       title1: '人员综合信息详情',    //弹窗标题
       onrequire: false,
 
-      form: {
+      form: { // 页面数据表单
         ac01id: '',   // 用户人员id
         base64: '',   // 上传文件字符串
         aac003: '',   // 人员姓名
@@ -168,15 +189,21 @@ export default {
         gwdate: '',   // 任岗时间
       }
     };
-
   },
+
   created() {
     this.loadData()
-    this.loadPosts()
     this.loadDocument()
   },
+
   mounted() {
+    this.$nextTick(() => {
+      this.$refs['grid1'].setInitFun((queryGrid) => {
+        this.doQuery()
+      });
+    });
   },
+
   methods: {
 
     loadData() {
@@ -226,23 +253,6 @@ export default {
       }
     },
 
-    loadPosts() {
-      let form2 = {
-        ac01id: this.form.ac01id
-      }
-      console.log('start request')
-      let callbackFun = function(date) {
-        console.log('success')
-      }
-      this.$eframe.submitTargetForm({
-        url: '/szybgzdtgl/baseinfo/staffinfo/staffindex.action',
-        form: form2,
-        actionFunName: "getPosts",
-        succFun: callbackFun,
-        failFun: null
-      });
-    },
-
     //加载照片
     loadDocument() {
       let that = this;
@@ -268,11 +278,32 @@ export default {
         failFun: null
       });
     },
+
+    doQuery() {
+      let that = this;
+      let whereCondition = "1=1";
+
+      if (that.form.info !== null && that.form.info !== "") {
+        whereCondition += " and Ac01id = '" + this.form.ac01id + "'";
+      }
+
+      let queryGrid = this.$refs['grid1'].getWidget();
+      queryGrid.selectAll = function (e, grid) {
+        console.log("selectAll");
+      };
+      queryGrid.selectRow = function (e, dataItem, grid, row) {
+        console.log("selectRole" + dataItem.QUERYNO);
+      };
+      queryGrid.doRefresh({
+        whereCondition: whereCondition,
+        parameters: {
+          ac01id: that.form.ac01id
+        }
+      });
+    },
   }
 }
 </script>
 
 <style lang="scss" scoped>
-
-
 </style>

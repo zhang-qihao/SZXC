@@ -9,7 +9,7 @@
         <!--        类型选择表单-->
         <el-form ref="form" :model="form" label-width="auto" style="margin: 0 5px">
           <!--        类型选择下拉框-->
-          <ef-select
+          <ef-select style="color:#8fb412;"
               @change="doQuery"
               label="变动类型："
               placeholder="请选择类型"
@@ -40,7 +40,7 @@
           <el-form ref="form" :model="form" label-position="left" label-width="auto">
             <el-row>
               <el-col :span="24">
-                <ef-page-grid ref="grid1" queryNo="Query_change" pageSize="20" queryWindow="1" style="height:500px;"/>
+                <ef-page-grid ref="grid1" queryNo="Query_change" pageSize="20" queryWindow="1" style="margin-top: 25px"/>
               </el-col>
             </el-row>
           </el-form>
@@ -60,6 +60,14 @@ export default {
         changeType: ''
       }
     }
+  },
+
+  mounted() {
+    this.$nextTick(() => {
+      this.$refs['grid1'].setInitFun((queryGrid) => {
+        this.doQuery()
+      });
+    });
   },
 
   methods: {
