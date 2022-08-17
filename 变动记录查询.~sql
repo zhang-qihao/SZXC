@@ -5,7 +5,7 @@ select distinct
   ADA3.CAE251 as 变更人,
   ADA3.AAE035 as 变更时间,
   case
-    when a.ada137 = 'AC01_GW' 
+    when a.ada137 = 'AC01_GW'
       then decode(ADA3.CAE059, '1', (select ADA4.ada152 from ADA4 where ADA4.ADA003 = a.ada003 and ADA4.ada181 = '姓名'), null, null, (select AAC003 from AC01_GW where AC01_GW.ac01id = a.Gwid))
     when a.ada137 = 'GW01'
       then decode(ADA3.CAE059, '1', (select ADA4.ada152 from ADA4 where ADA4.ADA003 = a.ada003 and ADA4.ada181 = '岗位名称'), null, null, (select GW003 from GW01 where GW01.GW001 = a.Gwid))
@@ -16,7 +16,7 @@ select distinct
       select p.aac003 from AC01_GW p, GW01 g, GW10 t
       where t.ac01id = p.ac01id
       and t.gw001 = g.gw001
-      and t.gw100 = a.gwid)
+      and t.gw001 = a.gwid)
   end as 变更对象,
   decode(a.ada137, 'GW10', decode(ADA3.CAE059, '1', '分配岗位', '3', '离岗', a.ADA181),
                    null, null,
