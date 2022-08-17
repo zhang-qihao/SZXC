@@ -114,8 +114,7 @@
     <!--    主视图内容-->
     <el-main>
       <div class="main-content">
-        <base-block class="out-block" style="margin-top: 1px" rounded ref="exampleBlock2" btn-option-fullscreen
-                    btn-option-content>
+        <base-block class="out-block" style="margin-top: 1px" ref="exampleBlock2">
           <el-form ref="form" :model="form" label-position="left" label-width="auto">
             <el-row>
               <el-col :span="24">

@@ -8,19 +8,13 @@
       <div class="header-right">
         <!--        类型选择表单-->
         <el-form ref="form" :model="form" label-width="auto" style="margin: 0 5px">
-          <!--        类型选择下拉框-->
-          <ef-select style="color:#8fb412;"
-                     label="变动类型："
-                     placeholder="请选择类型"
-                     v-model="form.changeType"
-                     :require="false"
-                     :emptyOption="false"
-                     :list="[
-                  {code:'00',name:'人员信息变动'},
-                  {code:'01',name:'岗位信息变动'},
-                  {code:'02',name:'科室信息变动'}
-              ]">
-          </ef-select><!--下拉框结束-->
+          <ef-text label="科室名称："
+                   v-model="form.ks003"
+                   :maxlength=20
+                   :minlength=5
+                   name="info"
+                   placeholder=""
+                   style="margin-right: 20px"/>
         </el-form><!--下拉框表单结束-->
         <!--        查询刷新按钮组-->
         <el-button-group style="margin: 0 5px">
@@ -50,13 +44,17 @@
 </template>
 
 <script>
+import {BaseCtrl} from "@/util/eframe";
+
 export default {
-  name: "changeindex",
+  name: "ksindex",
+  mixins: [BaseCtrl],
 
   data() {
     return {
       form: {
-        changeType: ''
+        ks003: '',
+        ckc005: ''
       }
     }
   },
@@ -74,12 +72,16 @@ export default {
     doQuery() {
       let that = this;
       let whereCondition = "1=1";
-      let changeT = this.form.changeType
+      let ks003 = this.form.ks003
+      let ckc005 = that.form.ckc005
 
-      if (that.form.changeType !== null && that.form.changeType !== "") {
-        whereCondition += " and selectedkey ='" + changeT + "' ";
-
+      if (ckc005 === null || ckc005 === "") {
+        whereCondition += " and CKC005 ='" + ckc005 + "'";
       }
+      if (ks003 !== null && ks003 !== "") {
+        whereCondition += " and KS003 like %'" + ks003 + "'% ";
+      }
+
       let queryGrid = this.$refs['grid1'].getWidget();
       queryGrid.selectAll = function (e, grid) {
         console.log("selectAll");
@@ -90,7 +92,7 @@ export default {
       queryGrid.doRefresh({
         whereCondition: whereCondition,
         parameters: {
-          '变动类型': that.form.changeType
+          ks003: that.form.ks003
         }
       });
 
