@@ -10,13 +10,12 @@
         <el-form ref="form" :model="form" label-width="auto" style="margin: 0 5px">
           <!--        类型选择下拉框-->
           <ef-select style="color:#8fb412;"
-              @change="doQuery"
-              label="变动类型："
-              placeholder="请选择类型"
-              v-model="form.changeType"
-              :require="false"
-              :emptyOption="false"
-              :list="[
+                     label="变动类型："
+                     placeholder="请选择类型"
+                     v-model="form.changeType"
+                     :require="false"
+                     :emptyOption="false"
+                     :list="[
                   {code:'00',name:'人员信息变动'},
                   {code:'01',name:'岗位信息变动'},
                   {code:'02',name:'科室信息变动'}
@@ -40,7 +39,8 @@
           <el-form ref="form" :model="form" label-position="left" label-width="auto">
             <el-row>
               <el-col :span="24">
-                <ef-page-grid ref="grid1" queryNo="Query_change" pageSize="20" queryWindow="1" style="margin-top: 25px"/>
+                <ef-page-grid ref="grid1" queryNo="Query_change" pageSize="20" queryWindow="1"
+                              style="margin-top: 25px"/>
               </el-col>
             </el-row>
           </el-form>
