@@ -1,5 +1,9 @@
 package com.xfinsoft.szybgzdtgl.module.view.szybgzdtgl.baseinfo.ks;
 
+import com.xfinsoft.szybgzdtgl.module.comp.baseinfomgmt.persmgr.dto.Ks_gwDTO;
+
+import java.util.List;
+
 public class KsForm {
 
     private String ks001; // 科室id
@@ -19,6 +23,16 @@ public class KsForm {
     private String aac039; // 人员性质
 
     private String aac029; // 政治面貌
+
+    private List<Ks_gwDTO> data_list; // 数据列表
+
+    public List<Ks_gwDTO> getData_list() {
+        return data_list;
+    }
+
+    public void setData_list(List<Ks_gwDTO> data_list) {
+        this.data_list = data_list;
+    }
 
     public String getKs001() {
         return ks001;

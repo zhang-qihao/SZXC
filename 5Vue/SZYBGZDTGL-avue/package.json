@@ -12,6 +12,7 @@
   },
   "main": "background.js",
   "dependencies": {
+    "@element-plus/icons-vue": "^2.0.9",
     "@progress/kendo-data-query": "^1.5.4",
     "@progress/kendo-drawing": "^1.10.0",
     "@progress/kendo-licensing": "^1.1.4",

@@ -20,25 +20,30 @@
 
             <el-row :gutter="24">
               <el-col :span="8">
-                <ef-text label="科室名称" name="ks003" v-model="form.ks003" :require="false" readonly="true"/>
+                <ef-text label="科室名称" name="ks003" v-model="form.ks003" :require="false"
+                         readonly="true"/>
               </el-col>
               <el-col :span="8">
-                <ef-text label="科室负责人" name="ks020" v-model="form.ks020" :require="false" readonly="true"/>
+                <ef-text label="科室负责人" name="ks020" v-model="form.ks020" :require="false"
+                         readonly="true"/>
               </el-col>
               <el-col :span="8">
-                <ef-text label="分管主任" name="ks010" v-model="form.ks010" :require="false" readonly="true"/>
+                <ef-text label="分管主任" name="ks010" v-model="form.ks010" :require="false"
+                         readonly="true"/>
               </el-col>
             </el-row>
 
             <el-row :gutter="24">
               <el-col :span="8">
-                <ef-text label="科室人数" name="pernum" v-model="form.pernum" :require="false" readonly="true"/>
+                <ef-text label="科室人数" name="pernum" v-model="form.pernum" :require="false"
+                         readonly="true"/>
               </el-col>
             </el-row>
 
             <el-row :gutter="24">
               <el-col :span="24">
-                <ef-text label="科室职责" name="ks002" v-model="form.ks002" :require="false" readonly="true"/>
+                <ef-text label="科室职责" name="ks002" v-model="form.ks002" :require="false"
+                         readonly="true"/>
               </el-col>
             </el-row>
 
@@ -51,9 +56,7 @@
         <base-block class="out-block" style="margin-top: 15px" ref="exampleBlock2">
           <div class="header-title" slot="title">科室岗位信息</div>
           <div class="header-right">
-            <el-button-group>
-              <el-button size="mini" type="primary" @click="printTable">打印</el-button> <!--v-print="'#printMe'"-->
-            </el-button-group>
+            <el-button size="mini" type="primary" @click="printTable">打印</el-button>
           </div>
           <div id="printMe">
             <el-form ref="form" :model="form" label-position="left" label-width="auto">
@@ -64,8 +67,6 @@
             </el-form>
           </div>
         </base-block><!--科室岗位信息块-->
-
-
       </div>
     </el-main>
   </el-container>
@@ -128,7 +129,7 @@ export default {
   methods: {
 
     loadData() {
-      //获取传递参数
+      // 获取传递参数
       let params = this.$attrs.params.dataItem;
       if (params) {
         if (params.get('KS001')) {
@@ -152,6 +153,7 @@ export default {
       }
     },
 
+    // 查询
     doQuery() {
       let that = this;
       let whereCondition = "1=1";
@@ -179,49 +181,53 @@ export default {
 
     printTable() {  // 打印表格
 
+      let that = this;
+
       let succFun = function (data) {
-        console.log(data)
-        printJS({
-          printable: data,
-          type: 'json',
-          properties: [{
-            field: 'ks003',
-            displayName: '岗位名称',
-            columnSize: 1
-          }, {
-            field: 'ks002',
-            displayName: '岗位职责描述',
-            columnSize: 3
-          }, {
-            field: 'aac003',
-            displayName: '工作人员',
-            columnSize: 1
-          }, {
-            field: 'aac004',
-            displayName: '人员性别',
-            columnSize: 1
-          }, {
-            field: 'aac039',
-            displayName: '人员性质',
-            columnSize: 1
-          }, {
-            field: 'aac029',
-            displayName: '政治面貌',
-            columnSize: 1
-          }],
-          header: this.form.ks003 + '科岗职责说明书',
-          //样式设置
-          gridStyle: 'border:2px; color:black',
-          gridHeaderStyle: 'color:black; border:2px;',
-          headerStyle: 'text-align:center;color:#000;width:100%;',
-        })
+        console.log(data.data_list)
+        // printJS({
+        //   printable: data,
+        //   type: 'json',
+        //   properties: [{
+        //     field: 'ks003',
+        //     displayName: '岗位名称',
+        //     columnSize: 1
+        //   }, {
+        //     field: 'ks002',
+        //     displayName: '岗位职责描述',
+        //     columnSize: 3
+        //   }, {
+        //     field: 'aac003',
+        //     displayName: '工作人员',
+        //     columnSize: 1
+        //   }, {
+        //     field: 'aac004',
+        //     displayName: '人员性别',
+        //     columnSize: 1
+        //   }, {
+        //     field: 'aac039',
+        //     displayName: '人员性质',
+        //     columnSize: 1
+        //   }, {
+        //     field: 'aac029',
+        //     displayName: '政治面貌',
+        //     columnSize: 1
+        //   }],
+        //   header: this.form.ks003 + '科岗职责说明书',
+        //   //样式设置
+        //   gridStyle: 'border:2px; color:black',
+        //   gridHeaderStyle: 'color:black; border:2px;',
+        //   headerStyle: 'text-align:center;color:#000;width:100%;',
+        // })
       };
       let failFun = function (data) {
-        alert('获取数据失败')
+        console.log('获取数据失败')
+        console.log(data)
       };
+      // 获取科室岗位信息
       this.$eframe.submitTargetForm({
-        url: '/szybgzdtgl/module/view/szybgzdtgl/baseinfo/ks/getPrintData.action',
-        form: {ks001: this.form.ks001},
+        url: '/szybgzdtgl/baseinfo/ks/getPrintData.action',
+        form: {ks001: that.form.ks001},
         actionFunName: "getData",
         succFun: succFun,
         failFun: failFun,

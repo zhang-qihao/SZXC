@@ -7,26 +7,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77b4fb53-0502-4bc8-9e8e-0c2419cbd923" name="Default" comment="Default">
-      <change afterPath="$PROJECT_DIR$/SZYBGZDTGL/src/com/xfinsoft/szybgzdtgl/module/comp/baseinfomgmt/persmgr/bo/IKsBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SZYBGZDTGL/src/com/xfinsoft/szybgzdtgl/module/comp/baseinfomgmt/persmgr/bo/impl/KsBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SZYBGZDTGL/src/com/xfinsoft/szybgzdtgl/module/comp/baseinfomgmt/persmgr/bs/IKsBS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SZYBGZDTGL/src/com/xfinsoft/szybgzdtgl/module/comp/baseinfomgmt/persmgr/bs/impl/KsBS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SZYBGZDTGL/src/com/xfinsoft/szybgzdtgl/module/comp/baseinfomgmt/persmgr/dto/Ks_gwDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SZYBGZDTGL/src/com/xfinsoft/szybgzdtgl/module/view/szybgzdtgl/baseinfo/ks/KsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SZYBGZDTGL/src/com/xfinsoft/szybgzdtgl/module/view/szybgzdtgl/baseinfo/ks/KsForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/src/views/szybgzdtgl/baseinfo/ks/ksdetail.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/babel-loader/04d0a5aa207466d12cdad7b74632e4c9.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/babel-loader/04d0a5aa207466d12cdad7b74632e4c9.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/babel-loader/a829b349cc8c1e7c91ff8772d4214ff3.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/babel-loader/a829b349cc8c1e7c91ff8772d4214ff3.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/1a7d84e7e1277de4cb1b25e4170723fe.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/1a7d84e7e1277de4cb1b25e4170723fe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/40aebf89990e4ba3df16a5760e884501.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/40aebf89990e4ba3df16a5760e884501.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/8876ddea9e7e44523e129e67c4de781a.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/8876ddea9e7e44523e129e67c4de781a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/e37e79d04201bc7ba3f6ab3593158e17.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/e37e79d04201bc7ba3f6ab3593158e17.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SZYBGZDTGL/src/com/xfinsoft/szybgzdtgl/module/comp/baseinfomgmt/persmgr/bo/impl/KsBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/SZYBGZDTGL/src/com/xfinsoft/szybgzdtgl/module/comp/baseinfomgmt/persmgr/bo/impl/KsBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SZYBGZDTGL/src/com/xfinsoft/szybgzdtgl/module/view/szybgzdtgl/baseinfo/ks/KsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SZYBGZDTGL/src/com/xfinsoft/szybgzdtgl/module/view/szybgzdtgl/baseinfo/ks/KsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SZYBGZDTGL/src/com/xfinsoft/szybgzdtgl/module/view/szybgzdtgl/baseinfo/ks/KsForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/SZYBGZDTGL/src/com/xfinsoft/szybgzdtgl/module/view/szybgzdtgl/baseinfo/ks/KsForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web/WEB-INF/classes/com/xfinsoft/szybgzdtgl/module/view/szybgzdtgl/baseinfo/ks/getPrintData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SZYBGZDTGL/com/xfinsoft/szybgzdtgl/module/view/szybgzdtgl/baseinfo/ks/getPrintData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/babel-loader/33e92e82fbabe07ab2ca379cb607bfe0.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/babel-loader/33e92e82fbabe07ab2ca379cb607bfe0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/babel-loader/f9712fabb3634fd60c2c2f7d93bed68f.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/babel-loader/f9712fabb3634fd60c2c2f7d93bed68f.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/2647e2ee219b1230b82fe665b6f61007.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/2647e2ee219b1230b82fe665b6f61007.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/3ec4baa31258e6cf8d96b2b943774804.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/3ec4baa31258e6cf8d96b2b943774804.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/7093ace737391057d7112de76b2747e3.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/7093ace737391057d7112de76b2747e3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/764abc96b683f464dd70b9701440bb60.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/764abc96b683f464dd70b9701440bb60.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/src/views/szybgzdtgl/baseinfo/ks/ksindex.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/src/views/szybgzdtgl/baseinfo/ks/ksindex.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../变动记录查询.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../变动记录查询.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/public/cdn/avue/2.8.1/avue.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/public/cdn/avue/2.8.1/avue.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/public/cdn/element-ui/2.15.0/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/public/cdn/element-ui/2.15.0/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/public/cdn/jquery/3.5.1/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/public/cdn/jquery/3.5.1/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/public/cdn/kendo/2021.1.330/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/public/cdn/kendo/2021.1.330/js/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/public/cdn/kendo/2021.1.330/js/kendo.mobile.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/public/cdn/kendo/2021.1.330/js/kendo.mobile.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/public/cdn/kendo/2021.1.330/js/kendo.spreadsheet.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/public/cdn/kendo/2021.1.330/js/kendo.spreadsheet.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/public/cdn/kendo/2021.1.330/js/messages/kendo.messages.en-AU.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/public/cdn/kendo/2021.1.330/js/messages/kendo.messages.en-AU.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/public/cdn/kendo/2021.1.330/js/messages/kendo.messages.en-CA.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/public/cdn/kendo/2021.1.330/js/messages/kendo.messages.en-CA.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/public/cdn/kendo/2021.1.330/js/messages/kendo.messages.en-GB.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/public/cdn/kendo/2021.1.330/js/messages/kendo.messages.en-GB.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/public/cdn/kendo/2021.1.330/js/messages/kendo.messages.en-US.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/public/cdn/kendo/2021.1.330/js/messages/kendo.messages.en-US.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/public/cdn/vue/2.5.2/vue.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/public/cdn/vue/2.5.2/vue.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/public/static/frame/example/prism/prism.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/public/static/frame/example/prism/prism.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/src/components/ef-element-comps/EfShow.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/src/components/ef-element-comps/EfShow.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/src/page/frame/user/setting.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/src/page/frame/user/setting.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/src/page/index/logo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/src/page/index/logo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/src/styles/normalize.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/src/styles/normalize.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/src/views/szybgzdtgl/baseinfo/changerecord/changeindex.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/src/views/szybgzdtgl/baseinfo/change/changeindex.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/src/views/szybgzdtgl/baseinfo/ks/ksdetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/src/views/szybgzdtgl/baseinfo/ks/ksdetail.vue" afterDir="false" />
     </list>
     <list id="4baad427-6ec1-4070-988a-2655473d1748" name="Failed commit: Default" comment="" />
     <list id="c7f2ac35-11ff-4cd8-8f58-75e49449e17c" name="Failed commit: Default (2)" comment="Failed commit: Default (2)" />
@@ -792,7 +804,7 @@
       <workItem from="1660612034091" duration="2129000" />
       <workItem from="1660698163643" duration="2983000" />
       <workItem from="1660784529234" duration="5799000" />
-      <workItem from="1660870840754" duration="4653000" />
+      <workItem from="1660870840754" duration="16679000" />
     </task>
     <task id="LOCAL-00119" summary="Default">
       <created>1513074713335</created>

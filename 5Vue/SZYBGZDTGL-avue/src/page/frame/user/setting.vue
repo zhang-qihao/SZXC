@@ -63,7 +63,7 @@
                 <p class="subtitle">选择当前语言</p>
               </div>
               <div class="user-setting__menu" style="cursor: pointer;">
-<!--                <el-switch @changerecord="handleSetLanguage" v-model="value" active-text="中文" inactive-text="英文">-->
+<!--                <el-switch @change="handleSetLanguage" v-model="value" active-text="中文" inactive-text="英文">-->
 <!--                </el-switch>-->
                 <el-dropdown trigger="click"
                              @command="handleSetLanguage">

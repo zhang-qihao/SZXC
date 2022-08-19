@@ -27,7 +27,7 @@
     <!--        :visible.sync="dialogVisible"-->
     <!--        width="460px"-->
     <!--        :before-close="handleClose" style="line-height: 20px;">-->
-    <!--      <changerecord-pwd @changeFlag='changeFlag' :dataForm="form"></changerecord-pwd>-->
+    <!--      <change-pwd @changeFlag='changeFlag' :dataForm="form"></change-pwd>-->
     <!--    </el-dialog>-->
   </div>
 </template>

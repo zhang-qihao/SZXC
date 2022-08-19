@@ -7,7 +7,7 @@
     <div v-if="type == 'text' && isNotNull(compValue)" class="text-box" style="user-select: text">{{compValue}}</div>
     <div v-if="type == 'text' && isNull(compValue)" class="text-null-box" style="user-select: text">{{compValue}}</div>
 <!--    <el-input :size="formStyle[0].size" v-model="compValue" :placeholder="placeholder" @input="input"-->
-<!--              @changerecord="changerecord" :disabled="compReadonly" :maxlength="compMaxLength" :minlength="compMinLength">-->
+<!--              @change="change" :disabled="compReadonly" :maxlength="compMaxLength" :minlength="compMinLength">-->
 <!--      <div slot="append" v-if="buttonFlag">-->
 <!--        <slot></slot>-->
 <!--      </div>-->

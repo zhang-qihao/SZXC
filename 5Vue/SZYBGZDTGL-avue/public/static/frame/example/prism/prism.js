@@ -39,7 +39,7 @@ var Prism = (function (_self) {
 		 *
 		 * By setting this value to `true`, Prism will not automatically highlight all code elements on the page.
 		 *
-		 * You obviously have to changerecord this value before the automatic highlighting started. To do this, you can add an
+		 * You obviously have to change this value before the automatic highlighting started. To do this, you can add an
 		 * empty Prism object into the global scope before loading the Prism script like this:
 		 *
 		 * ```js
@@ -60,7 +60,7 @@ var Prism = (function (_self) {
 		 * A namespace for utility methods.
 		 *
 		 * All function in this namespace that are not explicitly marked as _public_ are for __internal use only__ and may
-		 * changerecord or disappear at any time.
+		 * change or disappear at any time.
 		 *
 		 * @namespace
 		 * @memberof Prism
@@ -363,7 +363,7 @@ var Prism = (function (_self) {
 			 * can be done without temporarily deleting properties, so the iteration order is well-defined.
 			 *
 			 * However, only references that can be reached from `Prism.languages` or `insert` will be replaced. I.e. if
-			 * you hold the target object in a variable, then the value of the variable will not changerecord.
+			 * you hold the target object in a variable, then the value of the variable will not change.
 			 *
 			 * ```js
 			 * var oldMarkup = Prism.languages.markup;
@@ -562,7 +562,7 @@ var Prism = (function (_self) {
 
 			_.hooks.run('before-sanity-check', env);
 
-			// plugins may changerecord/add the parent/element
+			// plugins may change/add the parent/element
 			parent = env.element.parentElement;
 			if (parent && parent.nodeName.toLowerCase() === 'pre' && !parent.hasAttribute('tabindex')) {
 				parent.setAttribute('tabindex', '0');
@@ -854,7 +854,7 @@ var Prism = (function (_self) {
 		pattern.lastIndex = pos;
 		var match = pattern.exec(text);
 		if (match && lookbehind && match[1]) {
-			// changerecord the match to remove the text matched by the Prism lookbehind group
+			// change the match to remove the text matched by the Prism lookbehind group
 			var lookbehindLength = match[1].length;
 			match.index += lookbehindLength;
 			match[0] = match[0].slice(lookbehindLength);
