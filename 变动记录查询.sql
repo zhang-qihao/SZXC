@@ -13,9 +13,8 @@ select distinct
       then decode(ADA3.CAE059, '1', (select ADA4.ada152 from ADA4 where ADA4.ADA003 = a.ada003 and ADA4.ada181 = '科室名称'), null, null, (select KS003 from KS01 where KS01.KS001 = a.Gwid))
     when a.ada137 = 'GW10'
       then (
-      select p.aac003 from AC01_GW p, GW01 g, GW10 t
+      select p.aac003 from AC01_GW p, GW10 t
       where t.ac01id = p.ac01id
-      and t.gw001 = g.gw001
       and t.gw100 = a.gwid)
   end as 变更对象,
   decode(a.ada137, 'GW10', decode(ADA3.CAE059, '1', '分配岗位', '3', '离岗', a.ADA181),

@@ -7,15 +7,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77b4fb53-0502-4bc8-9e8e-0c2419cbd923" name="Default" comment="Default">
-      <change afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/src/views/szybgzdtgl/baseinfo/ks/ksindex.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SZYBGZDTGL/src/com/xfinsoft/szybgzdtgl/module/comp/baseinfomgmt/persmgr/bo/IKsBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SZYBGZDTGL/src/com/xfinsoft/szybgzdtgl/module/comp/baseinfomgmt/persmgr/bo/impl/KsBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SZYBGZDTGL/src/com/xfinsoft/szybgzdtgl/module/comp/baseinfomgmt/persmgr/bs/IKsBS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SZYBGZDTGL/src/com/xfinsoft/szybgzdtgl/module/comp/baseinfomgmt/persmgr/bs/impl/KsBS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SZYBGZDTGL/src/com/xfinsoft/szybgzdtgl/module/comp/baseinfomgmt/persmgr/dto/Ks_gwDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SZYBGZDTGL/src/com/xfinsoft/szybgzdtgl/module/view/szybgzdtgl/baseinfo/ks/KsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SZYBGZDTGL/src/com/xfinsoft/szybgzdtgl/module/view/szybgzdtgl/baseinfo/ks/KsForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/src/views/szybgzdtgl/baseinfo/ks/ksdetail.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/babel-loader/d5fdbf30ba1a418a8f1a1c136d4b4efb.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/babel-loader/d5fdbf30ba1a418a8f1a1c136d4b4efb.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/320043b885ba5d39d1fd657e4a465e6f.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/320043b885ba5d39d1fd657e4a465e6f.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/7c2dc9a7505d12f9a5ca1fe3f49e59e9.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/7c2dc9a7505d12f9a5ca1fe3f49e59e9.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/b73e55d8a4f005510fdb8306ea1fe335.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/b73e55d8a4f005510fdb8306ea1fe335.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/e1a6f136f145110a81f65eabee8cc4df.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/e1a6f136f145110a81f65eabee8cc4df.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/babel-loader/04d0a5aa207466d12cdad7b74632e4c9.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/babel-loader/04d0a5aa207466d12cdad7b74632e4c9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/babel-loader/a829b349cc8c1e7c91ff8772d4214ff3.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/babel-loader/a829b349cc8c1e7c91ff8772d4214ff3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/1a7d84e7e1277de4cb1b25e4170723fe.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/1a7d84e7e1277de4cb1b25e4170723fe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/40aebf89990e4ba3df16a5760e884501.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/40aebf89990e4ba3df16a5760e884501.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/8876ddea9e7e44523e129e67c4de781a.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/8876ddea9e7e44523e129e67c4de781a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/e37e79d04201bc7ba3f6ab3593158e17.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/node_modules/.cache/vue-loader/e37e79d04201bc7ba3f6ab3593158e17.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/src/views/szybgzdtgl/baseinfo/ks/ksindex.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../5Vue/SZYBGZDTGL-avue/src/views/szybgzdtgl/baseinfo/ks/ksindex.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../变动记录查询.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../变动记录查询.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../变动记录查询.~sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../变动记录查询.~sql" afterDir="false" />
     </list>
     <list id="4baad427-6ec1-4070-988a-2655473d1748" name="Failed commit: Default" comment="" />
     <list id="c7f2ac35-11ff-4cd8-8f58-75e49449e17c" name="Failed commit: Default (2)" comment="Failed commit: Default (2)" />
@@ -51,9 +62,6 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="websitePro" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -782,7 +790,9 @@
       <workItem from="1660266261335" duration="3314000" />
       <workItem from="1660525228495" duration="10353000" />
       <workItem from="1660612034091" duration="2129000" />
-      <workItem from="1660698163643" duration="1233000" />
+      <workItem from="1660698163643" duration="2983000" />
+      <workItem from="1660784529234" duration="5799000" />
+      <workItem from="1660870840754" duration="4653000" />
     </task>
     <task id="LOCAL-00119" summary="Default">
       <created>1513074713335</created>

@@ -29,10 +29,10 @@
     <el-main>
       <div class="main-content">
         <base-block class="out-block" style="margin-top: 1px" ref="exampleBlock2">
-          <el-form ref="form" :model="form" label-position="left" label-width="auto">
+          <el-form ref="form" :model="form" label-position="center" label-width="auto">
             <el-row>
               <el-col :span="24">
-                <ef-page-grid ref="grid1" queryNo="Query_change" pageSize="20" queryWindow="1"
+                <ef-page-grid ref="grid1" queryNo="Query_KSZH" pageSize="20" queryWindow="1"
                               style="margin-top: 25px"/>
               </el-col>
             </el-row>
@@ -68,6 +68,20 @@ export default {
   },
 
   methods: {
+
+    infoDetail(dataItem) {
+      let that = this;
+      var backFun = function (back) {
+        that.doQuery();
+      };
+      this.openDialog({
+        view: "views/szybgzdtgl/baseinfo/ks/ksdetail",
+        width: 800,
+        params: {dataItem: dataItem},
+        callBackFun: backFun
+      });
+    },
+
     //列表查询
     doQuery() {
       let that = this;
@@ -75,9 +89,9 @@ export default {
       let ks003 = this.form.ks003
       let ckc005 = that.form.ckc005
 
-      if (ckc005 === null || ckc005 === "") {
-        whereCondition += " and CKC005 ='" + ckc005 + "'";
-      }
+      // if (ckc005 === null || ckc005 === "") {
+      //   whereCondition += " and CKC005 = '00'";
+      // }
       if (ks003 !== null && ks003 !== "") {
         whereCondition += " and KS003 like %'" + ks003 + "'% ";
       }
@@ -88,6 +102,9 @@ export default {
       };
       queryGrid.selectRow = function (e, dataItem, grid, row) {
         console.log("selectRole" + dataItem.QUERYNO);
+      };
+      queryGrid.onKsSelected = function (dataItem) {
+        that.infoDetail(dataItem)
       };
       queryGrid.doRefresh({
         whereCondition: whereCondition,

@@ -28,10 +28,12 @@ import VueQuillEditor from 'vue-quill-editor'
 // import 'quill/dist/quill.core.css'
 // import 'quill/dist/quill.snow.css'
 // import 'quill/dist/quill.bubble.css'
+import Print from 'vue-print-nb'
 
 window.$crudCommon = crudCommon;
 //代码高亮
 // Vue.use(VueCodemirror)
+Vue.use(Print)
 Vue.use(router);
 Vue.use(VueAxios, axios);
 Vue.use(Element, {
